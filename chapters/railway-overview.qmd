@@ -1,0 +1,35 @@
+# Railway Overview
+
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- recognise the main elements of the railway
+- identify the main parts of railway infrastructure
+- explain the basic functions of track, points, signalling, overhead power, and telecommunications
+- understand common railway terminology
+
+## Introduction
+
+At first glance a railway can look deceptively simple, however it is a system comprising of many different interconnected subsystems.  All of the various systems are vital to the safe and efficient running of a railway.  It is of no use that the rails are intact if the signalling system is faulty, the overhead lines are not recieving power, or there is a fallen tree across the line.  Although a signalling technician is primarily concerned with signalling equipment it can be necessary to work with other departments.  This could include working with the track discipline (commonly known as "p-way") when rails or switches need replaced, the Distribution and Plant discipline if there is a power failure, or the Off-Track discpline (who deal with fencing, vegetation, and access points) if vegetation is obscuring signals.
+
+The railway can also often be accused of speaking its own language.  To complicate things further, there are many colloquial and local terms, and in some cases the same thing may be referred to differently by different departments.  It would be impossible to provide an exhaustive list of all such terms (indeed, *Ellis' British Railway Encyclopaedia* is nearly 600 pages and is not complete), but this should hopefully make some of the basic every day terms less mystifying.  Signalling terminology can also differ from what you may be used to from other engineering backgrounds.
+
+## The track
+The most obvious part of railway infrastructure is the track.  At first glance the track may appear to simply two rails, connected by sleepers, but in reality there is considerably more to it than that.  A typical track construction includes:
+
+- rails
+- sleepers
+- ballast
+- the formation beneath the ballast
+- rail fastenings to hold the rails to the sleepers
+- switches and crossings to allow trains to change track
+- expansion joints to accomodate for changes in temperature
+- rail joints to connect lengths of track together, and insulated rail joints to provide electrical insulation
+
+### The rails
+The rails provide the running surface and guide the train in the required direction.  There are numerous different types of rail, although it's not necessary for a signalling technician to know the precise characteristics of each.  Most rail now used falls into the category of "flat-bottomed" rail, although some bullhead rail still exists in sidings and on lesser used lines.
+
+::: {.trivia}
+The only place bullhead is used in the Central section is in Bridgeton Yard, near Rutherglen.

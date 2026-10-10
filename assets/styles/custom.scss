@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+/*-- scss:rules --*/
+main.content {
+  max-width: 900px;
+}
+
+figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  font-size: 0.92rem;
+}
+
+.callout {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}

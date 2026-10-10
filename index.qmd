@@ -1,0 +1,29 @@
+# Preface {.unnumbered}
+
+This book is intended for people entering railway signalling from a general engineering background and for practising technicians who need a concise reference to the systems they maintain.
+
+It is designed to support, rather than replace, company training, controlled standards, maintenance specifications, local instructions or competence arrangements.
+
+## How to use this book
+
+The early chapters are intended to be read in order. Equipment-specific chapters follow a consistent structure so they can also be used as practical reference material.
+
+::: {.callout-important title="Principle"}
+Safety or engineering principles that explain why a signalling system is designed or operated in a particular way.
+:::
+
+::: {.callout-note title="In practice"}
+How the principle normally appears in real equipment, drawings or maintenance work.
+:::
+
+::: {.callout-tip title="Fault finding"}
+A diagnostic observation, reasoning method or worked fault-finding example.
+:::
+
+## Scope
+
+The first edition concentrates on equipment and systems encountered within the author's section. The underlying principles are explained broadly enough to remain useful when other equipment is encountered later.
+
+## Safety and authority
+
+This book is educational material. Where it differs from current controlled company documentation, the controlled documentation takes precedence.

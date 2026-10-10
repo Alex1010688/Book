@@ -1,0 +1,61 @@
+# Signals
+
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- explain what the equipment is intended to do;
+- identify its main components;
+- describe how those components interact during normal operation;
+- relate the equipment to signalling circuits, indications or documentation;
+- describe the main maintenance requirements at a conceptual level;
+- recognise common faults and apply a systematic fault-finding approach.
+
+## What the equipment does
+
+<!-- Start with the operational or signalling problem the equipment solves. -->
+
+## Main components
+
+<!-- Introduce the physical parts before explaining the complete operating sequence. -->
+
+## How it works
+
+<!-- Explain how the components interact. Build from simple to detailed. -->
+
+## Normal operation
+
+<!-- Step through the normal sequence and expected states. -->
+
+## Maintenance
+
+<!-- Explain what is maintained and why. -->
+
+## Common faults
+
+<!-- Describe failure modes and the symptoms they create. -->
+
+## Fault-finding approach
+
+::: {.callout-tip title="Fault finding"}
+Start with the reported symptom, establish the actual state, compare it with the expected state, and identify the first missing condition.
+:::
+
+<!-- Add equipment-specific diagnostic reasoning here. -->
+
+## Worked example
+
+<!-- Use a realistic but sanitised example. -->
+
+## Key points
+
+- 
+- 
+- 
+
+## Check your understanding
+
+1. 
+2. 
+3. 

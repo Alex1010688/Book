@@ -1,0 +1,40 @@
+# Testing
+
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- explain the main principles introduced in the chapter;
+- relate them to practical signalling equipment and systems;
+- recognise where the principles appear in later chapters.
+
+## Why this matters
+
+<!-- Explain why the topic matters to a new signalling technician. -->
+
+## Core principles
+
+<!-- Build from familiar concepts to signalling-specific application. -->
+
+## In practice
+
+::: {.callout-note title="In practice"}
+Add the practical application of the principle here.
+:::
+
+## Worked example
+
+<!-- Add a simple example, drawing or activity. -->
+
+## Key points
+
+- 
+- 
+- 
+
+## Check your understanding
+
+1. 
+2. 
+3. 

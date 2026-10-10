@@ -1,0 +1,9 @@
+# Glossary {.unnumbered}
+
+| Term | Meaning |
+|---|---|
+| Correspondence | Agreement between the commanded and proved state of equipment, particularly points. |
+| Fail-safe | A design approach in which foreseeable failures tend to result in, or reveal themselves through, a safe state. |
+| Interlocking | The system that prevents incompatible or unsafe signalling commands from being simultaneously authorised. |
+| Normal / Reverse | Defined reference positions used for points and associated controls. |
+| Route | A defined path through the signalling system for a train movement. |
