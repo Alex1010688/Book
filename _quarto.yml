@@ -14,6 +14,7 @@ book:
     - part: "I — Railway and signalling fundamentals"
       chapters:
         - chapters/railway-overview.qmd
+        - chapters/history-of-railway-signalling.qmd
         - chapters/what-is-railway-signalling.qmd
         - chapters/safety-principles.qmd
         - chapters/electrical-principles.qmd
