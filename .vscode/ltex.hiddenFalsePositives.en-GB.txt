@@ -1,0 +1,1 @@
+{"rule":"PHRASE_REPETITION","sentence":"^\\QThe rails\nThe rails provide the running surface and guide the train in the required direction.\\E$"}

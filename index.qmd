@@ -20,6 +20,11 @@ How the principle normally appears in real equipment, drawings or maintenance wo
 A diagnostic observation, reasoning method or worked fault-finding example.
 :::
 
+::: {.callout-caution title="Trivia"}
+A local note, or trivia.
+:::
+
+
 ## Scope
 
 The first edition concentrates on equipment and systems encountered within the author's section. The underlying principles are explained broadly enough to remain useful when other equipment is encountered later.
