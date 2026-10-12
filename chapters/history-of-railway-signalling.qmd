@@ -12,21 +12,27 @@ By the end of this chapter, you should be able to:
 
 ## Why this matters
 
-Railway signalling is sometimes taught as a collection of separate subjects: signals, points, train detection, interlocking, level crossings, power supplies and control systems. In practice, these subjects grew together. Each stage in the history of signalling was a response to a real operating problem: how to keep trains apart, how to route them safely, how to communicate with drivers, and how to make sure that a single human error did not become a disaster.
+Railway signalling is sometimes taught as a collection of separate subjects: signals, points, train detection, interlocking, level crossings, power supplies and control systems. In practice, these subjects grew together. Each stage in the history of signalling was a response to a real operating problem: how to keep trains apart, how to route them safely, how to communicate with drivers, and how to make sure that a single human error did not become a disaster. Often innovations and changes to rules and methods came about due to accidents, and the same can be said for the railway in general. Almost every rule is "written in blood." Some knowledge of the history is therefore useful to understand the importance of why things we do today are necessary.
 
-For a signalling technician, the history is not just background interest. It explains why many modern terms sound mechanical even when the equipment is electronic. We still talk about locking, levers, routes, blocks, clearing a signal, proving a point and replacing a signal to danger. These words come from earlier methods of working, but the ideas behind them are still present in relay interlockings, solid state interlockings and computer-based control systems.
+A background knowledge of the history also helps to demystify some of the modern terminology. Knowing the history explains why many terms sound mechanical even when the equipment is electronic. We still talk about locking, levers, routes, blocks, clearing a signal, proving a point and replacing a signal to danger. These words come from earlier methods of working with levers and semaphore signals, but the ideas behind them are still present all the way through relay based interlockings, to solid state interlockings and computer-based control centres.
 
-This chapter gives a broad overview. Later chapters look at the individual systems in more detail.
+This chapter gives a broad overview of the history, with later chapters going into more technical detail of the individual systems.
 
 ## The problem signalling had to solve
 
-The basic railway safety problem is simple to state:
+The basic problems of railways is simple:
 
-> A train is heavy, guided by the rails, and cannot stop as quickly as a road vehicle.
+> A train cannot steer or stop quickly.
 
-Once a train is moving, the driver cannot steer around an obstruction. The route must be set before the train arrives, and there must be enough distance to stop if the route is not safe. Signalling exists to control these conditions.
+::: callout-tip
+## Trivia
 
-Early railways were slower, less frequent and often worked by simple local arrangements. On some lines, a railway employee might give a hand signal, display a flag, or use a lamp at night. These methods were easy to understand, but they depended heavily on local knowledge, good visibility and disciplined working.
+The contact patch between each train wheel and the rail is approximately the same as a 10p coin. There is very little friction between the wheels and the rail, which goes some way to explaining why the stopping distances are so great.
+:::
+
+Once a train is moving, the driver cannot steer around an obstruction. The route must be set and known to be clear before the train arrives, and there must be enough distance to stop if the route is not safe. Signalling exists to control these conditions.
+
+Early railways were slower, less frequent and often worked by simple local arrangements. On some lines, a railway employee might give a hand signal, display a flag, or use a lamp at night. These methods were easy to understand, but they depended heavily on local knowledge, good visibility and disciplined working. In the very early days, trains were divided by time, with a train not allowed to follow until a set time had passed. This was safe, providing the first train did not break down, and the second train was not faster than the first...
 
 As railways expanded, three problems became more urgent:
 
@@ -42,32 +48,36 @@ Imagine a single track railway with one train in each direction. If there is no 
 
 ## Hand signals, flags and lamps
 
-The earliest form of railway signalling was direct human communication. A person near the line could use hand signals, coloured flags or lamps to tell a driver whether to proceed, stop, or approach cautiously. This was a natural starting point because it used methods already familiar from roads, canals and military practice.
+The earliest form of railway signalling was direct human communication. A person near the line could use hand signals, coloured flags or lamps to tell a driver whether to proceed, stop, or approach cautiously. These people were initially policemen, hence why signallers are still occasionally referred to as "bobbies". The limitation with using hand signals was that the signal was only reliable as the person displaying it, and was not particularly visible in poor weather and with the limited view available to the driver in steam trains. Fog, darkness, curves, cuttings, and lineside buildings could all make a signal harder to see.
 
-The limitation was that the signal was only as reliable as the person, the weather and the driver's view. Fog, darkness, curves, cuttings and station buildings could all make a signal harder to see. Hand signalling also made it difficult to control a railway over any distance. It was local, immediate and dependent on people being in the right place at the right time.
+These limitations did not make hand signalling useless. Even today, handsignalling, flags and lamps have a place in possession work, degraded working and emergency arrangements. These circumstances are carefully controlled, and are generally only used for slow speed movements.
 
-These limitations did not make hand signalling useless. Even today, handsignalling, flags and lamps have a place in possession work, degraded working and emergency arrangements. The difference is that they are now used within defined rules, not as the main method of controlling a busy railway.
+::: callout-important
+## Important
+
+One important handsignal to remember is the emergency stop, where two hands are raised above the head. In darkness a red lamp can be used, or any light waved vigorously.
+:::
 
 ## Fixed signals
 
-The next important step was the fixed signal. Instead of relying only on a person standing at the lineside, railways installed equipment at known locations to give drivers a consistent instruction.
+The next important step was the fixed signal. Instead of relying only on a person standing at the lineside with a flag or lamp, railways installed equipment at fixed locations to give drivers consistent instructions.
 
-Mechanical semaphore signals became widely used. A semaphore arm could be placed in different positions to show whether a train was allowed to proceed. At night, coloured spectacle lenses and a lamp gave a corresponding indication. The exact appearance and meaning varied between railway companies, but the general principle was the same: a fixed signal gave the driver a standardised message at a known braking point.
+There were a variety of early signals used, but mechanical semaphore signals became the common solution. A semaphore arm could be held horizontal to show that it was not safe to proceed and raised or lowered to show that the line ahead was clear. At night, coloured spectacle lenses and a lamp gave a corresponding indication. The exact appearance and meaning varied between railway companies, but the general principle was the same.
 
 Fixed signals brought several advantages:
 
-- the signal was always in the same place;
-- the driver could learn where to expect it;
+- the signal was always in the same place so the driver could learn where to expect it;
+- the signal could be placed higher to improve visibility;
 - the signal could be worked from a safer or more convenient location;
 - the signal could be connected mechanically to other equipment.
 
-That last point was crucial. Once signals and points could be worked by levers, rods, wires and pulleys, it became possible to link their operation together. This led to the signal box and to interlocking.
+That last point was crucial for the development of more sophisticated systems. Once signals and points could be worked by levers, rods, wires and pulleys, it became possible to link their operation together. This led to the development of interlocking.
 
 ## Points, routes and conflicting movements
 
-Points allow a train to move from one line to another. They are essential for junctions, loops, sidings and yards, but they introduce risk. If points are not set correctly, a train can be sent in the wrong direction. If points move under a train, the result can be a derailment. If two trains are authorised over conflicting routes, they may collide.
+Points allow a train to move from one line to another. They are essential for junctions, loops, sidings and yards, but they introduce risk. If points are not set correctly, a train can be sent in the wrong direction. If points move under a train or are not closed fully, the train can derail. If two trains are sent over conflicting routes then a crash is inevitable.
 
-A route is the path a train will take through a layout. It is not enough to show a proceed signal. The points in the route must be correctly set, and any conflicting route must be prevented.
+To make sure that the route ahead of a train is safe all the points in the route must be fully closed, correctly set, and any conflicting route must be prevented.
 
 This is the idea behind interlocking. In its simplest form, interlocking ensures that the equipment can only be operated in a safe sequence. For example:
 
@@ -75,10 +85,10 @@ This is the idea behind interlocking. In its simplest form, interlocking ensures
 - points cannot be moved while a signal reading over them is cleared;
 - two signals cannot be cleared at the same time if their routes conflict.
 
-The word "interlocking" comes from mechanical locking between levers. In a traditional lever frame, each lever worked a signal, point or lock. Mechanical tappets and locking bars prevented unsafe combinations. The signal operator did not have to rely only on memory; the equipment physically resisted an unsafe movement.
+The word "interlocking" comes from mechanical locking between levers. In a traditional lever frame, each lever worked a signal, point or lock. Mechanical tappets and locking bars prevented unsafe combinations. The signaller did not have to rely only on memory; the equipment physically resisted an unsafe movement as the mechanical bars were "interlocked" to prevent them moving out of sequence.
 
 ::: {.callout-tip title="Technician's link"}
-When you later study relay interlockings or computer-based interlockings, keep this mechanical idea in mind. The technology has changed, but the purpose is recognisably the same: prove that the route is safe before authority is given to the driver.
+When you later study relay interlocking or computer-based interlocking, keep this mechanical idea in mind. The technology has changed, but the purpose is recognisably the same: prove that the route is safe before authority is given to the driver.
 :::
 
 ## The signal box
@@ -88,11 +98,10 @@ The signal box brought local control together in one place. From the signal box,
 Many features of signalling practice grew around the signal box:
 
 - lever numbers and signal box diagrams;
-- bell codes and block instruments;
-- train registers;
+- bell codes and block instruments for communication between boxes;
+- train registers (a log book of all the movements made);
 - local instructions for special layouts;
-- mechanical detection and facing point locks;
-- communication between adjacent boxes.
+- mechanical detection to allow remote working of signals and points.
 
 The signal box also created a clear division of responsibility. The driver obeyed the signals. The signaller set routes and controlled the section. The S&T staff maintained the equipment that made the system dependable.
 
@@ -100,57 +109,46 @@ This division is still visible today, although the physical workplace may now be
 
 ## Time interval and absolute block
 
-One of the earliest ways of separating trains was time interval working. A train could be allowed to follow another train after a specified time had passed. This was better than having no rule at all, but it had an obvious weakness: if the first train stopped unexpectedly, time alone did not prove that the line ahead was clear.
+One of the earliest ways of separating trains was time interval working. A train would be allowed to follow another train after a specified time had passed. This was better than having no rule at all, but it had an obvious weakness: if the first train stopped unexpectedly, time alone did not prove that the line ahead was clear.
 
 Block working developed to solve this problem. The railway was divided into sections, and the aim was to prevent more than one train being in a block section at the same time. On double track railways, this principle allowed trains to follow one another in the same direction while maintaining a controlled separation.
 
 Absolute block working became a major method of operation. Adjacent signal boxes communicated with each other, traditionally using bell codes and block instruments. Before accepting a train, the box in advance had to confirm that the line was clear according to the rules of that system.
 
-The important change was this:
-
-- time interval asks, "Has enough time passed?"
-- block working asks, "Is the section ahead available for this train?"
-
-That distinction is central to signalling. A safe signalling system should not simply assume that a train has gone. It should establish, by rule, observation or detection, that the relevant part of the railway is available.
+This allowed a change in the mindset from having to assume that a train has gone because enough time had passed, to being able to prove that the train had passed through the section and that therefore the line **must** now be clear. It was common to refer to a train having passed "complete with tail lamp" as unless the red light on the rear of the train was spotted by the next signal box there was always the possibility that the train had split in two and left some carriages behind. Signalling moved to having to establish that a section of railway was clear before being able to allow another train to enter it.
 
 ## The telegraph and communication
 
-The electric telegraph transformed railway operation because it allowed information to travel faster than the train. Signal boxes could communicate with each other over distance, and control of trains became less dependent on sight alone.
+The electric telegraph transformed railway operation because it allowed information to travel faster than the train. Signal boxes could communicate with each other over distance, and control of trains became less dependent on sight alone. Before telephones all communication between signal boxes was done via telegraphs, and to this day mechanical signal boxes still use bell-codes as the primary method of communication. Although they will now have a telephone to the next signal box, the actual signalling of trains is still done via the official bell-codes.
 
-This is a good example of a wider engineering pattern. Railway signalling did not develop in isolation. It used available technologies from other fields and adapted them to railway safety. Mechanical engineering provided levers, rods and locks. Electrical engineering provided telegraph circuits, instruments, relays, track circuits and later electronic systems. Computing provided data-driven interlockings, control systems and automatic route setting.
-
-For technicians, this mixed history matters because signalling equipment is also mixed. A modern railway may contain old mechanical assets, relay rooms, lineside cases, axle counters, data links, power supplies and computer equipment, all in the same area.
+This is a good reminder that railway signalling did not develop in isolation. It used available technologies from other fields and adapted them to railway safety, although at times somewhat slower than other industries. Mechanical engineering provided levers, rods and locks. Electrical engineering provided telegraph circuits, instruments, relays, track circuits and later electronic systems. Computing provided data-driven interlocking, control systems and automatic route setting.
 
 ## Track circuits and train detection
 
-Block working originally depended on people and procedures to establish whether a section was clear. Train detection introduced a further engineering safeguard: the railway could detect the presence of a train directly.
+Block working originally depended on people and procedures to establish whether a section was clear. Train detection introduced a further engineering safeguard: a method of directly detecting whether a train was within a section, or more importantly that a section is clear.
 
-The track circuit is one of the most important inventions in railway signalling. In a basic track circuit, the rails form part of an electrical circuit. When a train's wheels and axles occupy the section, they provide a path between the rails and change the state of the circuit. This allows the signalling system to detect that the line is occupied.
+In a basic track circuit, the rails form part of an electrical circuit. When a train's wheels and axles occupy the section, they provide a path between the rails and change the state of the circuit. This allows the signalling system to detect that the line is occupied. Due to its fail-safe nature a track circuit is best thought of as *proving the absence of a train* as they are designed to fail in such a way that they will give an occupied indication (there are some exceptions to this, and these must be treated as serious failures).
 
 Track circuits made several developments possible:
 
-- automatic replacement of signals to danger after a train passed;
 - continuous proof that a section was clear or occupied;
+- automatic replacement of signals to danger after a train passed;
 - automatic signalling on busy lines;
 - electrical interlocking controls based on train position.
 
-Track circuits also introduced new technical responsibilities. Rail condition, bonding, insulation, ballast resistance, traction return currents and power supply arrangements could all affect reliable operation. For S&T staff, train detection is not an abstract idea. It is a practical interface between the signalling system, the track and the train.
-
 ## Colour light signals and electric operation
 
-Semaphore signals were effective, but they had limitations. They required moving mechanical parts at the signal, mechanical transmission from the signal box, and lamps for night indications. As electrical technology became more reliable, railways increasingly adopted colour light signals.
+Semaphore signals were effective, but they had limitations. They required moving mechanical parts at the signal, mechanical transmission from the signal box, and lamps for night indications. As electrical technology became more reliable, railways increasingly adopted colour light signals. Electric lights provided better reliability and better visibility. As technology progressed many colour light signals now use LED lights rather than filaments, which are brighter and more reliable yet.
 
-Colour light signals use coloured aspects to instruct the driver. On many main lines, multiple-aspect signalling allows a driver to receive advance information about the state of the route ahead. For example, a sequence of aspects can warn the driver to expect a stop signal and brake in good time.
+Colour light signals use coloured aspects to instruct the driver. Multi-aspect signalling allows a driver to receive advance information about the state of the route ahead. For example, a sequence of aspects can warn the driver to expect a stop signal and brake in good time. This allows the frequency of trains to be increased.
 
-Electric operation also changed points. Mechanical point operation by rods and cranks was suitable for many layouts, but distance, complexity and required operating force could become limiting factors. Power-operated points allowed larger areas to be controlled from a single location and reduced the amount of physical effort required from signallers.
-
-These changes did not remove the need for proving. A power-operated point is still not safe merely because it has been commanded to move. The signalling system must know that it has reached and is locked in the required position before a signal can clear over it.
+Electric operation also changed points. Mechanical point operation by rods and cranks was suitable for many layouts, but distance, complexity and required operating force limited the practical maximum distance. Power-operated points allowed larger areas to be controlled from a single location and reduced the amount of physical effort required by the signallers to move them. Proving that the point had completed its movement and was now fully closed in the other position now became possible electrically too.
 
 ## Relay interlockings
 
 Relays allowed interlocking logic to be built electrically. Instead of using only mechanical locking in a lever frame, circuits could prove conditions and energise relays when those conditions were satisfied.
 
-Relay interlockings could handle larger and more complex layouts than purely mechanical systems. They also supported remote control, panel signal boxes and route setting. A signaller could press buttons or operate switches to request a route, while the relay circuits checked that the necessary conditions were met.
+Relay interlockings could handle larger and more complex layouts than purely mechanical systems, and required less space and maintenance. They also supported remote control, panel signal boxes and route setting. A signaller could press buttons or operate switches to request a route, while the relay circuits checked that the necessary conditions were met.
 
 The basic questions remained familiar:
 
@@ -161,10 +159,8 @@ The basic questions remained familiar:
 - Is the approach locking condition satisfied?
 - Can the signal show a proceed aspect?
 
-In relay logic, these questions become contacts, coils and circuit paths. This is why learning to read signalling circuits is so important. A relay room is not just a collection of wires. It is a physical representation of the signalling principles.
-
 ::: {.callout-note title="In practice"}
-When fault finding on a relay interlocking, technicians often work backwards from the missing output. For example, if a signal will not clear, the question is not simply "What is broken?" but "Which required condition has not been proved?"
+When fault finding on a relay interlocking it's often useful to work backwards. For example, if a signal will not clear, the question is not simply "What is broken?" but "Which required condition has not been proved?"
 :::
 
 ## Automatic warning and train protection
@@ -179,19 +175,17 @@ This layered approach is a recurring theme in railway safety. No single measure 
 
 ## Solid state and computer-based signalling
 
-From the late twentieth century onwards, signalling increasingly moved from relay logic to electronic and computer-based systems. Solid State Interlocking (SSI) and later computer-based interlockings use data and software to implement the interlocking rules.
+From the late twentieth century onwards, signalling increasingly moved from relay logic to electronic and computer-based systems. Solid State Interlocking (SSI) and later computer-based interlockings use data and software to implement the interlocking rules. Rather than a large room of relays the same operations and logic can be performed by just a few computer cubicles.
 
-This can make the system look very different to a technician. Instead of tracing a long relay circuit, you may be looking at diagnostic screens, data links, object controllers, input and output modules, event logs and configuration data.
+This has dramatically changed fault-finding. Instead of tracing circuits, checking contacts, and measuring voltages the process is much similar, with often one faulty module simply swapped out for another under the guidance of a Box TO checking the computer terminal, however the underlying principles coded into the interlocking are no less complex:
 
-However, the underlying principles remain familiar:
-
-- the system still needs reliable train detection;
+- the route ahead still needs to be proved clear;
 - points still need to be commanded, moved, detected and locked;
 - signals still need to display the correct authority;
 - conflicting routes still need to be prevented;
 - failures still need to move the system towards a safer state.
 
-The main change is where the logic is represented. In a mechanical frame, it is represented in metal. In a relay interlocking, it is represented in circuits. In a computer-based interlocking, it is represented in validated data, software and hardware interfaces.
+The change is only where the logic takes place. In a mechanical interlocking it is done with chucks of metal physically blocking each other. In a relay interlocking many switches and circuits are used. In a computer-based interlocking it is lines of code.
 
 ## Control centres and traffic management
 
@@ -253,13 +247,13 @@ Consider a simple junction where a train is to be signalled from a main line int
 
 A historical way of thinking through the problem is useful:
 
-1. The hand-signalling question: is it safe to tell the driver to proceed?
-2. The fixed-signal question: is the signal able to display the correct instruction?
-3. The points question: are the points set for the loop?
-4. The interlocking question: are conflicting routes prevented?
-5. The block question: is the line ahead available?
-6. The train-detection question: is the route and overlap clear?
-7. The proving question: has the equipment actually proved those conditions?
+1.  The hand-signalling question: is it safe to tell the driver to proceed?
+2.  The fixed-signal question: is the signal able to display the correct instruction?
+3.  The points question: are the points set for the loop?
+4.  The interlocking question: are conflicting routes prevented?
+5.  The block question: is the line ahead available?
+6.  The train-detection question: is the route and overlap clear?
+7.  The proving question: has the equipment actually proved those conditions?
 
 In a mechanical signal box, some of these answers would be found through lever positions, locks and block instruments. In a relay interlocking, they may be found through relay states and circuit diagrams. In a computer-based interlocking, they may be found through indications, diagnostic messages and event logs.
 
@@ -295,9 +289,8 @@ Do not worry about exact dates for this activity. The aim is to connect each dev
 
 ## Check your understanding
 
-1. Why was time interval working weaker than block working?
-2. What is the basic purpose of interlocking?
-3. Why must point position be proved rather than merely commanded?
-4. How did track circuits change the way signalling systems could detect trains?
-5. Give one example of a signalling term that comes from older technology but is still used today.
-
+1.  Why was time interval working weaker than block working?
+2.  What is the basic purpose of interlocking?
+3.  Why must point position be proved rather than merely commanded?
+4.  How did track circuits change the way signalling systems could detect trains?
+5.  Give one example of a signalling term that comes from older technology but is still used today.
