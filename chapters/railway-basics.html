@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Railway basics – Railway Signalling for Technicians</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/railway-signalling.html" rel="next">
+<link href="../chapters/introduction.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8cf6cfe92c0099d874d94e130a1e0cae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/railway-basics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Railway Signalling for Technicians</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Start here</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-basics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-signalling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Railway signalling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Overview of a signalling scheme</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/trackwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trackwork</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Points</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lineside-signals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/circuit-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/relays.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/train-detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/interlocking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ssi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Solid State Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/remote-control-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Remote control systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/telecommunications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Telecommunications</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/power-supplies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Signalling power supplies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/cables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Signalling cables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/useful-sources-of-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Useful other sources of information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link active" data-scroll-target="#responsibilities"><span class="header-section-number">2.1</span> Responsibilities</a></li>
+  <li><a href="#tracks-and-lines" id="toc-tracks-and-lines" class="nav-link" data-scroll-target="#tracks-and-lines"><span class="header-section-number">2.2</span> Tracks and lines</a></li>
+  <li><a href="#up-and-down-directions" id="toc-up-and-down-directions" class="nav-link" data-scroll-target="#up-and-down-directions"><span class="header-section-number">2.3</span> Up and Down directions</a></li>
+  <li><a href="#line-names" id="toc-line-names" class="nav-link" data-scroll-target="#line-names"><span class="header-section-number">2.4</span> Line names</a></li>
+  <li><a href="#elrs-track-ids-and-mileages" id="toc-elrs-track-ids-and-mileages" class="nav-link" data-scroll-target="#elrs-track-ids-and-mileages"><span class="header-section-number">2.5</span> ELRs, Track IDs, and mileages</a></li>
+  <li><a href="#the-spaces-around-the-track" id="toc-the-spaces-around-the-track" class="nav-link" data-scroll-target="#the-spaces-around-the-track"><span class="header-section-number">2.6</span> The spaces around the track</a></li>
+  <li><a href="#how-tracks-appear-on-plans" id="toc-how-tracks-appear-on-plans" class="nav-link" data-scroll-target="#how-tracks-appear-on-plans"><span class="header-section-number">2.7</span> How tracks appear on plans</a></li>
+  <li><a href="#other-diagrams" id="toc-other-diagrams" class="nav-link" data-scroll-target="#other-diagrams"><span class="header-section-number">2.8</span> Other diagrams</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Learning objectives">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Understand common terminology used to refer to trackside locations, understand directional terminology on the railway, and how to identify locations.</p>
+</div>
+</div>
+<section id="responsibilities" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="responsibilities"><span class="header-section-number">2.1</span> Responsibilities</h2>
+<p>Railway lines are formed of two running rails and sleepers between them. There are also various other components that you will see around the railway, some of which will belong to other departments. The track department, more commonly known as p-way, is responsible for looking after the track itself. This includes the rails, the sleepers, and the ballast.</p>
+<div class="background" style="--background-border:#70558c;--background-header:#f3eef8" role="note" aria-label="Background">
+<div class="background__header">
+<span class="background__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" width="32" height="32"><g fill="none" stroke="#70558c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="#ffffff" d="M16 8C12 5 6 5 3 6v19c4-1 9-1 13 2 4-3 9-3 13-2V6c-3-1-9-1-13 2Z"></path><path d="M16 8v19M7 11c2-.3 4 0 6 1M7 16c2-.3 4 0 6 1M19 12c2-1 4-1.3 6-1M19 17c2-1 4-1.3 6-1"></path></g></svg></span>
+Background
+</div>
+<div class="background__body">
+<p>The name “p-way” comes from the term “Permanent Way”, which was used to describe the final railway that was constructed. In the early days of railway building a “Temporary Way” was first quickly constructed to help get materials to site.</p>
+</div>
+</div>
+<p>Almost all of the railway surrounding Glasgow is now electrified using overhead lines. There are therefore overhead gantries and stantions dotted around to suspend the overhead lines from. The Overhead line department are responsible for looking after these, although the power is maintained by the Electrification and Plant (E&amp;P) department. E&amp;P are also responsible for switch heaters that run along the rails of points to keep them clear of snow and ice, and the compressed air which drives many of the points in Glasgow Central.</p>
+<p>Off-track look after all the things which are not directly part of the railway, but are needed to keep it safe and secure. This includes fencing and vegetation. You might need to speak with them a lot in the summer months when trees begin to grow and obscure signals.</p>
+<p>The Telecoms department are responsible for all the telecoms that is used by the railway. In years gone by this was part of the signalling department’s job, which is why we’re known as S&amp;T, although now we do very little telecoms. The only telecoms we are still responsible for are signal post telephones (SPTs).</p>
+</section>
+<section id="tracks-and-lines" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="tracks-and-lines"><span class="header-section-number">2.2</span> Tracks and lines</h2>
+<p>A <strong>track</strong> normally consists of two running rails and the structure that supports them. A <strong>single-track</strong> railway has one track; a <strong>double-track</strong> railway has two. A railway with four tracks has eight running rails. Points connect tracks so that trains can pass from one to another.</p>
+<p>The word <strong>line</strong> often means a particular track, as in <em>Up Main line</em>. It can also describe a railway between places, so someone might say the Neilston line, but actually mean both the <em>Up Neilston</em> and the <em>Down Neilston</em> as they’re referring to the branch as a whole. A bit of context is often needed to know exactly which is being referred to.</p>
+</section>
+<section id="up-and-down-directions" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="up-and-down-directions"><span class="header-section-number">2.3</span> Up and Down directions</h2>
+<p><strong>Up</strong> and <strong>Down</strong> are established railway directions. They provide a consistent way to describe movements and distinguish tracks without relying on the direction in which someone happens to be looking. Up commonly means towards the principle station on that route, often the headquarters of the company which built that line. Many lines use London as the marker for the Up direction, but some lines in the area use Glasgow instead. This is just something that you will have to learn as you get to know the section.</p>
+<p>Most lines will have one predominant direction of movement, so will be known as the Up or Down line. For example, the <em>Up Fast</em> mostly carries train in the Up direction, towards London. Some bits of it are bi-directionally signalled however, so trains can travel in either direction. This means it is possible for a train to be travelling in the Down direction (towards Glasgow) on the <em>Up Fast</em>.</p>
+<p>Where there is a single-track section of railway these are normally bi-directionally signalled so that trains can travel in either direction. They will still have an Up and a Down direction though.</p>
+</section>
+<section id="line-names" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="line-names"><span class="header-section-number">2.4</span> Line names</h2>
+<p>Fast and Slow are common line names, although in some regions the terms Main and Relief are more commonly used, with the same meanings. Fast lines are generally intended for faster or non-stopping services, with Slow lines more commonly associated with stopping passenger services or freight trains. Fast lines might have a higher maximum permissible speed than Slow lines, but this isn’t always the case. Often the line speed might actually be the same for both lines.</p>
+<p>Lines may also have other designations, which might refer to geographical locations (e.g.&nbsp;Gourock or Hertford), usage (e.g.&nbsp;Suburban or Departure), or be named for historical reasons (e.g.&nbsp;City Union or Smithy Lye).&nbsp; These designations are not necessarily an indication of how a line is used today, and their meaning may have been all but forgotten.</p>
+</section>
+<section id="elrs-track-ids-and-mileages" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="elrs-track-ids-and-mileages"><span class="header-section-number">2.5</span> ELRs, Track IDs, and mileages</h2>
+<p>Every location on the railway has an ELR, Track ID, and mileage. With these three pieces of information every location on the railway can be identified exactly.</p>
+<section id="engineers-line-reference" class="level3">
+<h3 class="anchored" data-anchor-id="engineers-line-reference">Engineer’s Line Reference</h3>
+<p>Each route on the railway is given an Engineer’s Line Reference (ELR). This a three letter code, which sometimes also has a number. ELRs were generally chosen wherever possible to relate to the line that they referred to, but as each line needed a unique ELR this wasn’t always possible.</p>
+<p>A number is used at the end of the ELR when there is a discontinuity in mileage along a route. This might happen if the track layout has changed over the years or the original measurements were very inaccurate.</p>
+<p>The ELRs within the Glasgow Central section are given in the table below. Origins of the ELR are given where they aren’t obvious to help remember them.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ELR</th>
+<th>Line</th>
+<th>Name Origin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ARG1 &amp; ARG2</td>
+<td>Argyle line</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>AYR1</td>
+<td>Ayr line</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>BRD</td>
+<td>Through Terminus</td>
+<td>This line is also known as the <strong>B</strong>urma <strong>R</strong>oa<strong>d</strong></td>
+</tr>
+<tr class="even">
+<td>CLY</td>
+<td>Clydesdale line</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CNC</td>
+<td>Cathcart North Curve</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CND1 &amp; 2</td>
+<td>Deanside branch</td>
+<td>The line branches off at <strong>C</strong>ardo<strong>n</strong>al<strong>d</strong></td>
+</tr>
+<tr class="odd">
+<td>CNL</td>
+<td>Corkerhill and Paisley Canal line</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CTC</td>
+<td>Cathcart Circle</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>EKE</td>
+<td>East Kilbride line</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>GBK</td>
+<td>Barrhead line</td>
+<td>Originally built by the <strong>G</strong>lasgow, <strong>B</strong>arrhead and <strong>K</strong>ilmarnock Joint Railway</td>
+</tr>
+<tr class="odd">
+<td>HST</td>
+<td>City Union line</td>
+<td>Line joins Shields Junction and <strong>H</strong>igh <strong>St</strong>reet</td>
+</tr>
+<tr class="even">
+<td>KHL</td>
+<td>Kirkhill line</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>LFS</td>
+<td>Larkfield Curve</td>
+<td>Originally known as the <strong>L</strong>ark<strong>f</strong>ield <strong>S</strong>outh Curve</td>
+</tr>
+<tr class="even">
+<td>LYE</td>
+<td>Smithy Lye</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MEN1 &amp; MEN2</td>
+<td>Muirhouse line</td>
+<td>Probably named as the line is from <strong>M</strong>uirhouse Junction to <strong>E</strong>glinto<strong>n</strong> Junction</td>
+</tr>
+<tr class="even">
+<td>RCB</td>
+<td>Carmyle line</td>
+<td>Originally known as the <strong>R</strong>utherglen and <strong>C</strong>armyle <strong>B</strong>ranch</td>
+</tr>
+<tr class="odd">
+<td>RNC</td>
+<td>Rutherglen West Curve</td>
+<td>May have once been known as the <strong>R</strong>utherglen <strong>N</strong>orth <strong>C</strong>urve</td>
+</tr>
+<tr class="even">
+<td>TSS</td>
+<td>Terminus Curve</td>
+<td>Originally known as the <strong>T</strong>erminu<strong>s</strong> <strong>S</strong>outh Curve</td>
+</tr>
+<tr class="odd">
+<td>WCM2</td>
+<td>West Coast Mainline</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="track-id" class="level3">
+<h3 class="anchored" data-anchor-id="track-id">Track ID</h3>
+<p>Each line also has a Track ID, which is a four number code which describes the type of line and the direction of travel.</p>
+<p>Track IDs aren’t used often by S&amp;T, but they can be helpful when talking to other departments which use them more often, such as pway.</p>
+<p>The numbers are always in the form of DNXX where:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 38%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>D</th>
+<th>N</th>
+<th>XX</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 - Up</td>
+<td>1 - Main or Fast (or other line performing this function)</td>
+<td>00 - the first line at this location with that direction and type</td>
+</tr>
+<tr class="even">
+<td>2 - Down</td>
+<td>2 - Relief, Slow, or Through (or other line performing this function)</td>
+<td>01 - the second line at this location with that direction and type</td>
+</tr>
+<tr class="odd">
+<td>3 - Bi-directional</td>
+<td>3 - Goods</td>
+<td>02 - the third line at this location with that direction and type</td>
+</tr>
+<tr class="even">
+<td>4 - Merry-go-round loop</td>
+<td>4 - Single line</td>
+<td>…and so on…</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>5 - Loop</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>6 - Terminal track or Bay</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>7 - Crossover</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>8 - Other</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>9 - Siding</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="examples" class="level4">
+<h4 class="anchored" data-anchor-id="examples">Examples</h4>
+<p>Using the below diagram from Glasgow Central as an example we have:</p>
+<ul>
+<li><p>1200 - Up Slow</p></li>
+<li><p>2200 - Down Slow</p></li>
+<li><p>1100 - Up Fast</p></li>
+<li><p>2100 - Down Fast</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2026-10-24 223452-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="635"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="mileage" class="level3">
+<h3 class="anchored" data-anchor-id="mileage">Mileage</h3>
+<p>All lines also have a mileage, starting from a datum point. The origin points are normally the destination of the Up line, but there are some exceptions.</p>
+<div class="trivia">
+<p>In Scotland mileages are given in Miles and Yards, but in the rest of the UK mileages are given in Miles and Chain. You might see chain used in some documents, such as the Sectional Appendix, so it’s important to know what this is.</p>
+<p>A Chain is an old measurement equal to 22 yards (or roughly 20 meters).</p>
+</div>
+<p>The diagram below of Busby Junction shows how a location can be narrowed down first by ELR, then by Track ID, and then by mileage. Alternatively, just the ELR and mileage could be used to identify a place but not necessarily a track, or a line name could be used. For this example it would be just as valid to say <em>0m 103yds on the Up East Kilbride</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2026-10-24 211352.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="the-spaces-around-the-track" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="the-spaces-around-the-track"><span class="header-section-number">2.6</span> The spaces around the track</h2>
+<p>The following names describe where something lies relative to the rails:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Four-foot</strong></td>
+<td>The space between the running rails of one track</td>
+</tr>
+<tr class="even">
+<td><strong>Six-foot</strong></td>
+<td>The space between adjacent tracks in the usual double-track description</td>
+</tr>
+<tr class="odd">
+<td><strong>Ten-foot</strong></td>
+<td>The wider space between pairs of tracks in a four-track arrangement</td>
+</tr>
+<tr class="even">
+<td><strong>Cess</strong></td>
+<td>The area alongside the outside of the running lines</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/paste-1.png" class="img-fluid"></p>
+<p>These names identify spaces rather than certifying their dimensions, for example, <em>four-foot</em> is not the measurement used to specify track gauge. The <a href="../chapters/trackwork.html">Trackwork</a> chapter explains gauge and the construction of the track.</p>
+<p>You may also hear the 10-ft called a “wideway”.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Spaces may be smaller than their names suggest. Do not rely on the names to judge whether you are in a position of safety.</p>
+</div>
+</div>
+</section>
+<section id="how-tracks-appear-on-plans" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="how-tracks-appear-on-plans"><span class="header-section-number">2.7</span> How tracks appear on plans</h2>
+<p>A signalling scheme M12 plan generally represents each track by <strong>one line</strong>. That line stands for the complete track, not an individual rail. A double-track railway therefore appears as two lines even though it has four running rails. A detailed bonding diagram, by contrast, generally shows both rails as the individual connections between the rails matter.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2026-10-24 230756.png" class="img-fluid figure-img"></p>
+<figcaption>Same junction on both an M12 signalling plan, a bonding diagram, and in real life</figcaption>
+</figure>
+</div>
+<p>M12 diagrams are the most common diagram that you will come across. They show almost all signalling equipment, but can be confusing at first due to the number of symbols used. The above diagram contains the symbol for a point machine (the connected circle and rectangle).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start by finding the orientation of a plan, using line names, stations, points, signals, or other features that are shown. It will become easier to relate what you see on the plan to what you see on the ground as you become more familiar with both the plans and the location.</p>
+</div>
+</div>
+<p>It’s important to understand what is shown on each type of diagram so that you can relate it to the real world conditions on the ground.</p>
+<p>Plans are generally to scale, but the scale may change throughout the plan depending on the complexity of the layout. Do not assume that just because two things look close together on the plan they will be a short walk in real life.</p>
+<p>There is also an <a href="glasgowsignals.co.uk">unofficial website</a> [password: Glasg0w!] covering Glasgow showing the locations of all the assets and track circuits which can be useful when working out distances or finding assets. It’s vital to be able to understand official diagrams but this can be useful resource to assist you in getting to know the area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2026-10-24 231811.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="other-diagrams" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="other-diagrams"><span class="header-section-number">2.8</span> Other diagrams</h2>
+<p>Another diagram you may come across are TAP diagrams. These can be found on the <a href="https://networkrail.sharepoint.com/sites/ScotlandsRailwayPlanningHub/SitePages/Home.aspx">Scotland’s Railway Planning Hub</a>. They can be a bit more user friendly, but aren’t used that often as they don’t give as much detail as an M12.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2026-10-24 232250-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The Sectional Appendix is a document produced that gives all sorts of information about each lines, which is mostly relevant to train drivers. It does, however, include diagrams which contain some important information, such as line speeds and controlling signal box. The Sectional Appendix will always be included in your safe work pack and can also be found <a href="https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/">online</a>.</p>
+<p><img src="images/Screenshot 2026-10-24 232934.png" class="img-fluid"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/introduction.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/railway-signalling.html" class="pagination-link" aria-label="Railway signalling">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Railway signalling</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

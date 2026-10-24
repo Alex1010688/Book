@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Lineside signals – Railway Signalling for Technicians</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/circuit-reading.html" rel="next">
+<link href="../chapters/points.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8cf6cfe92c0099d874d94e130a1e0cae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/lineside-signals.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Railway Signalling for Technicians</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Start here</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-signalling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Railway signalling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Overview of a signalling scheme</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/trackwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trackwork</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Points</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lineside-signals.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/circuit-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/relays.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/train-detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/interlocking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ssi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Solid State Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/remote-control-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Remote control systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/telecommunications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Telecommunications</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/power-supplies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Signalling power supplies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/cables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Signalling cables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/useful-sources-of-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Useful other sources of information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#communicating-with-the-driver" id="toc-communicating-with-the-driver" class="nav-link active" data-scroll-target="#communicating-with-the-driver"><span class="header-section-number">7.1</span> Communicating with the driver</a></li>
+  <li><a href="#warning-before-a-stop" id="toc-warning-before-a-stop" class="nav-link" data-scroll-target="#warning-before-a-stop"><span class="header-section-number">7.2</span> Warning before a stop</a></li>
+  <li><a href="#overlaps" id="toc-overlaps" class="nav-link" data-scroll-target="#overlaps"><span class="header-section-number">7.3</span> Overlaps</a></li>
+  <li><a href="#headway" id="toc-headway" class="nav-link" data-scroll-target="#headway"><span class="header-section-number">7.4</span> Headway</a></li>
+  <li><a href="#inside-a-filament-colour-light-signal" id="toc-inside-a-filament-colour-light-signal" class="nav-link" data-scroll-target="#inside-a-filament-colour-light-signal"><span class="header-section-number">7.5</span> Inside a filament colour-light signal</a></li>
+  <li><a href="#aspect-selection-filament-changeover-and-lamp-proving" id="toc-aspect-selection-filament-changeover-and-lamp-proving" class="nav-link" data-scroll-target="#aspect-selection-filament-changeover-and-lamp-proving"><span class="header-section-number">7.6</span> Aspect selection, filament changeover and lamp proving</a></li>
+  <li><a href="#searchlight-signals" id="toc-searchlight-signals" class="nav-link" data-scroll-target="#searchlight-signals"><span class="header-section-number">7.7</span> Searchlight signals</a></li>
+  <li><a href="#route-indicators-and-signal-sighting" id="toc-route-indicators-and-signal-sighting" class="nav-link" data-scroll-target="#route-indicators-and-signal-sighting"><span class="header-section-number">7.8</span> Route indicators and signal sighting</a></li>
+  <li><a href="#shunt-and-subsidiary-signals" id="toc-shunt-and-subsidiary-signals" class="nav-link" data-scroll-target="#shunt-and-subsidiary-signals"><span class="header-section-number">7.9</span> Shunt and subsidiary signals</a></li>
+  <li><a href="#fitting-a-train-into-an-occupied-platform" id="toc-fitting-a-train-into-an-occupied-platform" class="nav-link" data-scroll-target="#fitting-a-train-into-an-occupied-platform"><span class="header-section-number">7.10</span> Fitting a train into an occupied platform</a></li>
+  <li><a href="#automatic-warning-system" id="toc-automatic-warning-system" class="nav-link" data-scroll-target="#automatic-warning-system"><span class="header-section-number">7.11</span> Automatic Warning System</a></li>
+  <li><a href="#train-protection-and-warning-system" id="toc-train-protection-and-warning-system" class="nav-link" data-scroll-target="#train-protection-and-warning-system"><span class="header-section-number">7.12</span> Train Protection and Warning System</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points"><span class="header-section-number">7.13</span> Key points</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Learning objectives">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Explain colour-light signal operation; relate aspect sequences to braking and headway; distinguish aspect selection, filament monitoring and lamp proving; describe route and subsidiary indications; and explain the operating principles of AWS and TPWS.</p>
+</div>
+</div>
+<section id="communicating-with-the-driver" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="communicating-with-the-driver"><span class="header-section-number">7.1</span> Communicating with the driver</h2>
+<p>An <strong>aspect</strong> is the indication displayed by a signal. Colour-light signals distinguish aspects by colours or combinations of colours. Position-light signals also use the arrangement of the lights. The meaning must be taken from the applicable signalling system, rather than from colour alone.</p>
+<p>In route signalling, signals communicate movement information and route indications identify a divergence or destination. The driver also needs knowledge of the route and its speed restrictions. This differs from systems that use aspects to communicate specified speed categories directly.</p>
+<p>A signal at its most restrictive aspect is said to be <strong>on</strong>. When it displays a less restrictive aspect it is <strong>off</strong>, or has <strong>cleared</strong>. Clearing does not necessarily mean displaying green: a signal displaying yellow has also cleared from red.</p>
+</section>
+<section id="warning-before-a-stop" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="warning-before-a-stop"><span class="header-section-number">7.2</span> Warning before a stop</h2>
+<p>A sequence of red/green stop signals needs an associated means of warning the driver about a red signal early enough to stop. Yellow/green distant or repeater signals can provide this warning in association with the stop signals.</p>
+<p>The governing relationship is between the point at which the driver receives the warning and the location where the train must stop. Braking requirements depend on the trains and the railway, including gradient. Visibility of the red signal alone may not provide sufficient stopping distance.</p>
+<p>A three-aspect system combines stop and warning functions at successive signals:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect in the simplified sequence</th>
+<th>Information conveyed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Red</td>
+<td>Stop</td>
+</tr>
+<tr class="even">
+<td>Single yellow</td>
+<td>Be prepared to stop at the next signal</td>
+</tr>
+<tr class="odd">
+<td>Green</td>
+<td>The next signal is displaying a proceed aspect within this sequence</td>
+</tr>
+</tbody>
+</table>
+<p>A four-aspect system adds double yellow as an earlier caution in the sequence. A simplified progression towards a signal at red is green, double yellow, single yellow, red.</p>
+<div id="fig-aspect-sequence" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aspect-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/aspect-sequence.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aspect-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: A simplified four-aspect warning sequence, read in the direction of travel. Actual spacing and controls depend on the design.
+</figcaption>
+</figure>
+</div>
+<p>This is a principle diagram. It does not cover flashing aspects, special sequences or every possible installation.</p>
+</section>
+<section id="overlaps" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="overlaps"><span class="header-section-number">7.3</span> Overlaps</h2>
+<p>An <strong>overlap</strong> provides a defined distance beyond a stop signal as part of the protection for a train approaching that signal. In a simple plain-line arrangement, the signal in rear requires the appropriate section and overlap beyond the next stop signal to be clear.</p>
+<p>The overlap is additional protection for an overrun; it is not an extension of the driver’s authority to pass the stop signal. It can include points and more than one train-detection section. Those conditions must be dealt with by the interlocking.</p>
+</section>
+<section id="headway" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="headway"><span class="header-section-number">7.4</span> Headway</h2>
+<p><strong>Headway</strong> is the separation between successive trains, expressed as a distance or as a time at a stated speed. A minimum-distance headway calculation must include the stated assumptions, such as train length, overlap, signal sighting allowance and braking distance.</p>
+<p>For a simplified, evenly spaced plain-line arrangement:</p>
+<p><span class="math display">\[H_3 = L + O + 2B + S\]</span></p>
+<p><span class="math display">\[H_4 = L + O + 1.5B + S\]</span></p>
+<p>Here <span class="math inline">\(H_3\)</span> and <span class="math inline">\(H_4\)</span> are the three- and four-aspect headway distances, <span class="math inline">\(L\)</span> is train length, <span class="math inline">\(O\)</span> is overlap length, <span class="math inline">\(B\)</span> is braking distance and <span class="math inline">\(S\)</span> is a sighting allowance, all expressed in the same distance unit. These simplified teaching relationships depend on the stated assumptions; they are not general design rules for all layouts.</p>
+<p>For an invented example, take <span class="math inline">\(L = 200\)</span> m, <span class="math inline">\(O = 180\)</span> m, <span class="math inline">\(B = 1{,}000\)</span> m and <span class="math inline">\(S = 200\)</span> m. The results are <span class="math inline">\(H_3 = 2{,}580\)</span> m and <span class="math inline">\(H_4 = 2{,}080\)</span> m. At a constant 20 m/s, these distances correspond to 129 s and 104 s respectively. The reduction is 500 m, or 25 s at that speed. Actual service planning also depends on junctions, station stops, varying speeds and other constraints.</p>
+<p>Adding intermediate signals does not halve every component of headway. Train length, overlap and sighting allowance remain in this simplified comparison.</p>
+</section>
+<section id="inside-a-filament-colour-light-signal" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="inside-a-filament-colour-light-signal"><span class="header-section-number">7.5</span> Inside a filament colour-light signal</h2>
+<p>In a separate-aperture filament signal, each aspect has a compartment containing its lamp, holder, electrical connections and optical system. Internal partitions prevent an illuminated lamp from lighting the lens of another aspect. The rear access and sealing arrangements protect these relationships from dirt, water and disturbance.</p>
+<p>A double-filament lamp has a <strong>main</strong> and <strong>auxiliary</strong> filament with the required contacts and common connection. The holder fixes their position relative to the optical system. The correct lamp type and orientation matter: two lamps with similar bases can have different filament geometry or ratings.</p>
+<p>The optical assembly collects and directs the light into the required beam. A long-range lens concentrates the light; a spread arrangement provides a wider viewing field where required. A <strong>hot strip</strong> directs part of the light towards the position of a driver close to the signal. Beam alignment is therefore more than pointing the outside of the housing towards the track.</p>
+<p>Hoods, backgrounds and control of reflections support recognition of the intended aspect. A <strong>phantom aspect</strong> is an apparent illumination caused by extraneous light, such as sunlight, rather than the intended lamp. Maintaining sighting and optical integrity preserves the meaning of the electrical control.</p>
+<section id="the-electrical-supply-to-the-lamp" class="level3">
+<h3 class="anchored" data-anchor-id="the-electrical-supply-to-the-lamp">The electrical supply to the lamp</h3>
+<p>A filament arrangement can send an a.c. supply along the tail cable and step it down at an aspect transformer in the signal head. This reduces the current required in the longer cable compared with distributing the same power at the lower lamp voltage. The transformer and lamp connections still have to provide the specified conditions at the filament.</p>
+<p>Separate tappings or connections can set the intended main and auxiliary operation. The lamp’s nominal marking is not necessarily the specified operating value in the complete assembly. Adjustments, beam setting and holder position are governed by the applicable equipment instructions.</p>
+</section>
+</section>
+<section id="aspect-selection-filament-changeover-and-lamp-proving" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="aspect-selection-filament-changeover-and-lamp-proving"><span class="header-section-number">7.6</span> Aspect selection, filament changeover and lamp proving</h2>
+<p>Three functions must be distinguished:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Question answered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aspect control</td>
+<td>Which aspect has been selected by the signalling logic?</td>
+</tr>
+<tr class="even">
+<td>Filament changeover and monitoring</td>
+<td>Is the main filament available, and has the auxiliary been brought into use?</td>
+</tr>
+<tr class="odd">
+<td>Lamp proving</td>
+<td>Is the required aspect-current evidence present for the signalling controls?</td>
+</tr>
+</tbody>
+</table>
+<p>In a simplified four-aspect relay arrangement, the following states produce the normal sequence:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>HR</th>
+<th>HHR</th>
+<th>DR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Red</td>
+<td>Down</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="even">
+<td>Single yellow</td>
+<td>Up</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="odd">
+<td>Double yellow</td>
+<td>Up</td>
+<td>Up</td>
+<td>Down</td>
+</tr>
+<tr class="even">
+<td>Green</td>
+<td>Up</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+</tbody>
+</table>
+<p>The control logic enforces the intended progression. It does not normally allow an arbitrary combination such as DR up with HR down. These names and states explain the particular arrangement; other signal technologies implement the functions differently.</p>
+<p>A local lamp relay can be energised by the main-filament current. If that filament opens, the relay releases and switches the supply to the auxiliary filament. Monitoring can report that the main filament has failed even though the signal remains illuminated.</p>
+<p>The <strong>ECR</strong> lamp-proving function provides separate evidence used by the signalling controls. Its slow-release characteristic can bridge the short interruption during a legitimate aspect change or filament changeover, while a sustained loss removes the corresponding lamp-proving indication. The specified delay and proving path are part of the circuit design.</p>
+<p>In the four-aspect arrangement described, the second yellow has a different proving treatment from the red, first yellow and green. Losing only the second yellow changes double yellow to the more restrictive single yellow. That example should not be extended to every multi-lamp display: some missing lamps can make a route indication ambiguous rather than simply more restrictive.</p>
+<section id="worked-example-a-lamp-is-lit-but-a-filament-alarm-remains" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-a-lamp-is-lit-but-a-filament-alarm-remains">Worked example: a lamp is lit but a filament alarm remains</h3>
+<p>A signal continues to display its selected aspect after its main filament fails. The auxiliary is carrying the required current, but a filament alarm is present. These observations can be consistent: changeover has preserved the display while monitoring reports the loss of the main filament.</p>
+<p>The alarm and lamp-proving functions answer different questions. A visible light does not prove that both filaments are intact, while a main-filament alarm does not necessarily mean that the signal is dark. Read the particular lamp and proving circuit before interpreting either indication.</p>
+</section>
+</section>
+<section id="searchlight-signals" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="searchlight-signals"><span class="header-section-number">7.7</span> Searchlight signals</h2>
+<p>A searchlight signal uses a lamp and an optical path with a moving coloured <strong>roundel</strong>. Its mechanism selects red, yellow or green within that path. In the arrangement considered here, the released mechanism selects red; energisation with one polarity selects yellow and the opposite polarity selects green.</p>
+<p>Mechanism contacts repeat the roundel’s position. Lamp-current proving and roundel-position proving are different evidence: a lamp can be illuminated while the colour-selection mechanism fails to reach its commanded position. A four-aspect searchlight arrangement adds a separate upper yellow to provide double yellow.</p>
+<p>The lamp, reflector, roundel and lenses form the optical system. A reflector designed into that system must be understood with its associated controls and optical design, rather than applying a rule inferred from a different signal head. Main and auxiliary filament arrangements also have to maintain the intended optical alignment.</p>
+</section>
+<section id="route-indicators-and-signal-sighting" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="route-indicators-and-signal-sighting"><span class="header-section-number">7.8</span> Route indicators and signal sighting</h2>
+<p>A junction direction indicator, often called a <strong>feather</strong> or <strong>route arm</strong>, identifies a diverging route using an illuminated row of white lights. A theatre-type indicator displays a character identifying a route or destination. Their uses depend on visibility and operating context.</p>
+<p>A route indication complements the signal aspect. It does not replace the need for the route to be correctly established. The controls must associate the indication with the route actually proved.</p>
+<p>Physical signal design must make the intended display recognisable. Hoods, backgrounds, lens alignment and suppression of misleading reflections contribute to this. Plan symbols represent the signal’s function and orientation; the exact physical installation requires more information than the scheme-plan symbol alone.</p>
+<section id="proving-the-route-display" class="level3">
+<h3 class="anchored" data-anchor-id="proving-the-route-display">Proving the route display</h3>
+<p>A junction indicator must produce a recognisable indication before the associated main aspect is permitted where route-display proving is required. A relay proving circuit can assess the selected lamp group through its designed current conditions. The number of lit lamps and their contribution to recognisability are equipment-specific.</p>
+<p>A theatre-type display forms a character by illuminating selected lamp groups or an optical pattern. Some lamps are shared between different characters. Its controls must select the correct combination and obtain the required lamp-proving indication; finding current in any one lamp does not prove the intended character.</p>
+<p>A stencil displays a fixed legend when illuminated. Alternative stencils need controls that prevent conflicting legends appearing together. Fibre-optic arrangements can carry light from a lamp to the positions that form the displayed pattern. The control path, light source, optical path and visible legend are distinct links in that chain.</p>
+</section>
+</section>
+<section id="shunt-and-subsidiary-signals" class="level2" data-number="7.9">
+<h2 data-number="7.9" class="anchored" data-anchor-id="shunt-and-subsidiary-signals"><span class="header-section-number">7.9</span> Shunt and subsidiary signals</h2>
+<p>Shunt signals authorise movements under a different set of conditions from a main running signal. A proceed shunt indication must not be assumed to prove the route clear to the same extent as a main running route. Some shunt movements are specifically intended to approach vehicles already standing on the line.</p>
+<p>A <strong>subsidiary signal</strong> is associated with a main signal and can authorise a movement while the main aspect remains at danger. A <strong>call-on</strong> is a use that allows a train to enter an occupied line under the applicable conditions, such as entering a platform to join another train. The interlocking conditions are specific to the movement.</p>
+<p>Other arrangements include preceding shunt signals, yellow shunts, opposing-locking-omitted arrangements and limit-of-shunt signals. These names identify specific purposes; they are not interchangeable variants of a universal shunting permission. In particular, a limit of shunt defines the limit of the relevant movement rather than providing a proceed aspect.</p>
+</section>
+<section id="fitting-a-train-into-an-occupied-platform" class="level2" data-number="7.10">
+<h2 data-number="7.10" class="anchored" data-anchor-id="fitting-a-train-into-an-occupied-platform"><span class="header-section-number">7.10</span> Fitting a train into an occupied platform</h2>
+<p><strong>Lime Street control</strong> uses the occupation of defined approach and platform sections to establish whether an approaching train can fit into the available space. Its logic depends on the relative lengths and occupation of those sections, not merely on a generic “platform occupied” indication.</p>
+<p>Suppose the available platform section and a designated approach section have equal lengths. If the approaching train is standing at the signal but also occupies a further section behind that approach section, it is too long for the assumed space. The call-on conditions therefore exclude that state.</p>
+<p>This is an example of translating a physical requirement into train-detection conditions. It must be understood from the actual layout and control requirements before its logic can be interpreted.</p>
+</section>
+<section id="automatic-warning-system" class="level2" data-number="7.11">
+<h2 data-number="7.11" class="anchored" data-anchor-id="automatic-warning-system"><span class="header-section-number">7.11</span> Automatic Warning System</h2>
+<p>AWS combines track equipment and trainborne equipment to provide an audible indication and a visual reminder. In a standard signal-associated arrangement, the train receiver encounters a permanent magnet with its south pole uppermost and then an electromagnet which presents the required north-pole field when energised.</p>
+<p>The permanent magnet initiates the warning sequence. The subsequent energised electromagnet produces the clear indication under the required signal conditions. If that cancelling field is absent, the driver receives the warning and must acknowledge it; failure to acknowledge initiates a brake application.</p>
+<p>The cab’s yellow-and-black <strong>sunflower</strong> or sunburst indication reminds the driver of an acknowledged warning. It is not a live repeat of the signal aspect: the signal can change after the train has passed the equipment. The driver still responds to the signals and route requirements.</p>
+<p>For a permanent warning, such as a defined speed-restriction warning arrangement, a permanent magnet can be used without the signal-associated cancelling electromagnet. Bi-directional arrangements can require suppression and additional control of the magnetic fields so that the equipment has its intended effect for each direction.</p>
+<section id="the-inductor-circuit" class="level3">
+<h3 class="anchored" data-anchor-id="the-inductor-circuit">The inductor circuit</h3>
+<p>A relay-controlled AWS electromagnet can include both the green aspect-control condition and lamp-proving condition in its feed. The circuit therefore needs more than an instruction to display green. Both feed and return paths and the specified proving conditions must be followed when interpreting it.</p>
+<p>An inductor stores energy in its magnetic field. A suppression diode or rectifier across the coil limits the switching transient when the current is interrupted, reducing arcing at the controlling contacts in the arrangement concerned. Its polarity and circuit connections form part of the design.</p>
+<p>The track mounting, protecting ramp, magnet identity, direction and relationship to the associated signal are also functional parts of the installation. Correct electrical operation alone does not establish correct positioning or mechanical clearance.</p>
+</section>
+</section>
+<section id="train-protection-and-warning-system" class="level2" data-number="7.12">
+<h2 data-number="7.12" class="anchored" data-anchor-id="train-protection-and-warning-system"><span class="header-section-number">7.12</span> Train Protection and Warning System</h2>
+<p><strong>TPWS</strong> provides defined brake-intervention functions through track loops and trainborne equipment. Its <strong>overspeed sensor system (OSS)</strong> uses an arming and trigger sequence on the approach. The elapsed time between the two is related to the train’s speed and the loop separation.</p>
+<p>In a simple timing model, passing the trigger while the onboard timing window is still active initiates an intervention. Greater separation gives a longer transit time at the same speed, so loop position is a functional part of the designed threshold. A <strong>train stop system (TSS)</strong> uses a closely spaced loop arrangement at the protected location to initiate the defined stop intervention when active.</p>
+<p>The signalling interface controls the required active state and returns the specified fault or health information. An instruction to activate is different from evidence that the installation is functioning. A fault indication must be interpreted through the actual interface and its designed signalling response.</p>
+<p>TPWS addresses specified locations and conditions; it does not guarantee that every train will stop before every possible conflict. Performance depends on the layout, approach conditions, equipment and train braking. Loop spacings, timing values, suppression and tests belong to the applicable design and equipment requirements.</p>
+</section>
+<section id="key-points" class="level2" data-number="7.13">
+<h2 data-number="7.13" class="anchored" data-anchor-id="key-points"><span class="header-section-number">7.13</span> Key points</h2>
+<ul>
+<li>Clearing means becoming less restrictive, not necessarily showing green.</li>
+<li>Warning distance must support stopping at the protected location.</li>
+<li>Four-aspect signalling adds an earlier warning stage; capacity depends on the whole arrangement.</li>
+<li>An overlap is protection, not movement authority.</li>
+<li>Shunt and call-on routes have purpose-specific controls.</li>
+<li>Aspect selection, filament monitoring, optical performance and lamp proving provide different evidence.</li>
+<li>AWS warnings and TPWS interventions depend on defined track-to-train arrangements.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/points.html" class="pagination-link" aria-label="Points">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Points</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/circuit-reading.html" class="pagination-link" aria-label="Circuit reading">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

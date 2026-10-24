@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Relays and relay logic – Railway Signalling for Technicians</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/train-detection.html" rel="next">
+<link href="../chapters/circuit-reading.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8cf6cfe92c0099d874d94e130a1e0cae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/relays.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Railway Signalling for Technicians</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Start here</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-signalling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Railway signalling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Overview of a signalling scheme</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/trackwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trackwork</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Points</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lineside-signals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/circuit-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/relays.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/train-detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/interlocking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ssi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Solid State Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/remote-control-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Remote control systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/telecommunications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Telecommunications</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/power-supplies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Signalling power supplies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/cables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Signalling cables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/useful-sources-of-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Useful other sources of information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#a-switch-operated-by-an-electromagnet" id="toc-a-switch-operated-by-an-electromagnet" class="nav-link active" data-scroll-target="#a-switch-operated-by-an-electromagnet"><span class="header-section-number">9.1</span> A switch operated by an electromagnet</a></li>
+  <li><a href="#independent-and-dependent-contacts" id="toc-independent-and-dependent-contacts" class="nav-link" data-scroll-target="#independent-and-dependent-contacts"><span class="header-section-number">9.2</span> Independent and dependent contacts</a></li>
+  <li><a href="#inside-a-miniature-signalling-relay" id="toc-inside-a-miniature-signalling-relay" class="nav-link" data-scroll-target="#inside-a-miniature-signalling-relay"><span class="header-section-number">9.3</span> Inside a miniature signalling relay</a></li>
+  <li><a href="#plugboards-wiring-and-equipment-identity" id="toc-plugboards-wiring-and-equipment-identity" class="nav-link" data-scroll-target="#plugboards-wiring-and-equipment-identity"><span class="header-section-number">9.4</span> Plugboards, wiring and equipment identity</a></li>
+  <li><a href="#types-and-construction" id="toc-types-and-construction" class="nav-link" data-scroll-target="#types-and-construction"><span class="header-section-number">9.5</span> Types and construction</a></li>
+  <li><a href="#special-relay-behaviour" id="toc-special-relay-behaviour" class="nav-link" data-scroll-target="#special-relay-behaviour"><span class="header-section-number">9.6</span> Special relay behaviour</a></li>
+  <li><a href="#worked-example-two-coils-two-possible-meanings" id="toc-worked-example-two-coils-two-possible-meanings" class="nav-link" data-scroll-target="#worked-example-two-coils-two-possible-meanings"><span class="header-section-number">9.7</span> Worked example: two coils, two possible meanings</a></li>
+  <li><a href="#from-a-contact-to-a-complete-path" id="toc-from-a-contact-to-a-complete-path" class="nav-link" data-scroll-target="#from-a-contact-to-a-complete-path"><span class="header-section-number">9.8</span> From a contact to a complete path</a></li>
+  <li><a href="#and-and-or" id="toc-and-and-or" class="nav-link" data-scroll-target="#and-and-or"><span class="header-section-number">9.9</span> AND and OR</a></li>
+  <li><a href="#reading-a-compound-requirement" id="toc-reading-a-compound-requirement" class="nav-link" data-scroll-target="#reading-a-compound-requirement"><span class="header-section-number">9.10</span> Reading a compound requirement</a></li>
+  <li><a href="#memory-the-stick-circuit" id="toc-memory-the-stick-circuit" class="nav-link" data-scroll-target="#memory-the-stick-circuit"><span class="header-section-number">9.11</span> Memory: the stick circuit</a></li>
+  <li><a href="#finding-a-named-relay" id="toc-finding-a-named-relay" class="nav-link" data-scroll-target="#finding-a-named-relay"><span class="header-section-number">9.12</span> Finding a named relay</a></li>
+  <li><a href="#relays-controlling-aspects" id="toc-relays-controlling-aspects" class="nav-link" data-scroll-target="#relays-controlling-aspects"><span class="header-section-number">9.13</span> Relays controlling aspects</a></li>
+  <li><a href="#worked-example-the-missing-release" id="toc-worked-example-the-missing-release" class="nav-link" data-scroll-target="#worked-example-the-missing-release"><span class="header-section-number">9.14</span> Worked example: the missing release</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points"><span class="header-section-number">9.15</span> Key points</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Learning objectives">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Explain relay construction and front/back contacts; distinguish neutral, biased, polar, latched, twin, timed and vane arrangements; interpret independent and dependent contacts; locate a relay through its records; translate logic into contact paths; and distinguish electrical holding from magnetic retention.</p>
+</div>
+</div>
+<section id="a-switch-operated-by-an-electromagnet" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="a-switch-operated-by-an-electromagnet"><span class="header-section-number">9.1</span> A switch operated by an electromagnet</h2>
+<p>A relay combines a coil, a magnetic circuit, a moving armature and electrical contacts. Coil current produces a magnetic force that moves the armature. The movement operates several contacts, allowing one circuit to influence other circuits without directly joining all their electrical supplies.</p>
+<p>A relay is <strong>energised</strong> when its coil is supplied as required, and <strong>de-energised</strong> when it is not. In the ordinary neutral-relay example, it <strong>picks up</strong> when energised and <strong>drops away</strong> when the supply is removed. Special relays can have different behaviour, so the type matters.</p>
+<p>The contact state is defined relative to the relay’s operated state:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Relay state in the basic example</th>
+<th>Front contact</th>
+<th>Back contact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Down</td>
+<td>Open</td>
+<td>Closed</td>
+</tr>
+<tr class="even">
+<td>Up</td>
+<td>Closed</td>
+<td>Open</td>
+</tr>
+</tbody>
+</table>
+<p>The words front and back avoid the ambiguity of saying “normally open” when a relay may normally be kept energised in service. A track relay, for example, can be energised throughout the time its section is clear.</p>
+</section>
+<section id="independent-and-dependent-contacts" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="independent-and-dependent-contacts"><span class="header-section-number">9.2</span> Independent and dependent contacts</h2>
+<p>An <strong>independent contact</strong> has its own arm connection and associated fixed contact. A <strong>dependent contact arrangement</strong> uses a common arm that transfers between two fixed contacts. In the basic neutral example, these are the front and back contacts. The common terminal is shared, so the two paths must not be read as isolated switches.</p>
+<p>Terminal notation depends on the relay construction. Some arrangements identify the finger and its arm, front and back connections; miniature plugboards use their specified letter-and-number positions. Translate the symbol through the applicable terminal information rather than transferring a familiar numbering rule to a different relay.</p>
+<p>Contact behaviour during movement also matters. A specified <strong>bridging contact</strong> makes both paths during part of its travel. This is a particular characteristic, not something to assume for every changeover contact. Similarly, two breaks within one contact arrangement describe its physical interruption; they do not by themselves establish the separate feed-and-return control of a double-cut circuit.</p>
+</section>
+<section id="inside-a-miniature-signalling-relay" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="inside-a-miniature-signalling-relay"><span class="header-section-number">9.3</span> Inside a miniature signalling relay</h2>
+<p>The coil is wound around a soft-iron core. The core, yoke and armature provide a magnetic path. Soft iron carries the flux readily but retains relatively little magnetism after the coil current is removed. The armature pivots towards the pole face and operates a drive bar, transferring movement to the contact arms.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>Contribution to operation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coil and core</td>
+<td>Convert coil current into magnetic flux</td>
+</tr>
+<tr class="even">
+<td>Yoke</td>
+<td>Complete much of the magnetic path</td>
+</tr>
+<tr class="odd">
+<td>Armature and pivot</td>
+<td>Turn magnetic attraction into mechanical movement</td>
+</tr>
+<tr class="even">
+<td>Drive bar</td>
+<td>Operate the contact arms</td>
+</tr>
+<tr class="odd">
+<td>Buffer bar</td>
+<td>Limit the contact movement and support the intended contact pressure</td>
+</tr>
+<tr class="even">
+<td>Residual pin</td>
+<td>Maintain a small non-magnetic gap at the attracted position</td>
+</tr>
+<tr class="odd">
+<td>Case and baseplate</td>
+<td>Support and protect the assembly</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>residual pin</strong> prevents full metal-to-metal closure of the magnetic path. The resulting gap helps ensure that residual magnetism does not hold the armature attracted when the supply is removed. It has a different purpose from the contact buffer and from any return spring.</p>
+<p>Contact materials are selected for the required resistance, current duty and resistance to welding. A miniature signalling relay can use silver and silver-impregnated graphite at its contact surfaces. Mechanical clearance, pressure and material choice are part of the complete relay design; a contact is more than an ideal switch drawn on paper.</p>
+<p>For a neutral d.c. relay, reversing the coil current reverses the magnetic poles but still attracts the armature. A biased relay deliberately adds a directional characteristic. This distinction explains why observing an apparently correct voltage magnitude is insufficient without understanding the relay type and polarity.</p>
+</section>
+<section id="plugboards-wiring-and-equipment-identity" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="plugboards-wiring-and-equipment-identity"><span class="header-section-number">9.4</span> Plugboards, wiring and equipment identity</h2>
+<p>The relay’s spring connections engage the plugboard connections. Wires terminate in spade connectors retained in the plugboard, with identification beads linking the physical wires to their circuit records. Retaining arrangements secure the relay in position, while seals protect the internal assembly against unauthorised disturbance.</p>
+<p>A connection can be electrically specified on a circuit sheet but physically located through a rack or location profile. A typical profile records the function, position, relay specification, coding and contact arrangement. The profile’s stated viewing direction matters: a front-view arrangement cannot be transferred directly to a rear view without accounting for the change of perspective.</p>
+<p>The number of wires accommodated by a connector is limited. Where several points must be joined, a designed chain of connections can distribute the common path instead of crowding all wires into one terminal. A drawn branching path therefore has a physical termination arrangement behind it.</p>
+<p>A replacement relay must match the specified function and characteristics, including its voltage, timing, contact arrangement and coding. Pin coding is a safeguard against incorrect substitution; it is not a substitute for checking the label, records and physical condition.</p>
+</section>
+<section id="types-and-construction" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="types-and-construction"><span class="header-section-number">9.5</span> Types and construction</h2>
+<p>The BR miniature relay family includes several special functions:</p>
+<ul>
+<li>A <strong>neutral relay</strong> provides the basic electromagnetic switching function.</li>
+<li>A <strong>biased relay</strong> is designed to respond to the intended current direction.</li>
+<li>An <strong>a.c.-immune relay</strong> is designed to operate on its specified d.c. supply without responding to the specified a.c. interference.</li>
+<li>A <strong>contactor</strong> has contacts suited to heavier loads, such as point-machine control.</li>
+<li>A <strong>slow-pick relay</strong> delays the operation of its contacts after energisation.</li>
+<li>A <strong>slow-release relay</strong> delays contact release after removal of coil current.</li>
+<li>A <strong>latched relay</strong> retains its operated state until the required release action.</li>
+</ul>
+</section>
+<section id="special-relay-behaviour" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="special-relay-behaviour"><span class="header-section-number">9.6</span> Special relay behaviour</h2>
+<section id="double-wound-and-twin-relays" class="level3">
+<h3 class="anchored" data-anchor-id="double-wound-and-twin-relays">Double-wound and twin relays</h3>
+<p>A <strong>double-wound relay</strong> has two electrically separate windings acting on one mechanism. Either winding can operate the common contact assembly in the intended arrangement. The coil circuits are separate, but the resulting mechanical state is shared.</p>
+<p>A <strong>twin relay</strong> contains two independent relay mechanisms in one housing, each serving its own function and contacts. It saves space where each function needs fewer contacts. Two coils visible in a case therefore do not, by themselves, tell you whether the device is double-wound or twin.</p>
+</section>
+<section id="immunity-and-timing" class="level3">
+<h3 class="anchored" data-anchor-id="immunity-and-timing">Immunity and timing</h3>
+<p>A copper sleeve or slug on the magnetic circuit opposes rapid changes of flux. Its position and the associated magnetic arrangement can create the required immunity or delay characteristics. An a.c.-immune d.c. relay is designed not to respond to the specified alternating interference; the characteristic has to match the electrical environment.</p>
+<p>Slow pick and slow release delay different transitions. A track repeater can require a sustained clear input before picking. A lamp-proving relay can bridge the brief interruption of current during an intended change of aspect. Neither delay should be assumed from the relay’s external shape or from a generic delay quoted for another type.</p>
+<p>Dedicated timing functions can use different mechanisms:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Timer</th>
+<th>Principle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Synchronous motor</td>
+<td>A motor and gearing move through a defined travel before operating contacts</td>
+</tr>
+<tr class="even">
+<td>Thermal</td>
+<td>Heating and cooling of an element provide a controlled contact sequence</td>
+</tr>
+<tr class="odd">
+<td>Electronic</td>
+<td>A defined electronic timing process controls the output function</td>
+</tr>
+</tbody>
+</table>
+<p>The timing interval may include more than the first visible movement. In a thermal arrangement, the warm-up phase can start a sequence whose final output follows the cooling phase. Read the complete circuit before deciding when the timed function should occur.</p>
+</section>
+<section id="magnetic-memory-and-electrical-memory" class="level3">
+<h3 class="anchored" data-anchor-id="magnetic-memory-and-electrical-memory">Magnetic memory and electrical memory</h3>
+<p>A <strong>magnetically latched relay</strong> can retain its contact state without continuous coil current. A separate operation releases or changes it. The polar-stick example in the next subsection uses a particular form of this retention.</p>
+<p>This differs from the electrical stick circuit described later in this chapter. An ordinary relay in an electrical stick circuit needs continuing energy through its holding path. Magnetic retention can preserve a state through a loss of supply, so the expression “no coil current means all relays are down” is unsafe as a general rule.</p>
+</section>
+<section id="two-position-and-three-position-polar-relays" class="level3">
+<h3 class="anchored" data-anchor-id="two-position-and-three-position-polar-relays">Two-position and three-position polar relays</h3>
+<p>A polar relay uses current direction to select normal or reverse. The table compares a retaining two-position arrangement with a three-position arrangement that has a centre state. The polarity-to-terminal relationship comes from the relay and circuit information.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input condition in the teaching comparison</th>
+<th>Retaining two-position polar relay</th>
+<th>Three-position polar relay</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specified normal polarity</td>
+<td>Normal</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Specified reverse polarity</td>
+<td>Reverse</td>
+<td>Reverse</td>
+</tr>
+<tr class="odd">
+<td>No coil input</td>
+<td>Last selected position retained</td>
+<td>Centre; neither outer contact made</td>
+</tr>
+</tbody>
+</table>
+<p>Thus an unpowered polar relay cannot be interpreted from the word <em>polar</em> alone. The number of positions and the specified retention characteristic determine what its contacts can do.</p>
+</section>
+<section id="contactors-and-vane-relays" class="level3">
+<h3 class="anchored" data-anchor-id="contactors-and-vane-relays">Contactors and vane relays</h3>
+<p>A contactor uses contacts and interruption arrangements suited to a heavier load. Magnetic blow-out helps control an arc when a loaded contact opens. A contact suitable for an indication circuit cannot automatically interrupt a point-motor load merely because both are drawn as contacts.</p>
+<p>An <strong>a.c. vane relay</strong> works differently from the neutral d.c. relay. Local and control magnetic systems act on a conducting vane. Their currents must have the intended frequency and phase relationship to produce the operating torque. In the double-element arrangement, loss of either required input removes that torque.</p>
+<p>This gives a useful link to the <a href="../chapters/train-detection.html">train-detection chapter</a>: the receiver must recognise the intended electrical evidence, rather than simply respond to any current present at the rails.</p>
+</section>
+</section>
+<section id="worked-example-two-coils-two-possible-meanings" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="worked-example-two-coils-two-possible-meanings"><span class="header-section-number">9.7</span> Worked example: two coils, two possible meanings</h2>
+<p>A drawing shows two coil pairs associated with a single housing. One learner assumes that the two functions have independent contacts. Explain what must be checked.</p>
+<p>A double-wound relay has two windings operating the same mechanism; a twin relay has two mechanisms. The specification, naming, connection information and profile establish which arrangement is present. Counting coils or cases is insufficient to identify the logical independence of the functions.</p>
+</section>
+<section id="from-a-contact-to-a-complete-path" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="from-a-contact-to-a-complete-path"><span class="header-section-number">9.8</span> From a contact to a complete path</h2>
+<p>Use the <a href="../chapters/circuit-reading.html">circuit-reading method</a> to establish supplies, terminals and sheet references before translating contacts into logic. The examples below assume that the required feed and return are available, so they can concentrate on the relationships between relay states.</p>
+</section>
+<section id="and-and-or" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="and-and-or"><span class="header-section-number">9.9</span> AND and OR</h2>
+<p>For an ideal teaching circuit, assume a suitable supply and no faults. To energise relay R when A <strong>and</strong> B are up, place front contacts of A and B in series. Both contacts must close to complete the path.</p>
+<p>To energise R when A <strong>or</strong> B is up, place the front contacts in parallel. Either path can complete the circuit. OR is inclusive: both may be up.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>A up</th>
+<th>B up</th>
+<th>R for A AND B</th>
+<th>R for A OR B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No</td>
+<td>No</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="even">
+<td>No</td>
+<td>Yes</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Yes</td>
+<td>No</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Yes</td>
+<td>Yes</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+</tbody>
+</table>
+<p>A back contact introduces a condition involving the relay being down. For example, an A front contact in series with a B back contact expresses <strong>A up AND B down</strong>.</p>
+<p>Be precise about “only when” and “whenever”. Saying that R may be up only when A is up makes A a necessary condition. It does not, by itself, say that A being up is sufficient: the circuit might contain other conditions. When drawing a complete truth table, state that the listed inputs fully define the teaching circuit.</p>
+</section>
+<section id="reading-a-compound-requirement" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="reading-a-compound-requirement"><span class="header-section-number">9.10</span> Reading a compound requirement</h2>
+<p>Suppose the full energisation requirement is:</p>
+<p><strong>R up = A up AND (B up OR C up).</strong></p>
+<p>A front contact is placed in series with a parallel pair of B and C front contacts. If A drops, neither branch can energise R. If A is up, either B or C can provide the remaining path.</p>
+<p>The complementary statement is that R is down if A is down, <strong>or</strong> if both B and C are down. Changing from energisation conditions to de-energisation conditions changes AND and OR relationships. Checking the four or eight possible input combinations is often clearer than trying to interpret a long sentence mentally.</p>
+</section>
+<section id="memory-the-stick-circuit" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="memory-the-stick-circuit"><span class="header-section-number">9.11</span> Memory: the stick circuit</h2>
+<p>A momentary push button can energise a relay, but releasing the button opens that path. A <strong>stick circuit</strong> places a front contact of R in parallel with the starting button. Once R has picked, its own contact provides a holding path.</p>
+<div id="fig-stick-circuit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stick-circuit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/stick-circuit.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stick-circuit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: A conceptual stick circuit. The release condition must remain in series with both the start and holding paths.
+</figcaption>
+</figure>
+</div>
+<p>The circuit also needs a way to release R. A release condition in series with both paths removes the holding current when required. Placing the release condition only in the push-button branch would leave the stick branch able to hold R.</p>
+<p>This is electrical memory rather than a latched relay mechanism. In the basic example, loss of the supply drops R and opens its stick contact. Restoring the supply alone does not restart it when the starting button is open.</p>
+</section>
+<section id="finding-a-named-relay" class="level2" data-number="9.12">
+<h2 data-number="9.12" class="anchored" data-anchor-id="finding-a-named-relay"><span class="header-section-number">9.12</span> Finding a named relay</h2>
+<p>The <a href="../chapters/circuit-reading.html#sec-function-names">function-name table</a> explains the naming convention. Once a name has been interpreted, use the profile and relay specification to establish its physical position, contact arrangement and characteristics. Knowing what a name means does not establish which plugboard position or terminal is required.</p>
+</section>
+<section id="relays-controlling-aspects" class="level2" data-number="9.13">
+<h2 data-number="9.13" class="anchored" data-anchor-id="relays-controlling-aspects"><span class="header-section-number">9.13</span> Relays controlling aspects</h2>
+<p>Aspect selection applies the same logic to a visible railway function: the less restrictive aspect requires its positive conditions. Control state, lamp supply and the lamp-proving indication remain separate. The <a href="../chapters/lineside-signals.html">lineside-signals chapter</a> brings those functions together, including aspect-control relays and lamp proving.</p>
+</section>
+<section id="worked-example-the-missing-release" class="level2" data-number="9.14">
+<h2 data-number="9.14" class="anchored" data-anchor-id="worked-example-the-missing-release"><span class="header-section-number">9.14</span> Worked example: the missing release</h2>
+<p>R starts through a button and holds through its own front contact. A track-clear contact is fitted only in the button branch. Once R is up, the track-clear contact opens, but R stays up. Explain the result.</p>
+<p>The holding branch bypasses the track-clear contact. The circuit therefore checks that condition when starting but does not require it while holding. If the requirement is for loss of the track-clear indication to release R, the condition must control the holding path as well. A real safety circuit needs its complete design and failure analysis, beyond this ideal example.</p>
+</section>
+<section id="key-points" class="level2" data-number="9.15">
+<h2 data-number="9.15" class="anchored" data-anchor-id="key-points"><span class="header-section-number">9.15</span> Key points</h2>
+<ul>
+<li>The magnetic circuit, residual gap and contact mechanism contribute to the relay’s behaviour.</li>
+<li>Double-wound and twin describe different relationships between coils and mechanisms.</li>
+<li>Front and back identify contact states relative to relay operation.</li>
+<li>Series paths express AND; parallel alternatives express OR for energisation.</li>
+<li>A stick circuit changes the path available after the relay operates.</li>
+<li>Function names connect contacts to their coils and equipment.</li>
+<li>An ideal logic diagram alone is not a complete safety design.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/circuit-reading.html" class="pagination-link" aria-label="Circuit reading">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/train-detection.html" class="pagination-link" aria-label="Train detection">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

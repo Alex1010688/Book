@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; Interlocking – Railway Signalling for Technicians</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ssi.html" rel="next">
+<link href="../chapters/train-detection.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8cf6cfe92c0099d874d94e130a1e0cae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/interlocking.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Railway Signalling for Technicians</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Start here</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Railway basics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/railway-signalling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Railway signalling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Overview of a signalling scheme</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/trackwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trackwork</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Points</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lineside-signals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lineside signals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/circuit-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Circuit reading</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/relays.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Relays and relay logic</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/train-detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/interlocking.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ssi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Solid State Interlocking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/remote-control-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Remote control systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/telecommunications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Telecommunications</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/power-supplies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Signalling power supplies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/cables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Signalling cables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/useful-sources-of-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Useful other sources of information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#from-a-command-to-a-protected-movement" id="toc-from-a-command-to-a-protected-movement" class="nav-link active" data-scroll-target="#from-a-command-to-a-protected-movement"><span class="header-section-number">11.1</span> From a command to a protected movement</a></li>
+  <li><a href="#availability-before-movement" id="toc-availability-before-movement" class="nav-link" data-scroll-target="#availability-before-movement"><span class="header-section-number">11.2</span> Availability before movement</a></li>
+  <li><a href="#route-locking-and-conflicting-movements" id="toc-route-locking-and-conflicting-movements" class="nav-link" data-scroll-target="#route-locking-and-conflicting-movements"><span class="header-section-number">11.3</span> Route locking and conflicting movements</a></li>
+  <li><a href="#conditions-for-clearing-the-signal" id="toc-conditions-for-clearing-the-signal" class="nav-link" data-scroll-target="#conditions-for-clearing-the-signal"><span class="header-section-number">11.4</span> Conditions for clearing the signal</a></li>
+  <li><a href="#approach-control-and-approach-locking" id="toc-approach-control-and-approach-locking" class="nav-link" data-scroll-target="#approach-control-and-approach-locking"><span class="header-section-number">11.5</span> Approach control and approach locking</a></li>
+  <li><a href="#train-operated-cancellation-and-sectional-release" id="toc-train-operated-cancellation-and-sectional-release" class="nav-link" data-scroll-target="#train-operated-cancellation-and-sectional-release"><span class="header-section-number">11.6</span> Train-operated cancellation and sectional release</a></li>
+  <li><a href="#point-locking-has-several-causes" id="toc-point-locking-has-several-causes" class="nav-link" data-scroll-target="#point-locking-has-several-causes"><span class="header-section-number">11.7</span> Point locking has several causes</a></li>
+  <li><a href="#flank-protection" id="toc-flank-protection" class="nav-link" data-scroll-target="#flank-protection"><span class="header-section-number">11.8</span> Flank protection</a></li>
+  <li><a href="#overlaps-and-alternative-paths" id="toc-overlaps-and-alternative-paths" class="nav-link" data-scroll-target="#overlaps-and-alternative-paths"><span class="header-section-number">11.9</span> Overlaps and alternative paths</a></li>
+  <li><a href="#shunt-routes-and-ground-frames" id="toc-shunt-routes-and-ground-frames" class="nav-link" data-scroll-target="#shunt-routes-and-ground-frames"><span class="header-section-number">11.10</span> Shunt routes and ground frames</a></li>
+  <li><a href="#control-tables" id="toc-control-tables" class="nav-link" data-scroll-target="#control-tables"><span class="header-section-number">11.11</span> Control tables</a></li>
+  <li><a href="#worked-example-cancelled-but-still-locked" id="toc-worked-example-cancelled-but-still-locked" class="nav-link" data-scroll-target="#worked-example-cancelled-but-still-locked"><span class="header-section-number">11.12</span> Worked example: cancelled but still locked</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points"><span class="header-section-number">11.13</span> Key points</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Interlocking</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Learning objectives">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Follow route setting from availability to signal clearance; distinguish the main forms of locking; explain cancellation and release; and identify how control tables record the requirements.</p>
+</div>
+</div>
+<section id="from-a-command-to-a-protected-movement" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="from-a-command-to-a-protected-movement"><span class="header-section-number">11.1</span> From a command to a protected movement</h2>
+<p>Interlocking prevents incompatible routes, controls when points may move and determines when a signal may clear. It must maintain the required protection while a train approaches and traverses the route, and release it only under the specified conditions.</p>
+<p>The entrance-exit interface simplifies entering the signaller’s route command. It does not collapse the engineering process into one event. <strong>Route commanded</strong>, <strong>route available</strong>, <strong>route locked</strong> and <strong>signal cleared</strong> describe different stages.</p>
+<div id="fig-route-lifecycle" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-route-lifecycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/route-lifecycle.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-route-lifecycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: A simplified route-setting and release lifecycle. Each transition is subject to its designed conditions.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="availability-before-movement" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="availability-before-movement"><span class="header-section-number">11.2</span> Availability before movement</h2>
+<p>First establish that the commanded route exists and that its required points are available. A point already in the required position may be available; a point locked in the opposite position is not. The availability check prevents unnecessary point movements for a route that cannot be established.</p>
+<p>The system then calls the required points and establishes route locking. Point detection supplies the required indications to the signal controls. Availability and detection answer different questions: “may this point be used as required?” and “is the required state proved?”</p>
+</section>
+<section id="route-locking-and-conflicting-movements" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="route-locking-and-conflicting-movements"><span class="header-section-number">11.3</span> Route locking and conflicting movements</h2>
+<p>Route locking prevents the points being changed in a way that would destroy an established movement. Locking functions are associated with the successive train-detection sections of the route and overlap.</p>
+<p>Some conflicting routes require a common point in opposite positions. Locking the point for the first route prevents availability for the second. Other conflicts cannot be excluded that way. In particular, opposing routes can use the same point positions while authorising trains towards one another. Directional route conditions must exclude that conflict.</p>
+<p>White route indications and red occupation indications help the signaller follow the state. Their detailed meaning depends on the interface. They are information about the underlying functions, rather than the locking mechanism itself.</p>
+</section>
+<section id="conditions-for-clearing-the-signal" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="conditions-for-clearing-the-signal"><span class="header-section-number">11.4</span> Conditions for clearing the signal</h2>
+<p>For an invented main route from S1 to S3 over points P1, consider the simplified requirement:</p>
+<p><strong>Route set and locked AND P1 detected reverse AND T1 clear AND T2 clear AND overlap O1 clear AND the required S3 proving satisfied.</strong></p>
+<p>Each item has a purpose:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>What it establishes in this example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Route set and locked</td>
+<td>The correct route exists and its required protection is established</td>
+</tr>
+<tr class="even">
+<td>P1 detected reverse</td>
+<td>The required point state is proved</td>
+</tr>
+<tr class="odd">
+<td>T1 and T2 clear</td>
+<td>The route sections required clear are proved clear</td>
+</tr>
+<tr class="even">
+<td>O1 clear</td>
+<td>The required overlap section is proved clear</td>
+</tr>
+<tr class="odd">
+<td>S3 proving</td>
+<td>The specified signal-in-advance proving is satisfied</td>
+</tr>
+</tbody>
+</table>
+<p>This is a learning expression, not a complete control table. Flank conditions, aspect sequence, approach controls and other requirements can also apply. If any required term is false, the expression does not permit clearance.</p>
+</section>
+<section id="approach-control-and-approach-locking" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="approach-control-and-approach-locking"><span class="header-section-number">11.5</span> Approach control and approach locking</h2>
+<p>These terms sound alike but serve different purposes.</p>
+<p><strong>Approach control</strong> regulates when a signal clears as the train approaches. For a junction with approach control from red, a signal is held at danger until an approach condition is satisfied so that the train has reduced speed before taking a divergence. Depending on the design, occupation, timing and aspect conditions can be involved.</p>
+<p><strong>Approach locking</strong> maintains route protection after a signal has been cleared and is then replaced. A driver may already have acted on the proceed aspect and may be unable to stop before the signal. Replacing it to danger does not mean that the route locking has released or that the route is immediately free to alter.</p>
+<p>A release may depend on a look-back assessment, a timing condition, passage of the train or another designed sequence. No generic delay from an introductory example should be applied as a site instruction.</p>
+</section>
+<section id="train-operated-cancellation-and-sectional-release" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="train-operated-cancellation-and-sectional-release"><span class="header-section-number">11.6</span> Train-operated cancellation and sectional release</h2>
+<p><strong>Train Operated Route Release (TORR)</strong> uses a defined sequence of train-detection operations associated with passage of the train. One occupied input alone is insufficient: a detection failure could otherwise mimic the event used to cancel a route.</p>
+<p>Cancellation and release must be distinguished. A route can be cancelled while locking remains in force. Once the release conditions are met, <strong>sectional release</strong> removes locking behind the train in the specified sequence. A section ahead of the train must not become available merely because a preceding section has cleared.</p>
+<p>A simplified learning sequence is:</p>
+<ol type="1">
+<li>The signal clears with the route protected.</li>
+<li>The train passes the signal and the signal is replaced.</li>
+<li>A valid passage sequence cancels the route command where TORR is provided.</li>
+<li>Locking releases progressively as the required sections clear behind the train.</li>
+<li>Remaining overlap or other locking releases under its own specified conditions.</li>
+</ol>
+<p>Different layouts need different release conditions. The governing requirements are recorded for the actual route.</p>
+</section>
+<section id="point-locking-has-several-causes" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="point-locking-has-several-causes"><span class="header-section-number">11.7</span> Point locking has several causes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Route locking</td>
+<td>Preserve an established route or protected arrangement</td>
+</tr>
+<tr class="even">
+<td>Dead locking</td>
+<td>Prevent point movement when the associated train-detection section is occupied</td>
+</tr>
+<tr class="odd">
+<td>Individual-control or key locking</td>
+<td>Hold points in a selected position through the control arrangement</td>
+</tr>
+<tr class="even">
+<td>Time-of-operation locking</td>
+<td>Address movement timing where a train could reach points before a newly initiated movement finishes</td>
+</tr>
+</tbody>
+</table>
+<p>Dead locking and route locking can apply simultaneously. Waiting until the point section becomes occupied may be insufficient where the points are close to its boundary. Locking must address the train’s approach and the equipment’s movement time, rather than just its eventual position.</p>
+</section>
+<section id="flank-protection" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="flank-protection"><span class="header-section-number">11.8</span> Flank protection</h2>
+<p>A route can need protection from equipment outside its direct line of travel. Points in a siding or on an adjacent connection may be positioned and locked to prevent an unwanted movement reaching the route. This is <strong>flank protection</strong>.</p>
+<p>The precise detection indications required depend on the arrangement. Do not assume that every flank point has the same detection requirements as a point traversed by the train. Read the specified controls, including any additional track-clear conditions associated with alternative protection.</p>
+</section>
+<section id="overlaps-and-alternative-paths" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="overlaps-and-alternative-paths"><span class="header-section-number">11.9</span> Overlaps and alternative paths</h2>
+<p>An overlap can include several sections and points. Trailing points can require a particular locked position. Facing points can provide alternative overlap paths if the design permits a <strong>swinging overlap</strong>.</p>
+<p>A swinging overlap is a controlled change between valid protected arrangements. It does not mean that the points are unrestricted. Availability, detection, conflicts, timing and train occupation must all be addressed as required. Overlap release may also differ from route release, for example where a train stops at a platform and a later movement needs the points beyond it.</p>
+</section>
+<section id="shunt-routes-and-ground-frames" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="shunt-routes-and-ground-frames"><span class="header-section-number">11.10</span> Shunt routes and ground frames</h2>
+<p>A shunt route may not require every section up to its destination to be clear, because the movement can be intended to approach standing vehicles. This does not make its point detection or route protection optional. Each movement has its own requirements.</p>
+<p>A ground frame provides local control of a limited group of equipment. A release from the controlling signaller enables the local operation under the specified protective conditions. Restoring the frame and its equipment to the required state is part of handing control back. A release is an engineered interface between two control arrangements, not merely permission conveyed by an indication lamp.</p>
+</section>
+<section id="control-tables" class="level2" data-number="11.11">
+<h2 data-number="11.11" class="anchored" data-anchor-id="control-tables"><span class="header-section-number">11.11</span> Control tables</h2>
+<p>Control tables record the requirements for routes, points and other signalling functions. Signal-route entries include setting conditions, point and track proving, aspect controls, replacement, approach locking and train-operated release. Point entries describe movement restrictions, route locking, releases and overlap conditions.</p>
+<p>Separate signal and point sheets organise the requirements by purpose. Start by identifying what a row or column governs, then relate each entry to the layout and the other tables. Do not infer a complete requirement from a fragment of circuit or software data.</p>
+</section>
+<section id="worked-example-cancelled-but-still-locked" class="level2" data-number="11.12">
+<h2 data-number="11.12" class="anchored" data-anchor-id="worked-example-cancelled-but-still-locked"><span class="header-section-number">11.12</span> Worked example: cancelled but still locked</h2>
+<p>A signaller cancels a route just after a train has seen its proceed aspect. The signal returns to danger, but the points remain locked. Is the locking necessarily faulty?</p>
+<p>No.&nbsp;Approach locking may be preserving the path for a train that cannot stop in time. If the train enters the route, its occupation and subsequent release sequence may continue to hold the necessary locking. The visible replacement of the signal is only one event in the complete process.</p>
+</section>
+<section id="key-points" class="level2" data-number="11.13">
+<h2 data-number="11.13" class="anchored" data-anchor-id="key-points"><span class="header-section-number">11.13</span> Key points</h2>
+<ul>
+<li>Availability, locking, detection and aspect control are different stages.</li>
+<li>Opposing routes can conflict without requiring opposite point positions.</li>
+<li>Approach control governs clearance; approach locking protects an approach after clearance.</li>
+<li>Cancellation does not automatically release locking.</li>
+<li>Control tables define the requirements for the actual arrangement.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/train-detection.html" class="pagination-link" aria-label="Train detection">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Train detection</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ssi.html" class="pagination-link" aria-label="Solid State Interlocking">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Solid State Interlocking</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
