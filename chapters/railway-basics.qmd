@@ -12,7 +12,7 @@ Railway lines are formed of two running rails and sleepers between them. There a
 The name "p-way" comes from the term "Permanent Way", which was used to describe the final railway that was constructed. In the early days of railway building a "Temporary Way" was first quickly constructed to help get materials to site.
 :::
 
-Almost all of the railway surrounding Glasgow is now electrified using overhead lines. There are therefore overhead gantries and stantions dotted around to suspend the overhead lines from. The Overhead line department are responsible for looking after these, although the power is maintained by the Electrification and Plant (E&P) department. E&P are also responsible for switch heaters that run along the rails of points to keep them clear of snow and ice, and the compressed air which drives many of the points in Glasgow Central.
+Almost all of the railway surrounding Glasgow is now electrified using overhead lines. There are therefore overhead gantries and stanchions dotted around to suspend the overhead lines from. The Overhead line department are responsible for looking after these, although the power is maintained by the Electrification and Plant (E&P) department. E&P are also responsible for switch heaters that run along the rails of points to keep them clear of snow and ice, and the compressed air which drives many of the points in Glasgow Central.
 
 Off-track look after all the things which are not directly part of the railway, but are needed to keep it safe and secure. This includes fencing and vegetation. You might need to speak with them a lot in the summer months when trees begin to grow and obscure signals.
 
@@ -26,9 +26,9 @@ The word **line** often means a particular track, as in *Up Main line*. It can a
 
 ## Up and Down directions
 
-**Up** and **Down** are established railway directions. They provide a consistent way to describe movements and distinguish tracks without relying on the direction in which someone happens to be looking. Up commonly means towards the principle station on that route, often the headquarters of the company which built that line. Many lines use London as the marker for the Up direction, but some lines in the area use Glasgow instead. This is just something that you will have to learn as you get to know the section.
+**Up** and **Down** are established railway directions. They provide a consistent way to describe movements and distinguish tracks without relying on the direction in which someone happens to be looking. Up commonly means towards the principal station on that route, often the headquarters of the company which built that line. Many lines use London as the marker for the Up direction, but some lines in the area use Glasgow instead. This is just something that you will have to learn as you get to know the section.
 
-Most lines will have one predominant direction of movement, so will be known as the Up or Down line. For example, the *Up Fast* mostly carries train in the Up direction, towards London. Some bits of it are bi-directionally signalled however, so trains can travel in either direction. This means it is possible for a train to be travelling in the Down direction (towards Glasgow) on the *Up Fast*.
+Most lines will have one predominant direction of movement, so will be known as the Up or Down line. For example, the *Up Fast* mostly carries trains in the Up direction, towards London. Some bits of it are bi-directionally signalled however, so trains can travel in either direction. This means it is possible for a train to be travelling in the Down direction (towards Glasgow) on the *Up Fast*.
 
 Where there is a single-track section of railway these are normally bi-directionally signalled so that trains can travel in either direction. They will still have an Up and a Down direction though.
 
@@ -74,9 +74,9 @@ The ELRs within the Glasgow Central section are given in the table below. Origin
 
 ### Track ID
 
-Each line also has a Track ID, which is a four number code which describes the type of line and the direction of travel.
+Each line also has a Track ID, which is a four digit code which describes the type of line and the direction of travel.
 
-Track IDs aren't used often by S&T, but they can be helpful when talking to other departments which use them more often, such as pway.
+Track IDs aren't used often by S&T, so it isn't strictly necessary to memorise them all but they can be helpful when talking to other departments which use them more often, such as pway.
 
 The numbers are always in the form of DNXX where:
 
@@ -91,8 +91,6 @@ The numbers are always in the form of DNXX where:
 |  | 7 - Crossover |  |
 |  | 8 - Other |  |
 |  | 9 - Siding |  |
-
-#### Examples
 
 Using the below diagram from Glasgow Central as an example we have:
 
@@ -111,12 +109,24 @@ Using the below diagram from Glasgow Central as an example we have:
 All lines also have a mileage, starting from a datum point. The origin points are normally the destination of the Up line, but there are some exceptions.
 
 ::: trivia
-In Scotland mileages are given in Miles and Yards, but in the rest of the UK mileages are given in Miles and Chain. You might see chain used in some documents, such as the Sectional Appendix, so it's important to know what this is.
+In Scotland mileages are usually given in Miles and Yards, but in the rest of the UK mileages are given in Miles and Chain. You might still see chain used in some documents, such as the Sectional Appendix, so it's important to be be able to convert between the two.
 
-A Chain is an old measurement equal to 22 yards (or roughly 20 meters).
+A Chain is an old measurement equal to 22 yards (or roughly 20 metres).
+
+1 mile = 80 chain = 1760 yards
+
+3/4 mile = 60 chain = 1320 yards
+
+1/2 mile = 40 chain = 880 yards
+
+1/4 mile = 20 chain = 440 yards
 :::
 
-The diagram below of Busby Junction shows how a location can be narrowed down first by ELR, then by Track ID, and then by mileage. Alternatively, just the ELR and mileage could be used to identify a place but not necessarily a track, or a line name could be used. For this example it would be just as valid to say *0m 103yds on the Up East Kilbride*.
+Mileposts are used to mark every quarter of a mile (although they are sometimes missing, or hidden). The large number is the mile, and the bars or dots underneath indicate quarters of a mile.
+
+![](images/Screenshot 2026-10-25 004838.png){fig-align="center"}
+
+The diagram below of Busby Junction shows how a location can be narrowed down first by ELR, then by Track ID, and then by mileage. Alternatively, just the ELR and mileage could be used to identify a place but not necessarily a track, or a line name could be used. For this example it would be just as valid to say 0m 103yds on the *Up East Kilbride*.
 
 ![](images/Screenshot%202026-10-24%20211352.png){fig-align="center"}
 
@@ -155,9 +165,9 @@ Start by finding the orientation of a plan, using line names, stations, points, 
 
 It's important to understand what is shown on each type of diagram so that you can relate it to the real world conditions on the ground.
 
-Plans are generally to scale, but the scale may change throughout the plan depending on the complexity of the layout. Do not assume that just because two things look close together on the plan they will be a short walk in real life.
+M12 signalling plans and bonding diagrams are generally to scale, but the scale may change throughout the plan depending on the complexity of the layout. Do not assume that just because two things look close together on the plan they will be a short walk in real life!
 
-There is also an [unofficial website](glasgowsignals.co.uk) \[password: Glasg0w!\] covering Glasgow showing the locations of all the assets and track circuits which can be useful when working out distances or finding assets. It's vital to be able to understand official diagrams but this can be useful resource to assist you in getting to know the area.
+There is also an [unofficial website](www.glasgowsignals.co.uk) \[password: Glasg0w!\] covering Glasgow showing the locations of all the assets and track circuits which can be useful when working out distances or finding assets. It's vital to be able to understand official diagrams but this can be useful resource to assist you in getting to know the area.
 
 ![](images/Screenshot 2026-10-24 231811.png){fig-align="center"}
 
@@ -167,6 +177,6 @@ Another diagram you may come across are TAP diagrams. These can be found on the 
 
 ![](images/Screenshot 2026-10-24 232250-2.png){fig-align="center"}
 
-The Sectional Appendix is a document produced that gives all sorts of information about each lines, which is mostly relevant to train drivers. It does, however, include diagrams which contain some important information, such as line speeds and controlling signal box. The Sectional Appendix will always be included in your safe work pack and can also be found [online](https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/).
+The Sectional Appendix is a document produced that gives all sorts of information about each line, which is mostly relevant to train drivers. It does, however, include diagrams which contain some important information, such as line speeds and controlling signal box. The relevant extracts of the Sectional Appendix will always be included in your safe work pack and can also be found [online](https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/).
 
 ![](images/Screenshot 2026-10-24 232934.png)
