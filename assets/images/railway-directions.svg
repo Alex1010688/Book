@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360"><rect width="1200" height="360" fill="white"/><g font-family="Arial, sans-serif" fill="#18334b"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#216184"/></marker></defs>
+<text x="80" y="50" font-size="28" font-weight="bold">Town A</text><text x="80" y="80" font-size="20">Up reference location</text><text x="1000" y="50" font-size="28" font-weight="bold">Town B</text>
+<path d="M80 150H1120 M80 260H1120" stroke="#63788b" stroke-width="5"/>
+<path d="M850 150H350 M350 260H850" stroke="#216184" stroke-width="7" marker-end="url(#arrow)"/>
+<rect x="470" y="96" width="260" height="35" fill="white"/><text x="600" y="122" font-size="25" text-anchor="middle">Up Main</text>
+<text x="600" y="235" font-size="25" text-anchor="middle">Down Main</text>
+<text x="600" y="325" font-size="20" text-anchor="middle">Each horizontal line represents one complete track.</text></g></svg>

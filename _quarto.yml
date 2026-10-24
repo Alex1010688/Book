@@ -1,93 +1,73 @@
 project:
   type: book
   output-dir: _book
+  render:
+    - index.qmd
+    - chapters/*.qmd
+  resources:
+    - assets/images/*.svg
+    - assets/icons/*.svg
 
+filters:
+  - filters/local-information.lua
+  - filters/background.lua
+
+local-information:
+  title: "Local information"
+  border-colour: "#b65e00"
+  header-colour: "#fff0dd"
+
+background:
+  border-colour: "#70558c"
+  header-colour: "#f3eef8"
+
+lang: en-GB
 book:
   title: "Railway Signalling for Technicians"
-  subtitle: "Principles, Equipment and Practical Fault Finding"
+  subtitle: "An introduction to principles, equipment and systems"
   author: "Alex Corcoran"
-  output-file: "railway-signalling-for-technicians"
+  output-file: railway-signalling-for-technicians
   search: true
   chapters:
     - index.qmd
+    - chapters/introduction.qmd
+    - chapters/railway-basics.qmd
+    - chapters/railway-signalling.qmd
+    - chapters/overview.qmd
+    - chapters/trackwork.qmd
+    - chapters/points.qmd
+    - chapters/lineside-signals.qmd
+    - chapters/circuit-reading.qmd
+    - chapters/relays.qmd
+    - chapters/train-detection.qmd
+    - chapters/interlocking.qmd
+    - chapters/ssi.qmd
+    - chapters/remote-control-systems.qmd
+    - chapters/telecommunications.qmd
+    - chapters/power-supplies.qmd
+    - chapters/cables.qmd
+    - chapters/useful-sources-of-information.qmd
+  appendices:
+    - chapters/glossary.qmd
 
-    - part: "I — Railway and signalling fundamentals"
-      chapters:
-        - chapters/railway-overview.qmd
-        - chapters/history-of-railway-signalling.qmd
-        - chapters/what-is-railway-signalling.qmd
-        - chapters/safety-principles.qmd
-        - chapters/electrical-principles.qmd
-        - chapters/mechanical-principles.qmd
-
-    - part: "II — Circuits and signalling logic"
-      chapters:
-        - chapters/signalling-relays.qmd
-        - chapters/reading-signalling-circuits.qmd
-        - chapters/fundamental-circuits.qmd
-
-    - part: "III — Train detection"
-      chapters:
-        - chapters/train-detection-principles.qmd
-        - chapters/track-circuits.qmd
-        - chapters/axle-counters.qmd
-        - chapters/treadles.qmd
-
-    - part: "IV — Points"
-      chapters:
-        - chapters/point-principles.qmd
-        - chapters/electro-pneumatic-point-machines.qmd
-        - chapters/hw-point-machines.qmd
-        - chapters/clamp-locks.qmd
-        - chapters/high-performance-switch-system.qmd
-
-    - part: "V — Signals and train protection"
-      chapters:
-        - chapters/signals.qmd
-        - chapters/automatic-warning-system.qmd
-        - chapters/train-protection-warning-system.qmd
-
-    - part: "VI — Interlocking"
-      chapters:
-        - chapters/interlocking-principles.qmd
-        - chapters/solid-state-interlocking.qmd
-
-    - part: "VII — Infrastructure and support systems"
-      chapters:
-        - chapters/signalling-power-supplies.qmd
-        - chapters/cables-and-location-cases.qmd
-
-    - part: "VIII — Working as a signalling technician"
-      chapters:
-        - chapters/technical-documentation.qmd
-        - chapters/testing.qmd
-        - chapters/useful-sources-of-information.qmd
-
-    - part: "Reference material"
-      chapters:
-        - chapters/glossary.qmd
-        - chapters/references.qmd
-
-bibliography: references.bib
 number-depth: 2
-
 format:
   html:
     theme:
       - cosmo
       - assets/styles/custom.scss
     toc: true
-    toc-depth: 3
+    toc-depth: 2
     link-external-newwindow: true
     fig-cap-location: bottom
-
   typst:
     toc: true
-    toc-depth: 3
-    papersize: "iso-b5"
+    toc-depth: 2
+    papersize: a4
+    fontsize: 11pt
     margin:
-      top: 20mm
+      top: 22mm
       bottom: 22mm
-      left: 22mm
-      right: 18mm
+      left: 24mm
+      right: 22mm
     fig-cap-location: bottom

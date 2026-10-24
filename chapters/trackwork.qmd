@@ -1,0 +1,66 @@
+# Trackwork
+
+::: {.callout-note title="Learning objectives"}
+Describe the functions of rails, sleepers, fastenings and ballast; explain why joints and bonding matter to signalling; explain track gauge and the wheel–rail interface.
+:::
+
+## The track is part of the signalling environment
+
+Track provides a load-bearing, guided path for the train. For S&T, it can also be part of an electrical circuit, a support for detection equipment and a mechanical reference for point operation. Changes to track geometry, rail joints or support can therefore affect signalling equipment.
+
+A simple track assembly consists of two rails held at the required gauge by sleepers and fastenings. Ballast supports the sleepers, distributes load and helps restrain the track while allowing drainage and resilience. Other forms use a concrete slab or embedded support rather than a conventional ballast bed.
+
+## Rails and fastenings
+
+Two rail forms are **bullhead** and **flat-bottom** rail. Bullhead rail has a relatively narrow base and is held in chairs, traditionally by keys. Flat-bottom rail has a broad foot and uses suitable baseplates or direct fastenings, including spring clips.
+
+Rail section designations can include a mass per unit length. Keep the units attached to the number: a designation expressed in kilograms per metre cannot be compared numerically with one expressed in pounds per yard without conversion. UIC 54 and BS110A illustrate the distinction between metric and imperial rail designations.
+
+Sleepers may be timber, concrete or steel. Their purpose is more than carrying the rail vertically: they maintain the relationship between the rails and transfer lateral and longitudinal forces into the supporting structure. Electrical insulation within the fastening arrangement can be essential where the rails form a track circuit.
+
+## Ballasted and slab track
+
+Ballast must support the sleepers firmly without making the track a completely rigid structure. Tamping consolidates the ballast under and around sleepers. Trackside cables, rail connections and point equipment occupy some of the same working area, so track maintenance has important S&T interfaces.
+
+Slab and embedded track use different support arrangements. One tunnel arrangement places concrete support blocks in resilient boots, allowing the support to accommodate traffic loads without behaving as an unyielding mass. The underlying lesson is that a track assembly needs controlled geometry and suitable resilience, whatever its form.
+
+::: {.callout-note title="In practice"}
+When looking at a signalling item fixed to the railway, identify what holds it in its intended position. A detector attached to a rail, a machine mounted beside points and a cable fixed to a sleeper have different mechanical reference points and different exposure to track work.
+:::
+
+## Rail joints and continuous welded rail
+
+Fishplates join rail ends mechanically. A conventional joint creates a discontinuity that must be maintained. Welding reduces the number of joints and changes how thermal expansion is managed within the track structure.
+
+Temperature changes still matter in welded rail. Expansion and contraction are restrained, so longitudinal forces develop. Track design, stressing and maintenance govern those forces. The applicable stressing requirements must be established for the site.
+
+For signalling, the electrical function of a joint is a separate question from its mechanical function. An ordinary joint may need a bond to provide a dependable electrical path. An **insulated rail joint** intentionally interrupts that path. A glued insulated joint combines mechanical strength with electrical separation and can be incorporated into welded track.
+
+The question to ask is therefore not simply "is there a joint?" but "what continuity or insulation is intended here?" The train-detection chapter develops the consequences.
+
+## Gauge and the wheel-rail interface
+
+**Track gauge** is the distance between the specified inner faces of the rails. Standard gauge is 1,435 mm. It is distinct from **loading gauge**, which concerns the space available for a vehicle and its load.
+
+A wheelset has two wheels connected by an axle. The wheel treads are profiled rather than being simple cylindrical surfaces. A lateral displacement changes the effective rolling radii at the contacts, contributing to guidance. Flanges provide an important boundary to movement, but ordinary guidance cannot be explained merely as flanges continuously rubbing against the rails.
+
+At points and crossings the wheel-rail relationship becomes more complex because routes diverge and flangeways interrupt parts of the running surface. This is why the next chapter introduces check rails and crossings as well as moving point blades.
+
+## Relating the track to its plan
+
+[Railway basics](railway-basics.qmd) explains how tracks are represented on plans, how lines are named and how the spaces around them are described. Use those references to identify the track before considering its construction or the equipment attached to it.
+
+## Activity: a joint has two jobs
+
+A rail joint is mechanically sound, but its insulating components no longer provide the intended electrical separation. Explain why a satisfactory mechanical inspection alone cannot establish that the signalling arrangement is correct.
+
+::: {.callout-note collapse="true" title="Suggested reasoning"}
+The joint supports and connects the rail ends mechanically, but its signalling purpose may be to separate adjacent track circuits. Losing insulation can connect circuits that should be electrically separated. Mechanical condition and electrical function must both be understood.
+:::
+
+## Key points
+
+- Track supports and guides the vehicle and can form part of signalling circuits.
+- Mechanical continuity and electrical continuity are different requirements.
+- Track geometry and support affect equipment attached to the railway.
+- Track gauge and wheel profiles govern the wheel–rail relationship.

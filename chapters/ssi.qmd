@@ -1,0 +1,86 @@
+# Solid State Interlocking
+
+::: {.callout-note title="Learning objectives"}
+Identify the principal SSI modules and interfaces, distinguish safety from availability, explain fixed program and application data, and follow a control and its feedback through the trackside data link.
+:::
+
+## What SSI means here
+
+This chapter uses **SSI** for the British Rail-developed Solid State Interlocking system. It is a particular system architecture, not a name for every electronic interlocking.
+
+SSI implements the interlocking functions introduced in the previous chapter using processors, application data and trackside interfaces. The change of technology does not remove the need to prove points, exclude conflicts and retain locking for a train.
+
+## The interlocking cubicle
+
+The **Multiprocessor Modules (MPMs)** carry out the interlocking processing. Three modules compare their results and internal information. In the two-out-of-three arrangement, a disagreeing module can be isolated while the two agreeing modules continue. If the remaining pair disagree, continued safe agreement is no longer established and the system shuts down as designed.
+
+This combines two purposes. Comparison supports the detection of an erroneous result. Having three modules also permits continued operation after one has been isolated. Three copies do not make the application data correct: all three could process the same incorrect requirement consistently. Safety therefore also depends on the program, data, engineering process and interfaces.
+
+| Item | Principal role |
+|---|---|
+| MPM | Interlocking processing and associated communications |
+| Panel Processor Module (PPM) | Interface to the signaller's control equipment |
+| Diagnostic module | Monitor system behaviour and provide diagnostic information |
+| Technician's terminal | Display diagnostics and provide specified technician facilities |
+| Data Link Module (DLM) | Interface to the relevant data-link path |
+| Trackside Functional Module (TFM) | Interface between data telegrams and local railway equipment |
+
+## Fixed program and application data
+
+The **fixed program** provides the common processing functions. The **application data** defines the particular railway: equipment identities, route conditions, point controls, release sequences and other required relationships.
+
+The distinction makes a reusable system possible, but application data remains safety-critical. It must represent the approved requirements accurately. Data preparation at a design workstation is followed by compilation and simulation before use. Successful compilation establishes that data can be translated; it does not prove that every railway requirement has been represented correctly.
+
+A useful learning chain is **layout and requirements → application data → compiled representation → tested behaviour**. Each transition can introduce an error and needs the appropriate assurance.
+
+## The signaller and technician interfaces
+
+The PPM links SSI with a hard panel or electronic control interface. The PPMs are duplicated for availability. That is different from the triplicated interlocking comparison function. A control interface commands actions; the interlocking remains responsible for enforcing its conditions.
+
+The technician's terminal and recording facilities make internal state and events accessible. Time-related records help reconstruct the order of commands, occupation changes, detection changes and outputs. Their interpretation depends on what was actually recorded, its timing and the corresponding equipment indications.
+
+Specified technician controls can impose additional restrictions, such as holding a signal at danger. They do not provide a general means of bypassing normal interlocking conditions. Use of those facilities requires the relevant authority and instructions.
+
+## Trackside functional modules
+
+A TFM receives a control telegram and returns indication information. The SSI trackside arrangement supports addresses 1-63 on a trackside system, with actual capacity and spare allowance considered in the scheme design. Addresses identify which module a telegram concerns; the correct association between address, wiring and application data is essential.
+
+Duplicated internal channels within a TFM compare their operation. If agreement is lost, the module is taken out of service as designed. This is distinct from the three-MPM arrangement and has a different effect on availability: a TFM affects its associated functions, while failure of the central interlocking can affect the whole area.
+
+### Signal module
+
+The signal TFM provides controlled outputs and indication inputs. Outputs can drive appropriate signal loads and other specified equipment. Current-sensing paths return evidence about the connected loads. Input circuits include checking intended to distinguish valid locally supplied input information from a spurious voltage.
+
+**Red retaining** is a special arrangement supporting the most restrictive aspect when a module is disabled in the specified way. It depends on the designed circuit and available power. It is not a claim that every loss of a TFM or supply must leave a visible red.
+
+### Points module
+
+The points TFM is designed around the outputs and inputs needed for point operation and detection. Its direct outputs suit clamp-lock equipment. Electric machines require the specified relay interfaces. A shared word such as "output" does not imply that every load can be connected directly.
+
+## Data links and long-distance interfaces
+
+Duplicated trackside data links carry controls and indications. DLMs interface the electrical paths. Repeaters extend the supported baseband arrangement within its design limits. For longer transport through a telecommunications bearer, **Long Distance Terminals (LDTs)** provide the required interface.
+
+An internal data link provides communication between interlockings. Do not confuse that boundary information with the trackside link to TFMs or the panel interface to the signaller.
+
+Duplicating the links improves availability only to the extent that common failures have been addressed. Two paths in one vulnerable cable route can both be lost together. The physical routing and the equipment shared by them therefore matter as well as their logical names.
+
+## Other electronic interlockings
+
+Other electronic interlockings, including Ebilock, VPI and WESTRACE, implement electronic safety in different ways. These include comparison of diverse processing, coded or checked logical processing and checked input/output architectures. The general lesson is that a system's safety case cannot be inferred from the number of processors alone.
+
+Equipment-specific architecture, diagnostics and permitted actions must be learnt for the actual system. SSI terminology should not be assumed to describe another manufacturer's modules directly.
+
+## Worked example: duplication and a cable cut
+
+A and B links are both working, but they pass through the same damaged section of route. Both fail together. Why has duplication not preserved communication?
+
+The paths were logically separate but shared a physical failure exposure. Availability depends on independence from the failures being considered, not merely on providing two interfaces. Route diversity and common equipment must be considered together.
+
+## Key points
+
+- SSI implements signalling requirements using processing, data and local interfaces.
+- Processor agreement and correct application data are separate requirements.
+- Duplication and triplication serve defined safety and availability purposes.
+- TFMs translate between telegrams and local equipment.
+- Diagnostics provide evidence; they do not replace the complete system documentation.

@@ -1,0 +1,17 @@
+# Introduction
+
+This book is intended to be used as a starting point for those learning about railway signalling for the first time. It is designed to give a basic overview and understanding of signalling, and an introduction to the railway.
+
+It is essentially my attempt at creating the book I wished I had when I first started.
+
+## Who the book is for
+
+The book is intended for those who are new to railway signalling, including those beginning work in signalling and telecommunications (S&T). It introduces the railway equipment, its purpose and the relationships between systems before moving into more detailed equipment descriptions.
+
+## How to use the book
+
+Read the opening chapters in sequence. [Railway basics](railway-basics.qmd) introduces line names, directions and location references. [Railway signalling](railway-signalling.qmd) introduces train separation and control, while [Overview of a signalling scheme](overview.qmd) brings the main equipment and system relationships together. The later chapters develop trackwork, points, signals, circuit reading, relays and the systems that connect them.
+
+For each item, establish what it does, how it fits into the wider signalling system and what happens when it fails to perform its function.
+
+Use [Useful other sources of information](useful-sources-of-information.qmd) to find references for further study. Practical work requires the applicable controlled documentation, local arrangements and competence; this introductory book does not define test limits, maintenance intervals or authority to work.

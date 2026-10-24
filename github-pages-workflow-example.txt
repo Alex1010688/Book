@@ -1,5 +1,0 @@
-This file is intentionally not active.
-
-Once you are ready to publish, use Quarto's current GitHub Pages documentation
-to configure a deployment workflow. Do not enable automatic public publishing
-until you have decided which material is appropriate to expose.

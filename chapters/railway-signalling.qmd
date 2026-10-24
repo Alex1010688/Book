@@ -1,0 +1,74 @@
+# Railway signalling
+
+::: {.callout-note title="Learning objectives"}
+Explain the need for train separation, distinguish block working from interlocking, and describe the relationship between electrical operation, train detection and route setting.
+:::
+
+## Safety and the service
+
+The principal purpose of signalling is to organise movements so that trains do not collide. That includes a following train catching a train ahead, opposing trains meeting on the same line, and trains converging at a junction. Signalling also influences the service that can be operated. A railway carrying occasional trains has different capacity requirements from one carrying trains a few minutes apart.
+
+These purposes are connected. Shortening the interval between trains requires a suitable method of separation and adequate warning for braking. Adding signals without considering braking, detection and route locking does not automatically create a useful increase in capacity.
+
+## Why time alone is insufficient
+
+A time-interval system releases a second train a specified time after the first. Its weakness is simple: the first train may have stopped. Elapsed time cannot prove that the line ahead is clear.
+
+A space-interval system instead separates trains by defined sections. The key question becomes whether the preceding train has left the protected section. This is the foundation of block working. How the railway establishes that a section is available depends on the system and its associated operating arrangements.
+
+## Absolute block
+
+In a simple example, adjacent signal boxes A and B communicate using bells and block instruments. The receiving signaller controls indications associated with the section. The three indications are **Line Blocked**, **Line Clear** and **Train on Line**.
+
+At a conceptual level, the receiving box agrees to accept a train, the sending box signals it forward under the required conditions, and the instruments record its entry into the section. The receiving box establishes that the train has arrived complete before the section is made available again. Arrival of the locomotive alone is insufficient: vehicles could have become detached and remain in the section.
+
+This explanation identifies the safety purpose of the communications. It is not a bell-code sequence or an instruction for operating block instruments.
+
+::: {.callout-important title="Two different protections"}
+Block working organises the separation of trains along a line. Interlocking prevents incompatible settings and movements within its designed scope. A junction can be correctly set while the line ahead is occupied; an empty line does not prove that a junction is correctly set.
+:::
+
+## Electrical operation and control
+
+A point machine provides the force at the points, while electrical detection reports the required resulting conditions. Relay circuits or electronic interlockings enforce the movement constraints, allowing the control interface and the equipment implementing the safety logic to have different physical forms. The operator's command, the equipment action and the resulting indication are separate parts of the system.
+
+## Track circuit block and automatic signals
+
+A track circuit uses the rails as part of an electrical circuit to establish whether a defined section is clear. It gives the signalling system information that does not depend on the signaller remembering the position of every train.
+
+With continuous train detection and suitable controls, a plain-line signal can respond automatically to conditions ahead. In track circuit block, train detection supports the separation of trains between signals. **Automatic** describes how a signal is controlled; it does not mean that it operates without safety conditions.
+
+The signal aspects must give the driver the required warning of a stop indication. The lineside signals chapter connects that requirement to braking distance, overlaps and headway.
+
+## From individual controls to route setting
+
+With individual controls, the signaller sets the points and then operates the signal control. An entrance-exit (NX) interface lets the signaller identify the start and end of the required movement. The system calls the required points and establishes the route conditions.
+
+The route command does not override the interlocking. If a required point is not detected, a track section is occupied or a conflicting route remains locked, the commanded proceed aspect cannot be obtained under those conditions.
+
+Remote control makes it possible to operate geographically separated interlockings from a signalling centre without providing a separate long-distance wire for every control and indication. The interlocking and remote control system perform different jobs, a distinction developed later in the course.
+
+## Train describers: background {#sec-train-describers}
+
+A **train describer** associates a service identity with a displayed position, or berth, and uses train-detection and route information to step the description as the train moves. Its information can also support passenger displays and other operational systems. It identifies the service associated with a position; it does not prove the track clear or replace the interlocking's safety checks. A wrong description can therefore cause confusion or misrouting even when the interlocking continues to prevent conflicting movements.
+
+## Automatic Warning System
+
+The Automatic Warning System (AWS) provides an audible indication in the cab. A warning requires acknowledgement by the driver; if it is not acknowledged, the system initiates a brake application.
+
+AWS supports the driver by drawing attention to a warning. It works alongside the signals and the driver's knowledge of the route.
+
+## Activity: two trains at a junction
+
+Train A is standing beyond a junction. Train B is approaching a signal before it. The points are correctly set for B's intended route. Explain why that fact alone cannot justify clearing B's signal.
+
+::: {.callout-note collapse="true" title="Suggested reasoning"}
+Correct point position establishes only one condition. The line to be used must also satisfy the train-detection and separation requirements, the required overlap and protection must be available, and conflicting movements must be excluded. A train standing beyond the junction may prevent these conditions being met.
+:::
+
+## Key points
+
+- Time elapsed does not prove that a train has cleared a section.
+- Block working and interlocking address related but distinct problems.
+- Route setting simplifies entering commands; the interlocking still governs the result.
+- AWS draws attention to a warning and requires the driver to acknowledge it.

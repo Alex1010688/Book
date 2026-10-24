@@ -1,40 +1,60 @@
-# Useful Sources of Information
+# Useful other sources of information
 
+Different resources answer different questions: how equipment works, what a task requires, what applies at a location, or what a technical term means. The following are useful starting points for study and day-to-day reference.
 
-## Learning objectives
+## OFFICIAL DOCUMENTATION
 
-By the end of this chapter, you should be able to:
+### Signal maintenance specifications (SMS)
 
-- explain the main principles introduced in the chapter;
-- relate them to practical signalling equipment and systems;
-- recognise where the principles appear in later chapters.
+The Signal Maintenance Specifications describe the maintenance tasks and technical requirements for signalling equipment. Use the applicable specification to establish what must be inspected, maintained or measured, together with the relevant limits and recording requirements.
 
-## Why this matters
+### Signal maintenance testing handbook (SMTH)
 
-<!-- Explain why the topic matters to a new signalling technician. -->
+The Signal Maintenance Testing Handbook sets out the processes, checks and tests for signalling maintenance testing within its defined scope. It helps establish the testing required after work such as equipment replacement, together with the associated planning and records.
 
-## Core principles
+### Network Rail standards
 
-<!-- Build from familiar concepts to signalling-specific application. -->
+[Network Rail standards](https://www.networkrail.co.uk/industry-and-commercial/third-party-investors/network-rail-is-open-for-business/reviewing-our-standards/) set out requirements for engineering, maintenance, safety and the management of railway assets. Use the controlled standards system to check the applicable document, issue and compliance date.
 
-## In practice
+### RSSB rulebook
 
-::: {.callout-note title="In practice"}
-Add the practical application of the principle here.
-:::
+The [RSSB Rule Book](https://www.rssb.co.uk/standards-catalogue) contains the operational rules, modules and handbooks relevant to railway roles. For an S&T technician, it explains responsibilities and arrangements for working on signalling equipment and communicating with those controlling train movements.
 
-## Worked example
+### Sectional Appendix
 
-<!-- Add a simple example, drawing or activity. -->
+The [Sectional Appendix](https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/) provides route-specific information, including track layouts, line names, mileages, permissible speeds and local instructions. It is useful for understanding the railway at a particular location and relating equipment to its operational setting.
 
-## Key points
+### Hazard Directory
 
-- 
-- 
-- 
+The [National Hazard Directory](https://www.nationalhazards.co.uk/) records known hazards and location information to support planning and working on Network Rail infrastructure. Consult the relevant entries alongside the site-specific information and arrangements for the work.
 
-## Check your understanding
+### Course notes
 
-1. 
-2. 
-3. 
+Course notes provide explanations, diagrams and worked examples from formal training, making them useful for revision and refreshing equipment knowledge. Check any task requirements or numerical limits against the applicable controlled documentation.
+
+### Network Rail e-learning
+
+Network Rail e-learning provides online learning modules and assessments to support training, briefings and revision. Use the modules relevant to your role to prepare for courses or revisit topics that need further study.
+
+### eB suite
+
+The eB suite is used to store, manage and retrieve engineering documents and records, including drawings. Check the document identity, revision and status to establish that the record is appropriate for the equipment and work being considered.
+
+## ONLINE RESOURCES
+
+### railwaycodes.org
+[Railway Codes](https://www.railwaycodes.org.uk/index.shtml) is a site which lists all codes used on the railway.  It's useful for looking up ELRs.
+
+### dickthesignals
+
+[dickthesignals](https://dickthesignals.co.uk/) contains a collection of signalling drawings, diagrams, manuals and technical documents that can help explain equipment and principles. Use it for background study, checking practical requirements against controlled documentation.
+
+### Glasgow S&T SharePoint
+
+Use the Glasgow S&T SharePoint site to find local team information and shared reference material. Check the status and revision of any document before using it for a task.
+
+## PHYSICAL RESOURCES
+
+### Ellis’ engineering encyclopaedia
+
+[*Ellis’ British Railway Engineering Encyclopaedia*](https://www.iainellis.com/erdic.htm) explains railway engineering terms, abbreviations, acronyms and jargon across several disciplines. It is a useful desk reference when an unfamiliar word appears in a drawing, document or conversation.

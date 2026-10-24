@@ -1,22 +1,58 @@
 /*-- scss:defaults --*/
 $font-size-root: 17px;
-$line-height-base: 1.65;
-
+$line-height-base: 1.7;
+$primary: #244f69;
+$link-color: #205c80;
+$headings-color: #17394f;
 /*-- scss:rules --*/
-main.content {
-  max-width: 900px;
-}
+main.content { max-width: 900px; }
+figure { margin: 1.8rem 0; }
+figcaption { font-size: .92rem; color: #465965; }
+.callout { margin: 1.4rem 0; }
+table { font-size: .94rem; }
 
-figure {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+// Local information callout: shared colours are set in _quarto.yml.
+.local-information {
+  margin: 1.4rem 0;
+  border: 1px solid var(--local-information-border, #b65e00);
+  border-left-width: 5px;
+  border-radius: .3rem;
+  overflow: hidden;
 }
+.local-information__header {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .55rem .8rem;
+  background: var(--local-information-header, #fff0dd);
+  color: #402600;
+  font-weight: 600;
+}
+.local-information__header p { margin: 0; }
+.local-information__icon { display: inline-flex; flex: 0 0 auto; }
+.local-information__icon svg { width: 1.5rem; height: 1.5rem; }
+.local-information__body { padding: .65rem .8rem; }
+.local-information__body > :last-child { margin-bottom: 0; }
 
-figcaption {
-  font-size: 0.92rem;
+// Optional background information: the heading is always Background.
+.background {
+  margin: 1.4rem 0;
+  border: 1px solid var(--background-border, #70558c);
+  border-left-width: 5px;
+  border-radius: .3rem;
+  overflow: hidden;
 }
-
-.callout {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.background__header {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .55rem .8rem;
+  background: var(--background-header, #f3eef8);
+  color: #3e2c50;
+  font-weight: 600;
 }
+.background__header p { margin: 0; }
+.background__icon { display: inline-flex; flex: 0 0 auto; }
+.background__icon svg { width: 1.5rem; height: 1.5rem; }
+.background__body { padding: .65rem .8rem; }
+.background__body > :last-child { margin-bottom: 0; }

@@ -1,0 +1,88 @@
+# Telecommunications
+
+::: {.callout-note title="Learning objectives"}
+Describe the main railway voice and data services, explain the purpose of a telephone concentrator and route diversity, relate digital bearer allocation to signalling services, and identify the telecommunications interface to SSI.
+:::
+
+## Services and bearers
+
+Telecommunications carries voice and data between the people and equipment operating the railway. A useful distinction is between a **service**, such as a signaller-driver call or an SSI data connection, and its **bearer**, such as a copper circuit, optical transmission path or radio link.
+
+Several services may share a bearer. A service can also use more than one bearer to improve availability. To understand a failure, identify both the user-facing function and the infrastructure that carries it.
+
+Telecommunications includes lineside telephones, concentrators, SSI links, transmission systems, passenger information and radio. Their equipment differs, but common questions recur: who is connected, how is the circuit identified, what information is carried, what delay is acceptable, and what happens when a path fails?
+
+## Lineside telephones
+
+A **signal post telephone (SPT)** provides a direct connection associated with a particular signal and controlling location. Other direct lines serve level crossings, adjacent control locations and operational interfaces. Dial telephones provide access to a telephone network, while maintenance plug points support communications between staff at equipment locations.
+
+Identity is essential. The person answering must know the circuit involved, and the caller must identify their location and purpose through the applicable communication arrangements. A technically clear voice path to the wrong person or location does not meet the operational need.
+
+Outdoor telephones also need suitable environmental protection, labels and physical robustness. Their lines and housings are part of the service, alongside the switching equipment at the control centre.
+
+## Telephone concentrators
+
+A concentrator brings many dedicated operational circuits to the signaller's console. Its functions include circuit identity, controlled call selection, prevention of unintended overhearing or interruption, and clear indication of which caller is connected.
+
+Call parking lets a caller remain associated with the system while the signaller deals with another call. It is different from joining callers together. Distinctive indications identify urgent or special calls. Recording provides evidence of communications, with the associated need to preserve the relevant record when required.
+
+The engineering objective is more than making speech audible. A dependable operational service must deliver speech to the intended party and make its identity unambiguous.
+
+## Diverse routing
+
+If adjacent lineside phones all depend on the same vulnerable cable path, one cut can remove several means of communication together. Alternating route directions and transmission paths can reduce the effect of a single fault on neighbouring facilities.
+
+**Diversity** must be assessed physically. Separate circuit numbers do not prove separate cables, ducts, power supplies or transmission nodes. The same point applies to duplicated signalling data links.
+
+Remote concentrators can combine low-use local circuits before sending them over a longer path. This reduces dedicated long-distance wiring while preserving the required call-control functions. The network arrangement must still address power, identity, capacity and failure behaviour.
+
+## SSI long-distance links
+
+An SSI baseband link uses the appropriate DLM interfaces and trackside cabling. An LDT adapts it for transport through a telecommunications bearer, with a corresponding interface at the remote end.
+
+The bearer must meet the signalling service's requirements, including timing. A path can be electrically intact and carry data, yet fail the service if delay or the relative arrival of duplicated messages is outside the permitted limits.
+
+For learning, separate four checks:
+
+1. **Continuity:** is a path available?
+2. **Integrity:** is the required information correctly conveyed?
+3. **Timing:** does it arrive within the specified constraints?
+4. **Independence:** what failures can affect both A and B paths?
+
+The permitted delay and message-timing limits depend on the SSI/LDT arrangement. They must be established from the applicable interface and design documentation.
+
+## Digital bearer allocation
+
+Digital transmission equipment can carry several operational voice and signalling data services over one bearer. PCM channel and aggregate interface rates describe available transmission capacity; the circuit allocation and interface records establish which service reaches which destination.
+
+For a signalling link, identify its allocated channel, end interfaces and required timing and integrity. A healthy aggregate bearer or a familiar interface rate does not establish that the correct signalling service is connected end to end. This is particularly important after transmission alterations or a change of route.
+
+## Multiplexing and transmission hierarchy
+
+TDM shares transmission capacity through timed channel positions. Transmission systems include **Plesiochronous Digital Hierarchy (PDH)**, with tributary clocks operating within tolerances, and **Synchronous Digital Hierarchy (SDH)**, with a coordinated timing structure supporting access to channels at intermediate nodes.
+
+A **drop-and-insert** point lets channels be taken from or added to a transmission system without terminating the entire service path. Digital regeneration reconstructs a valid signal at a stage, rather than simply amplifying everything present, including noise. It still depends on a receivable input and a correctly operating system.
+
+An optical fibre carries signals as light and removes a conductive connection along that fibre. It does not remove the need for powered terminal equipment, correctly engineered interfaces and a resilient physical route.
+
+## Passenger information and radio
+
+Customer information systems include public address, recorded announcements, displays and clocks. Automatic updates depend on the correct association between service information, location and time.
+
+Radio provides a mobile communications path. Coverage, selective calling, emergency calls and association between a train and the relevant control area are important radio-system functions. These are examples of system functions, rather than an inventory of equipment at a particular site.
+
+Voice communications, a data bearer and the safety system using that data are distinct functions. Radio coverage alone does not establish a safe movement authority. The complete train-control arrangement must define and assure that authority and its supervision.
+
+## Worked example: connected but unusable
+
+Both ends of a signalling data service report a connection, but valid messages are rejected after a transmission route change. Why is "the link is up" insufficient evidence that the service is satisfactory?
+
+Connection status says little about the message integrity, latency or relationship between duplicated paths. A new route can change those characteristics. The service must be assessed against its end-to-end requirements, using the evidence and responsibilities defined for that interface.
+
+## Key points
+
+- Services and bearers are different layers of the system.
+- Operational speech needs correct identity as well as audibility.
+- Route diversity addresses common physical failures.
+- Data services can have strict timing as well as continuity requirements.
+- Channel allocation and interface records connect a signalling service to its bearer.

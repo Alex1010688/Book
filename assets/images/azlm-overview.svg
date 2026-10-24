@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="450" viewBox="0 0 1100 450" role="img" aria-labelledby="title desc">
+<title id="title">AZLM section and information relationships</title><desc id="desc">Detection points D1, D2 and D3 define sections A and B. D2 is their shared boundary. Information from each point passes to a central evaluator, which provides separate section outputs.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#326b89"/></marker></defs>
+<rect width="1100" height="450" rx="12" fill="#f6f9fc"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#17324d">
+<rect x="130" y="55" width="420" height="72" fill="#e0ecf5"/><rect x="550" y="55" width="420" height="72" fill="#e7f1e6"/>
+<text x="340" y="84" font-size="23" font-weight="bold">Section A</text><text x="760" y="84" font-size="23" font-weight="bold">Section B</text>
+<path d="M65 108H1035" stroke="#4c5662" stroke-width="7"/>
+<g fill="#fff" stroke="#326b89" stroke-width="3"><rect x="116" y="93" width="28" height="29"/><rect x="536" y="93" width="28" height="29"/><rect x="956" y="93" width="28" height="29"/></g>
+<text x="130" y="155" font-size="22" font-weight="bold">D1</text><text x="550" y="155" font-size="22" font-weight="bold">D2: shared boundary</text><text x="970" y="155" font-size="22" font-weight="bold">D3</text>
+<text x="130" y="185" font-size="19">Rail contact + EAK</text><text x="550" y="185" font-size="19">Rail contact + EAK</text><text x="970" y="185" font-size="19">Rail contact + EAK</text>
+<g stroke="#326b89" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M130 201V246H410V295"/><path d="M550 201V295"/><path d="M970 201V246H690V295"/></g>
+<rect x="365" y="300" width="370" height="85" rx="8" fill="#17324d"/>
+<text x="550" y="333" font-size="24" font-weight="bold" fill="white">ACE</text><text x="550" y="364" font-size="20" fill="white">Central evaluation</text>
+<text x="550" y="424" font-size="21">Separate section information to the interlocking</text>
+</g></svg>

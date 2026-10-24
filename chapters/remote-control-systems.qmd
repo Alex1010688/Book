@@ -1,0 +1,75 @@
+# Remote control systems
+
+::: {.callout-note title="Learning objectives"}
+Explain the purpose of multiplexing, distinguish time division from frequency division, identify the safety boundary in a remote-control arrangement, and describe the principle of reed equipment.
+:::
+
+## Why transmit many functions together?
+
+Providing a dedicated pair of long-distance wires for every control and indication becomes costly as an area grows. Consider 200 controls and 500 indications over 30 km. At two conductors per function, that is 1,400 conductors and 42,000 conductor-kilometres.
+
+Conductor-kilometres describe the total length of individual conductors. They do not mean that the cable route is 42,000 km long. The route remains 30 km in the example. Keeping those quantities distinct makes the engineering and cost argument clear.
+
+**Multiplexing** shares a transmission path between functions. The functions remain identifiable by a rule, such as an allocated time slot or frequency channel.
+
+## Time Division Multiplex
+
+In **Time Division Multiplex (TDM)**, each function occupies an allocated part of a repeated sequence. Imagine matched switches at the sending and receiving ends stepping through inputs and outputs in the same order. Input 1 is conveyed to output 1, then input 2 to output 2, and so on. The rotating switches are an analogy; the equipment performs the function electronically.
+
+Synchronisation keeps the two ends aligned. If alignment is lost, the receiver must not simply treat one function's information as another's without the system's defined response.
+
+A panel-to-interlocking TDM system carries signaller controls to a satellite relay interlocking and brings indications back. The local interlocking enforces its safety conditions. This allows the control transmission to have a different safety role from a direct vital proving circuit.
+
+::: {.callout-important title="Locate the safety boundary"}
+A remote route command and a vital point-detection input are different kinds of information. Whether a transmission path must itself be vital depends on the function and the complete architecture. Panel-to-interlocking TDM can be non-vital because the interlocking checks the commands. That does not make all signalling transmissions non-vital.
+:::
+
+## Reconstructing indications
+
+An indication that flashes at the panel need not be transmitted as a series of timed on/off samples. A scan could distort that pattern. The system can send state information such as "flashing required" or "steady required", then generating the actual presentation locally.
+
+This separates the information from its display. A panel processor can reconstruct several indications from the transmitted state, reducing the number of transmitted functions. The display must still be associated with the correct equipment and have a defined response to lost or invalid information.
+
+## Frequency Division Multiplex
+
+In **Frequency Division Multiplex (FDM)**, functions share the pair by using different frequency channels. Function A can transmit at frequency f1, B at f2 and C at f3. A receiver for A responds to the intended f1 signal and controls its associated follower relay.
+
+| Feature | TDM example | FDM example |
+|---|---|---|
+| How a function is distinguished | Position in a timed sequence | Allocated frequency channel |
+| Main coordination need | Synchronisation and correct message association | Stable generation, selective reception and compatible channel allocation |
+| Typical application | Block transfer between control centre and satellite interlocking | Collection or distribution of trackside functions |
+
+Several frequencies can be present together on the pair. Their separation must be engineered: filtering, harmonics, interference and equipment faults matter. "Different frequencies" alone is not a complete argument for independence.
+
+## Reed equipment
+
+A reed is a mechanical resonator whose vibration is determined by its physical properties. A reed filter uses two reed assemblies on a coupled frame. An incoming electrical signal drives one reed; mechanical vibration is transferred to the other; its coil provides an electrical output when the intended resonance is established.
+
+In the receiver, this selective transfer supports acceptance of the assigned frequency. In the transmitter, the reed filter forms part of the oscillator's frequency-control arrangement. The intended result is a stable, recognisable channel rather than a frequency that can drift into another function's channel.
+
+Reed equipment has separate filter and electronic units, coding to prevent incorrect substitution, and follower relays matched to the receiver. Vital and non-vital versions have different roles. Physical similarity is not sufficient evidence that equipment has the required frequency, safety role or output characteristics.
+
+## The line is part of the system
+
+The transmitter's connection must not interrupt every other function when one unit is removed. The line arrangement retains continuity, with receivers connected across the pair. Line levels and impedance also affect the whole circuit.
+
+Amplifiers maintain signal level where required. In a vital frequency-based arrangement, they must preserve the characteristics on which safe recognition depends. Isolation addresses electrical conditions along the railway, including induction from traction. Equipment selection and positioning follow the actual design, rather than a generic distance rule.
+
+A **simplex** path carries information in one direction. A **half-duplex** path uses both directions at different times. A **full-duplex** path supports both directions simultaneously. These terms describe direction and timing of communication, not whether the signalling function is safe.
+
+## Worked example: identical symptoms from a shared path
+
+Six distributed indications disappear together. Each has its own local source contact, but all use one FDM pair and a common receiving supply. What does the pattern suggest?
+
+It identifies shared dependencies worth comparing with the system records: the line pair, common power, amplification or receiving equipment. It does not prove which item failed. Independent local faults remain possible, but a simultaneous group change is evidence about the system structure.
+
+The useful reasoning step is to map the affected functions to what they share before interpreting each as an unrelated equipment failure.
+
+## Key points
+
+- Multiplexing reduces dedicated transmission wiring by sharing a path.
+- TDM separates functions in time; FDM separates them by frequency.
+- Safety requirements depend on the function carried and its place in the architecture.
+- Reed systems rely on controlled resonance and selective reception.
+- Shared line and power arrangements can produce groups of symptoms.

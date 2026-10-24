@@ -4,3 +4,6 @@
 Thumbs.db
 
 **/*.quarto_ipynb
+
+/backups/
+/tmp/

@@ -1,34 +1,9 @@
-# Preface {.unnumbered}
+# Start here {.unnumbered}
 
-This book is intended for people entering railway signalling from a general engineering background and for practising technicians who need a concise reference to the systems they maintain.
+This book provides a starting point for learning about railway signalling. Begin with the [Introduction](chapters/introduction.qmd) for its purpose, intended readership and study guidance, then read the opening chapters in sequence.
 
-It is designed to support, rather than replace, company training, controlled standards, maintenance specifications, local instructions or competence arrangements.
+[Overview of a signalling scheme](chapters/overview.qmd) brings the main system relationships together. The equipment chapters develop those subjects, and [Useful other sources of information](chapters/useful-sources-of-information.qmd) provides references for further study.
 
-## How to use this book
-
-The early chapters are intended to be read in order. Equipment-specific chapters follow a consistent structure so they can also be used as practical reference material.
-
-::: {.callout-important title="Principle"}
-Safety or engineering principles that explain why a signalling system is designed or operated in a particular way.
+::: {.callout-important title="Authority for work"}
+This is an educational introduction. It does not specify test limits, maintenance intervals, operating rules or authority to work. Use the applicable controlled documentation, local arrangements and competence requirements for work on the railway.
 :::
-
-::: {.callout-note title="In practice"}
-How the principle normally appears in real equipment, drawings or maintenance work.
-:::
-
-::: {.callout-tip title="Fault finding"}
-A diagnostic observation, reasoning method or worked fault-finding example.
-:::
-
-::: {.callout-caution title="Trivia"}
-A local note, or trivia.
-:::
-
-
-## Scope
-
-The first edition concentrates on equipment and systems encountered within the author's section. The underlying principles are explained broadly enough to remain useful when other equipment is encountered later.
-
-## Safety and authority
-
-This book is educational material. Where it differs from current controlled company documentation, the controlled documentation takes precedence.

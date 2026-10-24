@@ -1,9 +1,93 @@
-# Glossary {.unnumbered}
+# Glossary
 
-| Term | Meaning |
+| Term | Meaning in this course |
 |---|---|
-| Correspondence | Agreement between the commanded and proved state of equipment, particularly points. |
-| Fail-safe | A design approach in which foreseeable failures tend to result in, or reveal themselves through, a safe state. |
-| Interlocking | The system that prevents incompatible or unsafe signalling commands from being simultaneously authorised. |
-| Normal / Reverse | Defined reference positions used for points and associated controls. |
-| Route | A defined path through the signalling system for a train movement. |
+| Approach control | Control of signal clearance using specified approach conditions, for example to support a speed reduction before a divergence |
+| Approach locking | Locking that preserves route protection after a signal has cleared and is then replaced, until the specified release conditions are met |
+| Aspect | The indication displayed by a signal |
+| Axle counter | A system that determines section occupation using axle passage at defined detection points and a valid evaluator state |
+| Bi-directional line | A line signalled for movements in both directions |
+| Ballast resistance | The electrical resistance associated with leakage between rails through the track support and surroundings |
+| Bearer | The transmission path or service carrying a communications channel |
+| Bond | An electrical connection providing the required continuity between rails or around a joint |
+| Call-on | A movement into an occupied line under specified signalling conditions |
+| Cess | The area alongside the outside of the running lines |
+| Clear indication | An indication that a section meets the system's clear-state conditions |
+| Control table | A record of the functional requirements for a signalling route, point or other item |
+| Crossover | Two point ends arranged to connect adjacent tracks |
+| Dead locking | Point locking associated with occupation of the relevant train-detection section |
+| Detection | Evidence that the specified equipment conditions have been established |
+| Diamond crossing | A same-level crossing of two tracks, without necessarily providing a connection between them |
+| DLM | Data Link Module, an interface to an SSI data-link path |
+| ELR | Engineers’ Line Reference, a code identifying a railway line or section for location records |
+| Facing movement | A movement approaching point toes and the divergence |
+| Fail-safe | Designed so that specified failures do not produce an unsafe permission |
+| FDM | Frequency Division Multiplex, sharing a path using distinct frequency channels |
+| Flank protection | Protection of a route from an unwanted movement approaching from outside its direct line of travel |
+| Four-foot | Conventional name for the space between a track's running rails |
+| Front contact | A relay contact closed in its operated state in the basic relay description |
+| Back contact | A relay contact closed in its released state in the basic relay description |
+| Gauge | In the trackwork chapter, the specified distance between the inner faces of the running rails |
+| Ground frame | Local controls for a limited group of equipment, with a release and protective arrangements where required |
+| Headway | Separation of successive trains, expressed as distance or time under stated conditions |
+| Insulated rail joint | A rail joint designed to provide electrical separation |
+| Interlocking | Equipment and logic enforcing the specified relationships between routes, points, signals and other conditions |
+| LDT | Long Distance Terminal, adapting an SSI link to an appropriate telecommunications bearer |
+| Location case | A trackside housing for signalling interfaces, terminals, supplies and other local apparatus |
+| MPM | Multiprocessor Module in the SSI architecture described |
+| Normal/reverse | The two designated point positions recorded in the scheme information |
+| NX | Entrance-exit route setting |
+| Overlap | A defined protected distance or arrangement beyond a stop signal |
+| PCM | Pulse Code Modulation, used for digital voice transmission |
+| PPM | Panel Processor Module, interfacing SSI with the signaller's control equipment |
+| Right-side failure | A failure producing a more restrictive result than the traffic conditions require |
+| Route locking | Locking that preserves the required route and protection until its release conditions are met |
+| Sectional release | Progressive release of route locking behind a train under the specified sequence |
+| Shunt | In train detection, a conductive connection between rails; in operations, a category of ancillary train movement |
+| Six-foot | Conventional name for the space between adjacent tracks |
+| SSI | In this book, the British Rail-developed Solid State Interlocking system |
+| Stick circuit | A relay holding circuit using a contact of the operated relay to maintain its energisation |
+| Stock rail | A fixed rail against which a switch blade closes |
+| Subsidiary signal | A signal associated with a main signal and used for a specified movement while the main aspect remains at danger |
+| Switch blade | A moving rail that selects the path through a set of points |
+| Tail cable | A local cable between an equipment housing and a trackside item or rail connection |
+| TDM | Time Division Multiplex, sharing a path using a timed sequence of channels |
+| Ten-foot | Conventional name for the wider space between pairs of tracks in a four-track arrangement |
+| TFM | Trackside Functional Module, an SSI interface to local inputs and outputs |
+| TORR | Train Operated Route Release, using a defined train-passage sequence |
+| Track circuit | Train detection using rails as part of an electrical circuit |
+| Trailing movement | A movement approaching points from a converging track towards the common end |
+| Up/Down | Established railway direction designations, identified from the applicable local records |
+| Wrong-side failure | A failure producing a less restrictive result than the conditions justify |
+
+## Further electrical and equipment terms
+
+| Term | Meaning in this course |
+|---|---|
+| ACE | Axle Counter Evaluator in the AZLM system |
+| Ampere-hour (Ah) | A unit of electric charge used for battery capacity under specified discharge conditions |
+| AZLM | A multi-section digital axle-counter system |
+| Back drive | A mechanism providing controlled movement farther along a switch rail |
+| Ballast leakage | Current taking a path between rails through their support and surroundings |
+| Bonding diagram | A drawing showing individual rail connections, insulation and bonding arrangements |
+| Core | An individual insulated conductor within a cable |
+| Drop-shunt value | The specified shunt resistance that just causes the occupied response under stated test conditions |
+| EAK | Trackside electronic unit associated with an axle-counter detection point |
+| Earth-free circuit | A circuit arranged without an intentional connection of its working conductors to earth |
+| Electrolyte | The ion-conducting medium in an electrical cell |
+| Escapement | A mechanism coordinating phases of movement, such as unlocking, driving and relocking points |
+| Float charging | Maintaining a rechargeable battery at its specified standby charging condition while supporting the load |
+| Internal resistance | A source characteristic contributing to voltage fall under signalling load |
+| OSS | Overspeed sensor system within TPWS |
+| Phantom aspect | Apparent signal illumination caused by extraneous light rather than the intended display |
+| Rectifier | A device or circuit converting alternating current into unidirectional current |
+| Residual pin | A non-magnetic part maintaining a small gap in a relay's attracted magnetic path |
+| Roundel | A coloured optical element moved to select the displayed aspect in a searchlight signal |
+| Secondary cell | A rechargeable electrical cell |
+| Sheath | The outer protective covering of a cable |
+| Snubbing | Controlled electrical braking of a motor near the end of its movement in the arrangement described |
+| Specific gravity | Density relative to a reference, used for electrolyte assessment where appropriate |
+| TPWS | Train Protection and Warning System |
+| Track-circuit interrupter | A sacrificial element that interrupts a circuit during a defined irregular wheel movement |
+| Transformer | Equipment providing the designed a.c. voltage conversion and isolation in a signalling supply |
+| TSS | Train stop system within TPWS |

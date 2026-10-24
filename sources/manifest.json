@@ -1,0 +1,77 @@
+{
+  "series": "Introduction to Signalling",
+  "source_files": [
+    {
+      "source_chapter": 1,
+      "filename": "Introduction to Signalling - 1 - Intro.pdf",
+      "pages": 3,
+      "sha256": "f78ea814b73952f3f1a57c02d20c86db07b48d139f6f173497751e7dd280e899"
+    },
+    {
+      "source_chapter": 2,
+      "filename": "Introduction to Signalling - 2 - Railway Signalling.pdf",
+      "pages": 9,
+      "sha256": "ab7ac143e4d524d51f2decd292aa74f1d2c3f046a2ac8842b992f8cf7fbe739e"
+    },
+    {
+      "source_chapter": 3,
+      "filename": "Introduction to Signalling - 3 - Elements of Signalling Scheme.pdf",
+      "pages": 9,
+      "sha256": "aaec02a897001083574b1028f342801f624caec6fa347eb2157e90dd61118d4f"
+    },
+    {
+      "source_chapter": 4,
+      "filename": "Introduction to Signalling - 4 - Trackwork.pdf",
+      "pages": 10,
+      "sha256": "cee19c1746471b141fc71752b076ebe270510b662150d5130889761af589d8d5"
+    },
+    {
+      "source_chapter": 5,
+      "filename": "Introduction to Signalling - 5 - Points.pdf",
+      "pages": 14,
+      "sha256": "e8d4e8a589859af4a2eaf0849094e58084d9dda18bf39388848eaa9f86dd85f3"
+    },
+    {
+      "source_chapter": 6,
+      "filename": "Introduction to Signalling - 6 - Lineside Signals.pdf",
+      "pages": 20,
+      "sha256": "e741d6329b6b98addcfc2277cc616b74e4d094e529dce83eb9a3f1e4d32a75f3"
+    },
+    {
+      "source_chapter": 7,
+      "filename": "Introduction to Signalling - 7 - Relays.pdf",
+      "pages": 16,
+      "sha256": "5ac681de68a166f8307615a6a26040698d8f35e045692eca792c6244227967df"
+    },
+    {
+      "source_chapter": 8,
+      "filename": "Introduction to Signalling - 8 - Train Detection.pdf",
+      "pages": 21,
+      "sha256": "7db95376854e058044501a9feb73b6354743cc6658d031a01d0ab9d3e89ca449"
+    },
+    {
+      "source_chapter": 9,
+      "filename": "Introduction to Signalling - 9 - Interlocking.pdf",
+      "pages": 20,
+      "sha256": "d6f8b5432abe0eafefb7deb86e86877b4ca08f482659417641577edcf1a82b43"
+    },
+    {
+      "source_chapter": 10,
+      "filename": "Introduction to Signalling - 10 SSI.pdf",
+      "pages": 18,
+      "sha256": "038cc56006b6c5ccb66f5d11774e4a84924be20e175facf47fb59d06ff916071"
+    },
+    {
+      "source_chapter": 12,
+      "filename": "Introduction to Signalling - 12 Remote Control Systems.pdf",
+      "pages": 11,
+      "sha256": "2568c639b4ecc4854adaf7611e7518d40252f1a79d2b714acdaa343ce161c8f9"
+    },
+    {
+      "source_chapter": 15,
+      "filename": "Introduction to Signalling - 15 Telecomms.pdf",
+      "pages": 15,
+      "sha256": "2b03ec17158974b85f53726761d98bd2756b59c36d430ee5ad199d47068da103"
+    }
+  ]
+}
