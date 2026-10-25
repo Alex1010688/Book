@@ -34,8 +34,7 @@ Instead of only showing a red flag or light when it was not safe, signals starte
 
 ![Some examples of early railway signals](https://mysite.du.edu/~etuttle/rail/sigs1.gif){fig-align="center"}
 
-![Semaphore signals
-](images/Sig-1-1024x853.jpg){fig-align="center"}
+![Semaphore signals](images/Sig-1-1024x853.jpg){fig-align="center"}
 
 The time interval system worked, providing that trains stuck to the timetable. Unfortunately, early trains weren't particularly reliable and often broke down, lost time between stations, or became stuck at an obstruction. Guards were instructed to leave a stopped train and display a danger signal to warn the driver of the following train, but this wasn't a perfect solution.
 
@@ -59,15 +58,9 @@ Bringing all the controls back to a single location also made it possible to saf
 
 Although mechanical interlockings are becoming less common (and there are none within our section) they are still used, and modern interlockings still apply many of the same principles, just using electrical and electronic methods instead.
 
-### The 1889 legislation
-
-The [Regulation of Railways Act 1889, section 1](https://www.legislation.gov.uk/ukpga/1889/57/pdfs/ukpga_18890057_en.pdf) empowered the Board of Trade to require block working, interlocking of points and signals, and continuous brakes on passenger trains. These were complementary protections: controlling entry to a section, preventing incompatible settings and providing effective braking.
-
-The Act was a major historical step towards wider adoption. It did not invent those protections, nor did it cause every railway to acquire identical equipment on the same date.
-
 ## Train detection adds information from the track
 
-Traditional block arrangements depended heavily on observation and communication. Signaller's had to rely on observing the passage of trains themselves, and passing messages about their locations between signal boxes using telegraphs. The invention of train detection in the form of a track circuit allowed confirmation of whether a track circuit was clear to be obtained electrically.
+Traditional block arrangements depended heavily on observation and communication. Signallers had to rely on observing the passage of trains themselves, and passing messages about their locations between signal boxes using telegraphs. The invention of train detection in the form of a track circuit allowed confirmation of whether a track circuit was clear to be obtained electrically.
 
 Train detection could be incorporated into signal controls and locking, and automatically prevent signals from being cleared if the track circuit was occupied by a train. Much later, it also allowed automatic signals to respond directly to the state of the track circuit ahead.
 
