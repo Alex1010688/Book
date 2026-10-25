@@ -42,19 +42,24 @@ The eB suite is used to store, manage and retrieve engineering documents and rec
 
 ## ONLINE RESOURCES
 
-### railwaycodes.org
+### Rail Signs
+[Rail Signs](https://www.railsigns.uk/index.html) has a massive amount of information on different styles of siganls and other signage found on the railway.
+
+### Railway Codes
 [Railway Codes](https://www.railwaycodes.org.uk/index.shtml) is a site which lists all codes used on the railway.  It's useful for looking up ELRs.
 
-### dickthesignals
+### Dick the Signals
 
 [dickthesignals](https://dickthesignals.co.uk/) contains a collection of signalling drawings, diagrams, manuals and technical documents that can help explain equipment and principles. Use it for background study, checking practical requirements against controlled documentation.
 
 ### Glasgow S&T SharePoint
 
-Use the Glasgow S&T SharePoint site to find local team information and shared reference material. Check the status and revision of any document before using it for a task.
+Use the Glasgow S&T SharePoint site to find local information, old course notes, and shared reference material. Check the status and revision of any document before using it for a task.
 
 ## PHYSICAL RESOURCES
 
 ### Ellis’ engineering encyclopaedia
 
 [*Ellis’ British Railway Engineering Encyclopaedia*](https://www.iainellis.com/erdic.htm) explains railway engineering terms, abbreviations, acronyms and jargon across several disciplines. It is a useful desk reference when an unfamiliar word appears in a drawing, document or conversation.
+
+### Quail maps

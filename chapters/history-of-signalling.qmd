@@ -1,360 +1,108 @@
 # History of signalling
 
 ::: {.callout-note title="Learning objectives"}
-Explain how railway growth created a need for signalling; compare time-interval and space-interval working; recognise early fixed signals and the development of the semaphore; explain how major accidents influenced design, testing and maintenance; distinguish block working, interlocking and train detection; and relate mechanical, electrical and electronic systems to the principles used today.
+Explain why signalling developed from local signals to connected systems; distinguish the contributions of block working, interlocking and train detection; recognise the transition from mechanical to electrical and electronic control; and relate older equipment to the principles used today.
 :::
 
 ## Why study the history?
 
-Many features of current railway signalling have their roots in the origins of the railways, as we are still trying to tackle the same problems: keeping trains apart whilst trying to run as many trains as possible. It would be easy to prevent collisions if there was only ever one train on the network at a time, but it would not be very useful.
+Many features of current railway signalling have their roots in the origins of the railways as we are still trying to tackle the same problems; keeping trains apart whilst trying to run as many trains as possible. It would be easy to prevent collisions if there was only ever one train on the network at a time, but it wouldn't be very useful.
 
-Understanding how signalling came to be helps to explain why we have the processes and equipment that we do. Many improvements have followed accidents, and understanding those events helps to explain why the resulting protections matter. Some phrases have also survived from the beginnings of the railway, even where the equipment has changed completely.
-
-This chapter develops the early history using the British Railways Board training manual *Brief History of Railway Signalling*, then follows the principles into later electrical and electronic systems. The early arrangements described here are historical examples.
+Having an understanding of how signalling came to be helps to understand why we have the processes and equipment that we do. Many improvements in signalling have come about from accidents, and bearing these in mind helps to understand why it's so important to the safe running of the railway. Some understanding of the history also helps to understand some of the terminology that's used, as some phrases have stuck around since the very beginnings of the railway.
 
 ## The first railways
 
-Railways existed before the familiar steam passenger railway. Wagonways and early railways carried materials such as coal, often using horses. Their purpose was to improve transport between places of production and markets or waterways. Steam locomotives subsequently made it possible to haul heavier loads over longer routes, and regular passenger services added another reason to develop the network.
+The very first railways of collieries had no need for signalling as they were typically horsedrawn. Even after the opening of the Stockton and Darlington railway in 1825 there was no need for signalling as they initially only had one locomotive. More locomotives were designed and built but there were still very few trains and they were travelling at slow speeds. Providing the trains stuck to the timetable they were generally spaced well apart.
 
-The Stockton and Darlington Railway opened on **27 September 1825**, with *Locomotion No. 1* hauling the opening train. The [National Railway Museum's account](https://blog.railwaymuseum.org.uk/shildon-the-cradle-of-the-railways-and-locomotion-no-1/) explains its significance. The [Liverpool and Manchester Railway](https://collection.sciencemuseumgroup.org.uk/people/ap48/liverpool-manchester-railway-co) opened on **15 September 1830**, following the Rainhill locomotive trials in 1829. These were important stages in railway development, rather than a single moment at which every feature of the modern railway appeared.
+As the railways became busier this stopped being the case. In 1840 a train collision occurred due to trains catching up to each other, and a recommendation was made that drivers should be trained, and that 30 minutes should pass between trains. Mileposts were installed at the side of the railway to allow passengers to report if they felt their train was traveling too fast.
 
-As more companies built lines, trains became more frequent and junctions more numerous. Passenger trains, goods trains and stopping services did not all travel at the same speed. A timetable could plan their movements, but a late-running train, an overloaded locomotive or a breakdown could quickly disturb the plan.
+A month later a second accident occurred, where a train stopped at a station was struck by the next train. A new recommendation was made that a red lamp or flag should be displayed for 10 minutes after a train had left a station to prevent the next train departing too closely.
 
-This created two linked requirements. The railway needed to establish where trains were allowed to go, and it needed a dependable way to tell drivers whether they could proceed. A timetable alone could do neither when events departed from the plan.
-
-::: {.background}
-Early railways also had to agree what time meant. Before standard railway time, clocks in different towns could show different local times. The British Rail manual describes inspectors finding different time references in use on the same railway. A common clock reference made timetables and records more useful, but even perfectly synchronised clocks could not prove that a train had cleared the line.
+::: trivia
+It was around this period that "railway time" was adopted, where all railways should use "London time" instead of their local time. Up until this point the time varied around the country as the sun was the only reliable way of telling the time.
 :::
 
 ## Local signals and the limits of time
 
-Some early arrangements used a **time-interval system**. After a train passed, the following train would be held for a specified interval. A danger indication might be followed by a caution indication and eventually permission to proceed. The intervals and indications varied between railways.
+The red lamps and flags used at the very introduction of signalling were quickly replaced with fixed signals. This gave drivers a set location to look for the flags and lamps. It also allowed for better positioning and therefore **signal sighting** than could be achieved by a man at the side of the track.
 
-Early railway staff used hand signals, flags and lamps to communicate with drivers. Railway policemen performed this work, which explains the nickname **bobby** for a signaller. Fixed signals subsequently provided a consistent place for drivers to look and allowed their position to be chosen for **signal sighting**. A signal could communicate the instruction more consistently, but it still needed a sound basis for deciding what to display.
+::: trivia
+At the very beginning the men operating these early signals were policemen, which gives rise to signaller's gaining the nickname of "Bobby", which is still occasionally heard today.
+:::
 
-The weakness of a time interval was that it assumed the first train continued to make progress. It might instead be moving slowly or standing just beyond a curve. Early arrangements therefore also depended on staff protecting a stopped train, for example by going back with a warning. Poor visibility and the time needed to reach a useful warning position limited that protection.
+Instead of only showing a red flag or light when it was not safe, signals started to show a second "all clear" indication when it was safe to go. What this looked like varied between different railway companies, but eventually this became standardised with the semaphore signal.
 
-The important change was from asking **how long ago did the train leave?** to asking **has it cleared the section ahead?** The latter question requires information about a place beyond the signaller's immediate view. This is the difference between a time interval and a **space interval**.
+![Some examples of early railway signals](https://mysite.du.edu/~etuttle/rail/sigs1.gif){fig-align="center"}
 
-### Worked example: a ten-minute gap
+![Semaphore signals
+](https://rsme.org.uk/wp-content/uploads/2023/02/Sig-1-1024x853.jpg){fig-align="center"}
 
-Suppose a railway holds a following train for ten minutes. The first train suffers a failure two minutes after departure and stops within the section. Eight minutes later, the prescribed interval has expired, but the train is still there.
-
-Increasing the interval to fifteen minutes would change the delay before the second train departed. It would not prove that the failed train had moved. The engineering problem is missing information about the section, rather than simply an interval that is too short.
-
-## From boards and discs to semaphores
-
-The earliest fixed signals did not all look like the signals familiar today. Boards, discs, crossbars and lamps appeared in different combinations. Some gave a danger indication by turning a board towards the driver and permission to proceed by turning it edge-on.
-
-![An 1834 Liverpool and Manchester signal. The board is edge-on for the historical all-right indication and faces the driver for danger. Source: British Railways Board training manual, Figure 6.](../assets/images/history-liverpool-manchester-signal.png){#fig-history-board fig-alt="Two views of the same early signal: a board edge-on for all right and facing the driver for danger." width="620"}
-
-The word **board**, sometimes used for a signal, reflects this history. The difficulty with an edge-on clear indication is that the driver sees very little of the signalling surface. An absent or obscured board could be confused with a board deliberately turned out of view.
-
-### A positive indication
-
-The Great Western's disc-and-crossbar arrangement provided a visible shape in both states: the crossbar for danger and the disc for proceed. The manual also notes that a disc could mean stop on another railway. Drivers therefore needed to understand the conventions of the railway on which they were working; recognising a shape alone was insufficient.
-
-![The Great Western disc-and-crossbar signal, with the crossbar facing the driver for danger and the disc facing the driver for proceed. Source: British Railways Board training manual, Figure 7.](../assets/images/history-disc-crossbar-signal.png){#fig-history-disc fig-alt="Historical Great Western signal shown with a horizontal crossbar for danger and a circular disc for proceed." width="620"}
-
-These examples introduce a lasting design question: **what positive evidence distinguishes permission from missing information?** Later designs increasingly sought to make permission depend on a definite indication and on the required conditions being established.
-
-### The semaphore
-
-The manual identifies Charles Hutton Gregory's semaphore on the London and Croydon Railway in **1841** as an important early example. Its moving arm made the indication recognisable by position. A lamp and coloured glasses, known as **spectacles**, provided corresponding indications at night.
-
-An early slotted-post form had three arm positions. The horizontal arm indicated danger, an inclined arm indicated caution, and an arm lowered into the post indicated clear. These are historical indications, not the two-position operation of later stop and distant semaphores.
-
-![The early slotted-post semaphore, showing danger, caution and clear. In the clear position the arm is lowered into the post. Source: British Railways Board training manual, Figure 8.](../assets/images/history-slotted-post-semaphore.png){#fig-history-slotted fig-alt="Three early semaphore positions: horizontal for danger, inclined downwards for caution, and concealed in the post for clear." width="680"}
-
-The slot made the arm difficult to see in the clear position and created a place where snow could interfere with its movement. The later history of the semaphore shows why the behaviour of the complete mechanism mattered as much as the intended meaning of its positions.
+The time interval system worked, providing that trains stuck to the timetable. Unfortunately, early trains weren't particularly reliable and often broke down, lost time between stations, or became stuck at an obstruction. Guards were instructed to leave a stopped train and display a danger signal to warn the driver of the following train, but this wasn't a perfect solution.
 
 ## Telegraphs and block working
 
-The electric telegraph made rapid communication between distant railway locations possible. In 1839, Cooke installed a demonstration telegraph between Paddington and West Drayton. The [London Museum's account of railway telegraphy](https://www.londonmuseum.org.uk/collections/london-stories/how-telegraph-took-off-victorian-london/) explains how the railway became an early application of this technology.
+Once invented, the electric telegraph made rapid communication between distant railway locations possible. In 1839, Cooke installed a demonstration telegraph between Paddington and West Drayton, and this enabled a new method of ensuring that trains were kept apart.
 
-Block working used communication between adjacent controlling locations to organise trains through defined sections. Instead of relying on elapsed time, staff exchanged information about whether a section could accept a train and whether a train had cleared it. Instruments displayed the section's state, while bells conveyed messages. The British Rail manual describes an early electric telegraph block installation on the Norwich to Yarmouth line in 1844; adoption elsewhere was gradual.
+![A Glasgow and South Western Railway telegraph instrument](https://content.easyliveauction.com/auctions/images_lots/755D4C38B35FB47DD7BBD80FE725A2EC_gre02/1100065861_PREVIEW.JPG){fig-align="center"}
 
-This introduced a lasting distinction: **communication supplies information; the working arrangements establish how that information is used**. A wire between two boxes did not by itself guarantee separation. Correct identification, acceptance and confirmation that a train had arrived complete were also important.
+Communication between distant locations meant that instead of hoping that trains would run to their timetables and keep moving once they'd left a station, it became possible to check that a train had reached its next destination by using telegraphs and bells. This allowed the railway to be divided into sections, or blocks.
 
-On single lines, opposing trains created a further problem. Staffs, tablets and tokens provided physical authority associated with a section. Electric token instruments developed the principle by controlling the release of tokens between locations. The detailed arrangements differed, but the aim was to prevent incompatible authorities being issued.
-
-:::: {.callout-note title="Activity: what does the message prove?"}
-A locomotive reaches the next signal box, but some wagons have become detached behind it. Why is seeing the locomotive insufficient evidence that the section is clear?
-
-::: {.callout-note collapse="true" title="Suggested reasoning"}
-The complete train must have left the section. Arrival of its leading vehicle gives no assurance about vehicles left behind. This explains the importance of establishing train completeness in traditional block working.
-:::
-::::
+The key rule, which remains to this day, became that only one train was allowed in each block section at a time. A second train could not be allowed to enter until the first had been proved to have cleared it.
 
 ## Signal boxes and mechanical interlocking
 
-Initially, staff worked signals and points at separate locations. Connecting signals by wires to a group of levers reduced the walking needed and allowed one person to control more equipment. Bringing point and signal controls together then made it practical to link their operation.
+The next major innovation in railway signalling was to be able to remotely control signals and points instead of needing someone to stand at each signal and point to operate them. In 1846 the first signal worked mechanically from a distance was invented. Wires and rodding were attached to each signal and point and brought back to a single location a short distance away where they could be worked by a single signaller.
 
-Concentration alone did not prevent mistakes. A signaller could still try to clear a signal with its points incorrectly set, or attempt to authorise conflicting movements. What mattered was enforcing the relationship between the controls.
+Bringing all the controls back to a single location also made it possible to safeguard against the signaller being able to set incompatible combinations of signals and point positions. A series of rods and notches were used to prevent levers from physically being pulled to operate signals and points unless it was safe to do so and all the necessary conditions were met.
 
-Mechanical interlocking used the relative positions of levers and locking components to prevent specified combinations. Point movement was transmitted through rods and cranks; signals could be worked through wires. The lever frame's locking made certain incorrect sequences physically unavailable.
+![Mechanical lever frame and locking tray](https://i.redd.it/kuw9wnohupyd1.jpg){fig-align="center"}
 
-The manual traces development through Gregory's early central frame at Bricklayers Arms, John Saxby's **1856** interlocking patent and subsequent arrangements enforcing a sequence of separate operations. The important progression was from grouping controls together to requiring one movement to be completed before a dependent movement could begin.
+Although mechanical interlockings are becoming less common (and there are none within our section) they are still used, and modern interlockings still apply many of the same principles, just using electrical and electronic methods instead.
 
-For example, the required point setting must be established before the associated signal can be cleared, and the points must be prevented from moving while the authorised movement requires them to remain secured. This is a relationship between the equipment states, rather than simply an instruction to the signaller to remember the correct order.
-
-Signal boxes developed with an operating floor above a locking room, giving the signaller a view of the railway and space below for the mechanism. [Historic England's *Signal Boxes*](https://historicengland.org.uk/images-books/publications/iha-signal-boxes/heag137-signal-boxes-iha/) describes their development and the relationship between the building, lever frame and block instruments.
-
-Block working and interlocking answered different questions. Block working addressed the separation of trains along a line. Interlocking addressed the compatibility of points and signals within a layout. Both were needed: correctly set points did not establish that the line ahead was clear.
-
-## Abbots Ripton: when the lever and signal disagreed
-
-On **21 January 1876**, a serious accident occurred on the Great Northern Railway at Abbots Ripton. In heavy snow, signals did not reliably return to danger when the signallers moved their levers. An express collided with a coal train being shunted clear of its path, and a train approaching on the other line subsequently struck the wreckage.
-
-The British Rail manual uses the accident to explain a weakness of the slotted-post semaphore. Snow and freezing conditions could impede movement of the arm and mechanism, leaving a misleading clear indication despite a danger command. The [Board of Trade court of inquiry report](https://abbotsripton.net/AbbotsriptonAccident/BoT_AbbotsRipton1876_Transcript.pdf) records evidence of this disagreement between lever position and the indications outside.
-
-The lesson connects directly to the distinction between **command, action and indication** in the [Railway signalling](railway-signalling.qmd) chapter. Moving the lever was the command; the arm returning to danger was the required action. The driver's indication depended on what the arm and spectacle actually did.
-
-Later semaphore development addressed the susceptibility to snow and the balance of the arm. The Great Northern adopted the somersault signal, with an arm standing clear of the post. Other arrangements used suitable counterbalancing so that specified failures of operating connections would tend to return the signal to danger. This was a development in how the equipment behaved when something went wrong, as well as a change in appearance.
-
-::: {.callout-important title="The engineering lesson"}
-An instruction to stop is useful only if the equipment conveys it. A control's position must not be mistaken for proof that the controlled equipment has completed its movement. The same distinction matters when a modern screen records a command but a point machine or signal has not achieved the required state.
-:::
-
-### Stop signals and distant signals
-
-Semaphore development also made different functions easier to recognise. A stop signal controls whether a train may pass it. A distant signal gives advance information about the stop signals ahead; it is not a substitute for them.
-
-Early distant signals could use red indications, making their warning function difficult to distinguish from a stop instruction, especially at night. The later familiar distant combined a fishtail arm with yellow colouring and yellow or green lights. The change illustrates the importance of distinguishing functions by the indications available to the driver, rather than by location knowledge alone. [Lineside signals](lineside-signals.qmd) develops the later arrangements.
-
-## The 1889 legislation
-
-### Armagh, 12 June 1889: block, lock and brake
-
-An excursion train stalled on a rising gradient near Armagh. Staff divided it to take it forward in portions, but the rear portion was inadequately secured and ran back into a following passenger train. Its non-automatic vacuum brake did not provide automatic braking of the detached portion. The [Board of Trade investigation](https://www.railwaysarchive.co.uk/docsummary.php?docID=106) examined the decisions and braking arrangements that allowed the runaway.
-
-Armagh helped bring longstanding safety concerns to a legislative turning point. [ORR's history of the Railway Inspectorate](https://www.orr.gov.uk/search-news/story-hmri-history-her-majestys-railway-inspectorate) connects the disaster and inquiry with the subsequent requirement for continuous automatic brakes. It explains why separation, interlocking and braking came to be considered together: each addressed a different way in which a train movement could become unsafe.
-
-### What the Act changed
+### The 1889 legislation
 
 The [Regulation of Railways Act 1889, section 1](https://www.legislation.gov.uk/ukpga/1889/57/pdfs/ukpga_18890057_en.pdf) empowered the Board of Trade to require block working, interlocking of points and signals, and continuous brakes on passenger trains. These were complementary protections: controlling entry to a section, preventing incompatible settings and providing effective braking.
 
 The Act was a major historical step towards wider adoption. It did not invent those protections, nor did it cause every railway to acquire identical equipment on the same date.
 
-By this stage, many companies had already installed substantial amounts of block signalling and interlocking. Legislation helped extend protections more consistently. Adoption, accidents, inspection, engineering development and legislation all contributed to change; the history is not simply a list of inventions replacing one another.
-
-### Milestones in the early development
-
-| Date or period | Development | Problem it helped address |
-|---|---|---|
-| 1825 and 1830 | Opening of the Stockton and Darlington and Liverpool and Manchester railways | Growth of public railways and regular train services |
-| 1830s and 1840s | Different forms of fixed signals | A consistent place and recognisable means of communicating with drivers |
-| 1839 onwards | Railway electric telegraph applications | Communication beyond the immediate view of local staff |
-| 1841 | Gregory's early railway semaphore | A signal indication expressed by the position of an arm |
-| 1840s onwards | Development of telegraph block working | Separation based on a section's availability rather than elapsed time |
-| 1850s onwards | Development of mechanical interlocking | Preventing incompatible point and signal settings |
-| 1876 | Abbots Ripton accident | Exposed the consequences of a danger command failing to produce a danger indication |
-| 1889 | Regulation of Railways Act | Powers to require block working, interlocking and continuous brakes |
-
-The developments overlapped. A railway might acquire telegraph communications before adopting comprehensive block working, and fixed signals could exist without interlocking.
-
 ## Train detection adds information from the track
 
-Traditional block arrangements depended heavily on observation and communication. A track circuit added an electrical means of obtaining information about occupation. The rails formed part of a circuit, and the train's wheels and axles changed its electrical condition.
+Traditional block arrangements depended heavily on observation and communication. Signaller's had to rely on observing the passage of trains themselves, and passing messages about their locations between signal boxes using telegraphs. The invention of train detection in the form of a track circuit allowed confirmation of whether a track circuit was clear to be obtained electrically.
 
-The [Science Museum Group's record of an 1898 DC track relay](https://collection.sciencemuseumgroup.org.uk/objects/co27829/d-c-track-relay-1898) places the successful closed-circuit application in the United States in 1872. Its [1912 signalling-school track circuit indicator](https://collection.sciencemuseumgroup.org.uk/objects/co8430674/track-circuit-indicator) shows how occupation information was used in training.
+Train detection could be incorporated into signal controls and locking, and automatically prevent signals from being cleared if the track circuit was occupied by a train. Much later, it also allowed automatic signals to respond directly to the state of the track circuit ahead.
 
-Detection could be incorporated into signal controls and locking, giving the system information beyond the positions of the signaller's levers. It also supported automatic signals responding to conditions ahead.
-
-### Quintinshill, 22 May 1915: protection against forgetting a train
-
-At Quintinshill, near Gretna, a local passenger train stood on the line used by an approaching troop train. The troop train was accepted and signalled towards it; a further express then struck the wreckage. The [National Records of Scotland account](https://www.nrscotland.gov.uk/learning-and-events/first-world-war/quintinshill-disaster-22-may-1915/) describes the collisions and the resulting fire.
-
-The accident demonstrated the consequences of allowing human memory and procedural precautions to remain the principal safeguards against overlooking an occupied line. [ORR's historical account](https://www.orr.gov.uk/search-news/story-hmri-history-her-majestys-railway-inspectorate) identifies wider use of track circuits interlocked with signals among the developments that followed. Track circuits already existed; the lesson concerned applying them as an additional protection. It did not mean that every line immediately acquired continuous train detection.
-
-For technicians, this added a new set of interfaces: rails, bonds, insulated joints, ballast, electrical supplies and relays. Later axle counters obtained occupation information by counting axles at section boundaries. Both belong to the subject of [train detection](train-detection.qmd), although they obtain their evidence differently.
+For the S&T, this added a new set of interfaces: rails, bonds, insulated joints, ballast, electrical supplies and relays. Decades later, axle counters were introduced which obtained occupation information by counting axles at section boundaries. Both belong to the subject of [train detection](train-detection.qmd), as they perform the same function, although they operate very differently.
 
 ## Electrical operation, colour lights and relay logic
 
-Mechanical operation placed practical limits on distances and operating effort. Power-operated points and electrically operated signals allowed the source of operating energy to be located near the equipment. Electrical circuits could carry controls and indications between that equipment and a more distant control point.
+Mechanical operation placed practical limits on distances and operating effort. Power-operated points and electrically operated signals allowed the source of operating energy to be located near the equipment. Electrical circuits could carry controls and indications between that equipment and a more distant signal box.
 
-Colour light signals communicated through illuminated aspects. Multiple-aspect arrangements could provide advance warning of a stop signal ahead. The required sequence still depended on the railway's braking and operating conditions; electrical operation did not remove those constraints.
+Colour light signals using only lamps instead of semaphore signals were introduced with increasing availability of electricity as these provided better visibility in poor weather conditions.
 
-Relays also allowed interlocking conditions to be implemented in circuits. A relay contact could represent a required condition, and a combination of contacts could prevent an output unless the designed conditions were satisfied. The safety purpose remained related to that of mechanical locking, although its engineering implementation changed.
+![Colour light signal at Glasgow Central](https://media-eu.invisioncic.com/y320084/monthly_2023_03/DSCF0006.JPG.4254084d23ba765c4bd170bc856cff83.JPG)
 
-Panel control and entrance-exit route setting changed the signaller's task. Rather than operating each point and signal separately, the signaller could request a route between two locations. The request still depended on the interlocking obtaining the necessary proofs.
+Relays also allowed interlocking conditions to be implemented in circuits instead of mechanical locking trays. A relay contact could represent a required condition, and a combination of contacts could prevent an output unless the designed conditions were satisfied. The safety purpose remained related to that of mechanical locking, although its engineering implementation changed. The combination of many, many relays essentially formed a large computer.
 
-::: {.callout-tip title="A link to circuit reading"}
-A modern-looking control panel does not tell you what type of interlocking lies behind it. Identify the control system, interlocking and trackside equipment separately when studying an installation's drawings.
-:::
+![Example of a relay room. The relays continue for two more rows behind these.](https://live.staticflickr.com/7308/9802794793_b7d99013f1_c.jpg){fig-align="center"}
 
-## Warnings and train protection
-
-Interlocking could prevent incompatible permissions, but it could not guarantee that a driver would observe and respond correctly to every signal. Warning and protection systems addressed this additional risk.
-
-AWS provides an in-cab indication and requires acknowledgement of a warning, with a brake application if it is not acknowledged. TPWS adds automatic brake intervention in defined circumstances, including certain overspeed and signal-overrun conditions. Their functions and application are described in [RSSB's AWS and TPWS application requirements](https://www.rssb.co.uk/standards-catalogue/CatalogueItem/RIS-0775-CCS%20Iss%203).
-
-These systems illustrate the development of additional protections around the basic signalling system. A warning does not prove a route, and acknowledging it does not establish that the train is travelling at a safe speed.
-
-### Harrow and Wealdstone, 8 October 1952: warning the driver in the cab
-
-An express passed signals requiring it to slow and stop, then struck a stationary local train. A further express collided with the wreckage. The [Ministry of Transport inquiry](https://www.jonroma.net/media/rail/accident/uk/mot/MoT_Harrow001.pdf) examined the sequence and the case for automatic warning equipment.
-
-The disaster gave urgency to wider adoption of AWS, as described in [ORR's historical account](https://www.orr.gov.uk/search-news/story-hmri-history-her-majestys-railway-inspectorate). Automatic warning systems had antecedents before 1952; the accident did not invent the idea. For technicians, the lasting distinction is between providing an additional warning and supervising the train's speed or enforcing its movement authority.
+Panel control and entrance-exit route setting changed the signaller's task. Rather than operating each point and signal separately, the signaller could request a route between two locations. If it was safe to do so, the interlocking would set all the points required and clear the signals.
 
 ## Electronic interlocking and signalling centres
 
-Solid State Interlocking (SSI) and later computer-based interlockings implemented safety logic using electronic equipment, software and installation-specific data. The equipment changed, but it still needed information about train occupation, point position and the other conditions governing movements.
+The next evolution from relay interlocking was Solid State Interlocking (SSI). This uses electronic equipment and software to perform the same functions as the earlier relays. SSI was introduced later than in other industries due to the complexity of carrying out safety validation of the data and outputs. SSI was first introduced in the mid-1980s.
 
-The [Office of Rail and Road's 2021 signalling market study](https://www.orr.gov.uk/media/22330/download) records electronic interlockings commissioned from 1985 and describes mechanical and relay equipment as part of the older installed base. This overlap matters: signalling development is a process of renewal and integration, rather than an immediate replacement of one complete railway by another.
+Remote control and workstation interfaces allowed geographically separated areas to be operated from signalling centres. SSI has enabled the West of Scotland Signalling Centre to control a large area from just one building, rather than multiple different signal boxes.
 
-Remote control and workstation interfaces allowed geographically separated areas to be operated from signalling centres. A communications fault, an interlocking fault and a trackside equipment fault could consequently produce related symptoms at a distant screen. Technicians needed to understand both the individual equipment and the links between systems.
+## Warnings and train protection
 
-## Cab signalling and digital train control
+Signal sighting had improved and the interlocking could prevent incompatible permissions, but there was still a risk that a driver would not observe and obey all signals. Warning and protection systems were introduced to reduce this risk.
 
-Cab signalling brings movement information into the driver's cab. The European Train Control System (ETCS) also supervises the train against the movement authority and speed information it receives, with brake intervention when required.
+The Automatic Warning System (AWS) was introduced to provide an audible and visual warning of the state of a signal in the driver's cab. If the a warning of a red signal is given and a driver does not acknowledge it the brakes will be automatically applied. The same basic idea idea was first tried in 1906 on the Great Western Railway, but worked differently, with a physical contact between the train and a ramp placed in the four foot. The modern version of AWS uses electromagnets.
 
-Network Rail describes ETCS, traffic management and their supporting telecommunications as distinct technologies within its [Digital Railway programme](https://www.networkrail.co.uk/our-work/railway/digital-railway/proven-technology/). Moving information to a screen does not remove the need to detect trains, secure routes or prove point positions. Those functions remain part of the complete system.
+![AWS magnet](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIEFfbKfi9-WzYzvdQHv3KaZVS3HZuwQ6sKtA4ONRQhPFXgkKsciVhHY&s=10){fig-align="center"}
 
-Electronic interlocking, remote control, automatic route setting and cab signalling should therefore be understood separately. An electronic interlocking can control lineside signals; cab signalling does not by itself imply moving-block operation.
+AWS begun to be developed in its current form in 1948, and the need for it became more urgent after the [crash at Harrow & Wealdstone in 1952](https://en.wikipedia.org/wiki/Harrow_and_Wealdstone_rail_crash) where it was thought that the driver made no attempt to stop until the last second during fog. AWS was brought into use in 1956. The downside of AWS is that, if a driver acknowledges it, there is nothing stopping them passing a signal at danger. This was the case in the [Bedford train collision in 2026](https://en.wikipedia.org/wiki/2026_Bedford_train_collision).
 
-## Later accidents and the changes that followed {#sec-accident-lessons}
+By 1988 British Rail realised that something was needed that would automatically apply the brakes if a train passed a red signal. Initially they trialed a system known as Automatic Train Protection, which continuously monitors the speed of a train and applies the brakes if it overspeeds or is about to pass a red signal. Two trial installations were installed on the Great Western and Chiltern routes, but it proved too expensive. The Train Protection Warning System (TPWS) was developed as a more affordable alternative which would stop a train that was passing a red signal, but could not continuously monitor the speed throughout a trains whole journey.
 
-Some of the most important developments concerned how work was organised and checked, rather than a new type of signal. The following cases distinguish the immediate equipment failure from the wider changes and recommendations. A recommendation identifies an action judged necessary; its publication alone does not establish that it was implemented effectively.
-
-### Clapham Junction, 12 December 1988: installation and independent testing
-
-Three trains were involved in collisions after a signal displayed an incorrect proceed aspect with a train ahead. During signalling alterations, a redundant wire had been disconnected at one end but left connected to its supply. Its bare end subsequently contacted a terminal and bypassed part of the intended control circuit.
-
-This was a **wrong-side failure introduced during work**. The circuit arrangement no longer corresponded to the intended design. Describing the system as fail-safe did not make an unintended feed harmless, and a test showing that the signal could clear would not establish that it would remain at danger under all the required conditions.
-
-The [Hidden report](https://www.jonroma.net/media/rail/accident/uk/dot/DoT_Hidden001.pdf) addressed wiring practice, checking and testing, training, supervision, excessive overtime and management of signalling work. Recommendations included independent wire counts and stronger training and certification arrangements for testers. [ORR describes the resulting development of competence management and working-hours controls](https://www.orr.gov.uk/command-controlling-and-signalling/5-appendix).
-
-RAIB's later [Greenhill Upper Junction report, paragraphs 141-144](https://assets.publishing.service.gov.uk/media/547c900340f0b6024400017f/R042010_100318_Greenhill_Upper_Jcn.pdf) also explains the separation of installation and testing roles following Clapham: someone testing their own installation could repeat the same misunderstanding that caused the original error.
-
-**Technician's link:** understand what the test proves, preserve the independence required by the testing arrangements, and recognise fatigue, interruptions and poor records as engineering risks. The [Circuit reading](circuit-reading.qmd) chapter provides a foundation for understanding intended and unintended current paths.
-
-### Southall, 19 September 1997: fitted equipment must be available
-
-A high-speed passenger train passed a signal at danger and collided with a crossing freight train. Its AWS was isolated and its fitted ATP was not operational. The [Uff inquiry](https://www.jesip.org.uk/wp-content/uploads/2022/03/Southall-Rail-Crash.pdf) investigated the driving, the unavailable protection and the arrangements that permitted the service to operate in that condition.
-
-Its recommendations addressed AWS reliability and status, fault reporting, rules for operation with defective equipment, driver competence and the use of ATP. The historical lesson is that installing a protection system is only one part of providing protection: maintenance, defect management and operational decisions must keep it available when needed.
-
-**Technician's link:** a defect record and the communication of equipment status can affect the safety of a subsequent movement. A fitted system must not be assumed to be working merely because it appears on the equipment list.
-
-### Ladbroke Grove, 5 October 1999: signal recognition and wider safety management
-
-A train leaving Paddington passed signal SN109 at danger and collided with an incoming high-speed train. The [Cullen inquiry, Part 1](https://www.jesip.org.uk/wp-content/uploads/2022/03/Ladbroke-Grove-Rail-Inquiry-Report-Part-1.pdf) examined driver training, the visibility and interpretation of the signal, previous signals passed at danger (SPADs), and the response to those earlier events. Its recommendations addressed signal sighting, driver training and the management of SPAD risk.
-
-Southall and Ladbroke Grove were also considered together in the subsequent inquiry into train protection. [ORR's account](https://www.orr.gov.uk/command-controlling-and-signalling/5-appendix) explains TPWS's role as an interim protection alongside the longer-term aim of fuller ATP. TPWS developed through a wider programme of engineering and regulation; attributing its invention to a single accident would miss that history.
-
-The wider Cullen recommendations also led to an independent accident-investigation body. [Department for Transport guidance](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/456936/guidance_to_rair_regs_v4.pdf) traces the establishment of RAIB and its becoming operational in October 2005. This separated the investigation of causes and safety lessons from the regulator's role.
-
-**Technician's link:** recurring irregularities and near misses are evidence to investigate and act upon. A signal operating electrically as designed may still present a recognition or sighting problem for its user.
-
-### Potters Bar, 10 May 2002: the complete points assembly
-
-A passenger train derailed as it passed over points south of Potters Bar station. HSE's [May 2003 investigation progress report](https://image.guardian.co.uk/sys-files/Guardian/documents/2003/05/29/may03progrep.pdf) identified missing stretcher-bar nuts, poor condition and adjustment, and fatigue failure of the lock stretcher bar. The switch rails were no longer held and controlled as the complete assembly required.
-
-The investigation exposed weaknesses in inspection, maintenance instructions and the division of responsibilities between track and signalling staff. Its recommendations sought improvements in understanding the points' safety functions, maintenance arrangements, competence and responses to reported defects. [ORR's later prosecution summary](https://www.orr.gov.uk/media/21061/download) records failures to provide and implement adequate standards, procedures and guidance for adjustable stretcher bars.
-
-The subsequent [Grayrigg report, Appendix L](https://assets.publishing.service.gov.uk/media/547c9037ed915d4c0d000199/R202008_081023_Grayrigg_v5.pdf) records revised standards and other actions following Potters Bar, while identifying shortcomings in how some lessons had been carried through.
-
-**Technician's link:** point detection and locking have defined functions. They do not certify the mechanical integrity of every component along the switch rails. Inspection must address the complete assembly and the interfaces between disciplines; see [Points](points.qmd).
-
-### Grayrigg, 23 February 2007: making recommendations effective
-
-A passenger train derailed at Lambrigg crossover, near Grayrigg, after degradation of a points assembly. RAIB's [Report 20/2008](https://assets.publishing.service.gov.uk/media/547c9037ed915d4c0d000199/R202008_081023_Grayrigg_v5.pdf) examined stretcher-bar assemblies, maintenance and inspection, and incomplete learning from earlier events. The stretcher-bar design differed from that at Potters Bar.
-
-The report recommended design improvements, better inspection and maintenance arrangements, and stronger management of recommendations. It also recorded revised instructions and checks already introduced. Its lesson was that issuing a standard or closing an action administratively is insufficient unless the intended improvement reaches the equipment and the people maintaining it.
-
-### Compare the protections
-
-| Accident | Main change or recommendation discussed here | Question to carry into later study |
-|---|---|---|
-| Abbots Ripton, 1876 | Improved semaphore failure behaviour | Did the danger command produce the required indication? |
-| Armagh, 1889 | Legislation addressing separation, interlocking and automatic continuous brakes | Which protections are needed together? |
-| Quintinshill, 1915 | Wider use of detection linked to signal controls | What protects against an occupied line being forgotten? |
-| Harrow and Wealdstone, 1952 | Greater urgency for automatic warning | What happens if a driver misses a signal? |
-| Clapham Junction, 1988 | Independent checking, testing, competence and fatigue controls | Could the work have introduced an unintended circuit path? |
-| Southall, 1997 | Better management of unavailable warning and protection equipment | Is the fitted protection actually available? |
-| Ladbroke Grove, 1999 | Signal sighting, SPAD management, train protection and independent investigation | Were earlier warnings recognised and acted upon? |
-| Potters Bar, 2002 | Improvements to points maintenance, instructions and responsibilities | Has the complete points assembly been considered? |
-| Grayrigg, 2007 | Design, inspection and effective implementation of lessons | Has the required improvement actually reached the railway? |
-
-:::: {.callout-note title="Activity: permission and physical condition"}
-Why would a correct signal aspect and a point-detection indication not, by themselves, answer every question raised by Clapham Junction and Potters Bar?
-
-::: {.callout-note collapse="true" title="Suggested reasoning"}
-At Clapham, the unintended wiring path produced a misleading permission: the displayed aspect was itself part of the unsafe condition. Potters Bar illustrates a different limitation: electrical indications have a defined scope and do not establish the integrity of every mechanical connection. Both cases require understanding what evidence an indication provides and what further assurance the installation, testing and maintenance arrangements must supply.
-:::
-::::
-
-## Worked example: three generations, one requirement
-
-A junction's points must be correctly positioned before a train is authorised over them. Consider how three generations of equipment address that requirement:
-
-| Arrangement | How the requirement appears | What the technician needs to distinguish |
-|------------------------|------------------------|------------------------|
-| Mechanical installation | Lever-frame locking and the installation's point-locking and detection arrangements | Lever position, transmission movement and actual point condition |
-| Relay interlocking | Point-detection conditions included in the relevant control circuits | A point command, physical movement and the detection circuit's state |
-| Electronic interlocking | Inputs and application logic controlling whether authority can be given | The command, equipment state, interface information and interlocking decision |
-
-These are teaching comparisons, not interchangeable maintenance instructions. In each case, knowing that the operator requested a route is insufficient evidence that the points completed the required movement and locking.
-
-## Key points
-
-- Railway growth exposed the limits of timetables and local observation as means of controlling trains.
-- A fixed signal gives a consistent place to look; it does not by itself establish that the line is clear.
-- Block working replaced reliance on elapsed time with control based on defined sections.
-- Interlocking prevented specified incompatible settings and movements.
-- Abbots Ripton demonstrates why a danger command must result in the required physical indication.
-- Clapham Junction shows why safe design must be supported by controlled installation, independent testing and competent, adequately rested staff.
-- Potters Bar and Grayrigg show why the integrity of points depends on the complete mechanical assembly and effective maintenance arrangements.
-- Southall and Ladbroke Grove show why driver warnings, train protection, signal sighting and the response to earlier incidents must be considered together.
-- Train detection added information obtained from the railway itself.
-- Electrical and electronic systems changed how controls were implemented and how far they could reach.
-- Warning and protection systems addressed risks beyond the issue of a correct signal permission.
-- Older and newer technologies can coexist; understand the interfaces as well as the equipment.
-
-## Check your understanding
-
-1. Why could increasing the time interval between departures fail to prevent a collision?
-2. What was the weakness of giving permission by turning a signal board edge-on?
-3. Why did the telegraph help the development of block working?
-4. What did Abbots Ripton show about the relationship between a lever and its signal?
-5. Why could mechanical interlocking not, on its own, prove that a train had cleared the section ahead?
-6. What additional information did track circuits provide?
-7. Why does replacing a lever frame with a workstation not identify the type of interlocking?
-8. Which requirement remains common to all three generations in the worked example?
-9. How did the failure at Clapham Junction differ from a signal simply failing to illuminate?
-10. What do Potters Bar and Grayrigg teach about the relationship between written standards and the physical condition of equipment?
-
-::: {.callout-note collapse="true" title="Suggested answers"}
-1. A stopped train could remain in the section after any prescribed interval had expired. Time alone gave no proof of clearance.
-2. A deliberately edge-on board could be difficult to distinguish from missing or obscured equipment. A visible indication for each state provided better information.
-3. It allowed distant controlling locations to exchange information promptly, supporting decisions about entry to sections.
-4. A lever could be moved to command danger while the external mechanism failed to display it. The command and resulting indication had to be considered separately.
-5. Locking between levers established permitted combinations within its design; section clearance required separate evidence and working arrangements.
-6. They provided an electrical indication of the state of a defined track section, which could be used in controls and indications.
-7. A workstation is the operator's interface. It can be connected to different forms of interlocking through suitable interfaces.
-8. The required point position and locking must be established before the movement is authorised.
-9. It was a wrong-side failure: an unintended electrical path allowed a proceed aspect when the train ahead should have been protected. It was a misleading permission, rather than a loss of the displayed indication.
-10. Standards must be suitable, understood and implemented through competent inspection and maintenance. Records and action closure must be supported by evidence that the required condition has actually been achieved.
-:::
-
-## Sources and further reading
-
-- British Railways Board, Signal & Telecommunications Engineering Department, *Introduction to Railway Signalling: Brief History of Railway Signalling*. Supplied scan, with pages dated September 1991 and revised pages dated February 1992. The early railway narrative draws on printed pages 1-10; the historical illustrations reproduce Figures 6-8. This is a historical training source.
-- [National Railway Museum: Shildon, the cradle of the railways and Locomotion No. 1](https://blog.railwaymuseum.org.uk/shildon-the-cradle-of-the-railways-and-locomotion-no-1/).
-- [Science Museum Group: Liverpool and Manchester Railway Company](https://collection.sciencemuseumgroup.org.uk/people/ap48/liverpool-manchester-railway-co).
-- [Historic England: Signal Boxes](https://historicengland.org.uk/images-books/publications/iha-signal-boxes/heag137-signal-boxes-iha/).
-- [Board of Trade: court of inquiry into the Abbots Ripton collisions, 1876, transcription](https://abbotsripton.net/AbbotsriptonAccident/BoT_AbbotsRipton1876_Transcript.pdf).
-- [Regulation of Railways Act 1889, as enacted](https://www.legislation.gov.uk/ukpga/1889/57/pdfs/ukpga_18890057_en.pdf).
-- [ORR: The story of HMRI](https://www.orr.gov.uk/search-news/story-hmri-history-her-majestys-railway-inspectorate), including Armagh, Quintinshill and Harrow and Wealdstone.
-- [National Records of Scotland: Quintinshill disaster, 22 May 1915](https://www.nrscotland.gov.uk/learning-and-events/first-world-war/quintinshill-disaster-22-may-1915/).
-- [Ministry of Transport: Harrow and Wealdstone inquiry report, 1953](https://www.jonroma.net/media/rail/accident/uk/mot/MoT_Harrow001.pdf).
-- [Anthony Hidden: Investigation into the Clapham Junction Railway Accident, 1989](https://www.jonroma.net/media/rail/accident/uk/dot/DoT_Hidden001.pdf), particularly the recommendations on working practices, testing, training and management.
-- [RAIB: Greenhill Upper Junction, Report 04/2010](https://assets.publishing.service.gov.uk/media/547c900340f0b6024400017f/R042010_100318_Greenhill_Upper_Jcn.pdf), paragraphs 141-144 on Clapham's testing lessons.
-- [John Uff: The Southall Rail Accident Inquiry Report, 2000](https://www.jesip.org.uk/wp-content/uploads/2022/03/Southall-Rail-Crash.pdf).
-- [Lord Cullen: The Ladbroke Grove Rail Inquiry, Part 1, 2001](https://www.jesip.org.uk/wp-content/uploads/2022/03/Ladbroke-Grove-Rail-Inquiry-Report-Part-1.pdf).
-- [ORR: Signalling system evolution and historical context](https://www.orr.gov.uk/command-controlling-and-signalling/5-appendix), including competence management and train protection.
-- [Department for Transport: guidance on the Railways (Accident Investigation and Reporting) Regulations](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/456936/guidance_to_rair_regs_v4.pdf), introduction on the establishment of RAIB.
-- [HSE Investigation Board: Potters Bar progress report, May 2003](https://image.guardian.co.uk/sys-files/Guardian/documents/2003/05/29/may03progrep.pdf), a progress report rather than a final account of all later proceedings.
-- [ORR: Potters Bar prosecution summary](https://www.orr.gov.uk/media/21061/download).
-- [RAIB: Derailment at Grayrigg, Report 20/2008, version 5](https://assets.publishing.service.gov.uk/media/547c9037ed915d4c0d000199/R202008_081023_Grayrigg_v5.pdf), including the summary, recommendations and Appendix L on actions following Potters Bar.
+TPWS was already being trialled by the time of the [Southall crash in 1997](https://en.wikipedia.org/wiki/Southall_rail_crash) and [Ladbroke Grove crash in 1999](https://en.wikipedia.org/wiki/Ladbroke_Grove_rail_crash), but these crashes accelerated its roll-out, which began in 2000. Not all signals are fitted with TPWS, with mainly signals around junctions being fitted. It does not prevent trains passing red signals, but tries to prevent any collisions which may occur as a result.
