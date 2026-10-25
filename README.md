@@ -18,6 +18,14 @@ quarto render
 
 `quarto render` builds both formats together. The Typst format produces the PDF. Diagrams are local SVGs in `assets/images`; no remote images are required. The Introduction explains the book's purpose and how to use it. Overview of a signalling scheme brings together the main signalling relationships. The technical chapters contain objectives, explanations, a worked example or activity, and key points.
 
+## Publish the website
+
+The `Publish book` GitHub Actions workflow builds the HTML book and deploys it to GitHub Pages whenever changes are pushed to `main`. In VS Code, commit your edits and select **Sync Changes**. No local render or publish command is needed.
+
+One-time setup: in the repository's **Settings > Pages**, set **Source** to **GitHub Actions**. The published book is at https://alex1010688.github.io/Book/.
+
+Follow progress in the repository's **Actions** tab. You can also select **Publish book > Run workflow** to publish again manually. A failed build stops before deployment, leaving the previous published version available.
+
 ## Recovery
 
 The previous book, including the uncommitted history edit, is preserved in `backups/book-before-rebuild-2026-10-24.zip`. Extract that archive to a separate folder to inspect or recover the earlier work. Its contents are excluded from the active Quarto chapter list. Backups and temporary OCR/render files are ignored by Git.
