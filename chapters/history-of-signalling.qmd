@@ -35,7 +35,7 @@ Instead of only showing a red flag or light when it was not safe, signals starte
 ![Some examples of early railway signals](https://mysite.du.edu/~etuttle/rail/sigs1.gif){fig-align="center"}
 
 ![Semaphore signals
-](https://rsme.org.uk/wp-content/uploads/2023/02/Sig-1-1024x853.jpg){fig-align="center"}
+](images/Sig-1-1024x853.jpg){fig-align="center"}
 
 The time interval system worked, providing that trains stuck to the timetable. Unfortunately, early trains weren't particularly reliable and often broke down, lost time between stations, or became stuck at an obstruction. Guards were instructed to leave a stopped train and display a danger signal to warn the driver of the following train, but this wasn't a perfect solution.
 
@@ -106,3 +106,5 @@ AWS begun to be developed in its current form in 1948, and the need for it becam
 By 1988 British Rail realised that something was needed that would automatically apply the brakes if a train passed a red signal. Initially they trialed a system known as Automatic Train Protection, which continuously monitors the speed of a train and applies the brakes if it overspeeds or is about to pass a red signal. Two trial installations were installed on the Great Western and Chiltern routes, but it proved too expensive. The Train Protection Warning System (TPWS) was developed as a more affordable alternative which would stop a train that was passing a red signal, but could not continuously monitor the speed throughout a trains whole journey.
 
 TPWS was already being trialled by the time of the [Southall crash in 1997](https://en.wikipedia.org/wiki/Southall_rail_crash) and [Ladbroke Grove crash in 1999](https://en.wikipedia.org/wiki/Ladbroke_Grove_rail_crash), but these crashes accelerated its roll-out, which began in 2000. Not all signals are fitted with TPWS, with mainly signals around junctions being fitted. It does not prevent trains passing red signals, but tries to prevent any collisions which may occur as a result.
+
+![A TPWS grid. The grids transmit frequencies which are detected by trains passing over them.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Tpws_loop.jpg/250px-Tpws_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail){fig-align="center"}
