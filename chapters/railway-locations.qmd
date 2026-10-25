@@ -1,4 +1,4 @@
-# Railway basics
+# Railway locations
 
 ::: {.callout-note title="Learning objectives"}
 Understand common terminology used to refer to trackside locations, understand directional terminology on the railway, and how to identify locations.

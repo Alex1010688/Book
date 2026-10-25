@@ -31,9 +31,9 @@ book:
   chapters:
     - index.qmd
     - chapters/introduction.qmd
-    - chapters/railway-basics.qmd
+    - chapters/railway-locations.qmd
     - chapters/railway-signalling.qmd
-    - chapters/overview.qmd
+    - chapters/history-of-signalling.qmd
     - chapters/trackwork.qmd
     - chapters/points.qmd
     - chapters/lineside-signals.qmd

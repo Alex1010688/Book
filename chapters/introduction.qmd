@@ -10,7 +10,7 @@ The book is intended for those who are new to railway signalling, including thos
 
 ## How to use the book
 
-Read the opening chapters in sequence. [Railway basics](railway-basics.qmd) introduces line names, directions and location references. [Railway signalling](railway-signalling.qmd) introduces train separation and control, while [Overview of a signalling scheme](overview.qmd) brings the main equipment and system relationships together. The later chapters develop trackwork, points, signals, circuit reading, relays and the systems that connect them.
+Read the opening chapters in sequence. [Railway locations](railway-locations.qmd) introduces line names, directions and location references. [Railway signalling](railway-signalling.qmd) introduces train separation, control and the main equipment and system relationships. [History of signalling](history-of-signalling.qmd) explains how those principles developed. The later chapters develop trackwork, points, signals, circuit reading, relays and the systems that connect them.
 
 For each item, establish what it does, how it fits into the wider signalling system and what happens when it fails to perform its function.
 

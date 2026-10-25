@@ -1,0 +1,138 @@
+# History of signalling
+
+::: {.callout-note title="Learning objectives"}
+Explain why signalling developed from local signals to connected systems; distinguish the contributions of block working, interlocking and train detection; recognise the transition from mechanical to electrical and electronic control; and relate older equipment to the principles used today.
+:::
+
+## Why study the history?
+
+Signalling developed as engineers and railway operators tackled related problems: keeping trains apart, setting their paths through junctions, communicating with drivers and preventing mistakes from authorising unsafe movements. Understanding those problems makes the equipment easier to understand.
+
+The development was gradual. A new invention did not replace every older installation at once. Mechanical, relay and electronic equipment can therefore appear in the same railway, connected through interfaces. Words such as *locking*, *block* and *clearing a signal* remain useful even when there is no lever frame in sight.
+
+This chapter follows the broad development of British railway signalling. It describes the reasons for change rather than a single sequence followed by every railway company.
+
+## Local signals and the limits of time
+
+Early railway staff used hand signals, flags and lamps to communicate with drivers. Fixed signals gave those instructions a recognisable position beside the track. Different companies developed different designs and conventions; standard practice emerged over time.
+
+Some early arrangements separated following trains by a time interval. A second train could be held for a prescribed interval after the first departed. That could create a gap, but it could not establish where the first train was. A failure or obstruction could leave it stopped just beyond the next curve.
+
+The important change was from asking **how long ago did the train leave?** to asking **has it cleared the section ahead?** The latter question requires information about a place beyond the signaller's immediate view.
+
+## Telegraphs and block working
+
+The electric telegraph made rapid communication between distant railway locations possible. In 1839, Cooke installed a demonstration telegraph between Paddington and West Drayton. The [London Museum's account of railway telegraphy](https://www.londonmuseum.org.uk/collections/london-stories/how-telegraph-took-off-victorian-london/) explains how the railway became an early application of this technology.
+
+Block working used communication between adjacent controlling locations to organise trains through defined sections. Instead of relying on elapsed time, staff exchanged information about whether a section could accept a train and whether a train had cleared it. Instruments displayed the section's state, while bells conveyed messages.
+
+This introduced a lasting distinction: **communication supplies information; the working arrangements establish how that information is used**. A wire between two boxes did not by itself guarantee separation. Correct identification, acceptance and confirmation that a train had arrived complete were also important.
+
+On single lines, opposing trains created a further problem. Staffs, tablets and tokens provided physical authority associated with a section. Electric token instruments developed the principle by controlling the release of tokens between locations. The detailed arrangements differed, but the aim was to prevent incompatible authorities being issued.
+
+::: {.callout-note title="Activity: what does the message prove?"}
+A locomotive reaches the next signal box, but some wagons have become detached behind it. Why is seeing the locomotive insufficient evidence that the section is clear?
+
+The complete train must have left the section. Arrival of its leading vehicle gives no assurance about vehicles left behind. This explains the importance of establishing train completeness in traditional block working.
+:::
+
+## Signal boxes and mechanical interlocking
+
+Bringing point and signal levers together made operation more convenient, but also brought the risk of incompatible settings into one place. A signaller might try to clear a signal while its points were incorrectly set, or attempt to authorise conflicting movements.
+
+Mechanical interlocking used the relative positions of levers and locking components to prevent specified combinations. Point movement was transmitted through rods and cranks; signals could be worked through wires. The lever frame's locking made certain incorrect sequences physically unavailable.
+
+Signal boxes developed with an operating floor above a locking room, giving the signaller a view of the railway and space below for the mechanism. [Historic England's *Signal Boxes*](https://historicengland.org.uk/images-books/publications/iha-signal-boxes/heag137-signal-boxes-iha/) describes their development and the relationship between the building, lever frame and block instruments.
+
+Block working and interlocking answered different questions. Block working addressed the separation of trains along a line. Interlocking addressed the compatibility of points and signals within a layout. Both were needed: correctly set points did not establish that the line ahead was clear.
+
+### The 1889 legislation
+
+The [Regulation of Railways Act 1889, section 1](https://www.legislation.gov.uk/ukpga/1889/57/pdfs/ukpga_18890057_en.pdf) empowered the Board of Trade to require block working, interlocking of points and signals, and continuous brakes on passenger trains. These were complementary protections: controlling entry to a section, preventing incompatible settings and providing effective braking.
+
+The Act was a major historical step towards wider adoption. It did not invent those protections, nor did it cause every railway to acquire identical equipment on the same date.
+
+## Train detection adds information from the track
+
+Traditional block arrangements depended heavily on observation and communication. A track circuit added an electrical means of obtaining information about occupation. The rails formed part of a circuit, and the train's wheels and axles changed its electrical condition.
+
+The [Science Museum Group's record of an 1898 DC track relay](https://collection.sciencemuseumgroup.org.uk/objects/co27829/d-c-track-relay-1898) places the successful closed-circuit application in the United States in 1872. Its [1912 signalling-school track circuit indicator](https://collection.sciencemuseumgroup.org.uk/objects/co8430674/track-circuit-indicator) shows how occupation information was used in training.
+
+Detection could be incorporated into signal controls and locking, giving the system information beyond the positions of the signaller's levers. It also supported automatic signals responding to conditions ahead.
+
+For technicians, this added a new set of interfaces: rails, bonds, insulated joints, ballast, electrical supplies and relays. Later axle counters obtained occupation information by counting axles at section boundaries. Both belong to the subject of [train detection](train-detection.qmd), although they obtain their evidence differently.
+
+## Electrical operation, colour lights and relay logic
+
+Mechanical operation placed practical limits on distances and operating effort. Power-operated points and electrically operated signals allowed the source of operating energy to be located near the equipment. Electrical circuits could carry controls and indications between that equipment and a more distant control point.
+
+Colour light signals communicated through illuminated aspects. Multiple-aspect arrangements could provide advance warning of a stop signal ahead. The required sequence still depended on the railway's braking and operating conditions; electrical operation did not remove those constraints.
+
+Relays also allowed interlocking conditions to be implemented in circuits. A relay contact could represent a required condition, and a combination of contacts could prevent an output unless the designed conditions were satisfied. The safety purpose remained related to that of mechanical locking, although its engineering implementation changed.
+
+Panel control and entrance-exit route setting changed the signaller's task. Rather than operating each point and signal separately, the signaller could request a route between two locations. The request still depended on the interlocking obtaining the necessary proofs.
+
+::: {.callout-tip title="A link to circuit reading"}
+A modern-looking control panel does not tell you what type of interlocking lies behind it. Identify the control system, interlocking and trackside equipment separately when studying an installation's drawings.
+:::
+
+## Warnings and train protection
+
+Interlocking could prevent incompatible permissions, but it could not guarantee that a driver would observe and respond correctly to every signal. Warning and protection systems addressed this additional risk.
+
+AWS provides an in-cab indication and requires acknowledgement of a warning, with a brake application if it is not acknowledged. TPWS adds automatic brake intervention in defined circumstances, including certain overspeed and signal-overrun conditions. Their functions and application are described in [RSSB's AWS and TPWS application requirements](https://www.rssb.co.uk/standards-catalogue/CatalogueItem/RIS-0775-CCS%20Iss%203).
+
+These systems illustrate the development of additional protections around the basic signalling system. A warning does not prove a route, and acknowledging it does not establish that the train is travelling at a safe speed.
+
+## Electronic interlocking and signalling centres
+
+Solid State Interlocking (SSI) and later computer-based interlockings implemented safety logic using electronic equipment, software and installation-specific data. The equipment changed, but it still needed information about train occupation, point position and the other conditions governing movements.
+
+The [Office of Rail and Road's 2021 signalling market study](https://www.orr.gov.uk/media/22330/download) records electronic interlockings commissioned from 1985 and describes mechanical and relay equipment as part of the older installed base. This overlap matters: signalling development is a process of renewal and integration, rather than an immediate replacement of one complete railway by another.
+
+Remote control and workstation interfaces allowed geographically separated areas to be operated from signalling centres. A communications fault, an interlocking fault and a trackside equipment fault could consequently produce related symptoms at a distant screen. Technicians needed to understand both the individual equipment and the links between systems.
+
+## Cab signalling and digital train control
+
+Cab signalling brings movement information into the driver's cab. The European Train Control System (ETCS) also supervises the train against the movement authority and speed information it receives, with brake intervention when required.
+
+Network Rail describes ETCS, traffic management and their supporting telecommunications as distinct technologies within its [Digital Railway programme](https://www.networkrail.co.uk/our-work/railway/digital-railway/proven-technology/). Moving information to a screen does not remove the need to detect trains, secure routes or prove point positions. Those functions remain part of the complete system.
+
+Electronic interlocking, remote control, automatic route setting and cab signalling should therefore be understood separately. An electronic interlocking can control lineside signals; cab signalling does not by itself imply moving-block operation.
+
+## Worked example: three generations, one requirement
+
+A junction's points must be correctly positioned before a train is authorised over them. Consider how three generations of equipment address that requirement:
+
+| Arrangement | How the requirement appears | What the technician needs to distinguish |
+|---|---|---|
+| Mechanical installation | Lever-frame locking and the installation's point-locking and detection arrangements | Lever position, transmission movement and actual point condition |
+| Relay interlocking | Point-detection conditions included in the relevant control circuits | A point command, physical movement and the detection circuit's state |
+| Electronic interlocking | Inputs and application logic controlling whether authority can be given | The command, equipment state, interface information and interlocking decision |
+
+These are teaching comparisons, not interchangeable maintenance instructions. In each case, knowing that the operator requested a route is insufficient evidence that the points completed the required movement and locking.
+
+## Key points
+
+- Block working replaced reliance on elapsed time with control based on defined sections.
+- Interlocking prevented specified incompatible settings and movements.
+- Train detection added information obtained from the railway itself.
+- Electrical and electronic systems changed how controls were implemented and how far they could reach.
+- Warning and protection systems addressed risks beyond the issue of a correct signal permission.
+- Older and newer technologies can coexist; understand the interfaces as well as the equipment.
+
+## Check your understanding
+
+1. Why did the telegraph help the development of block working?
+2. Why could mechanical interlocking not, on its own, prove that a train had cleared the section ahead?
+3. What additional information did track circuits provide?
+4. Why does replacing a lever frame with a workstation not identify the type of interlocking?
+5. Which requirement remains common to all three generations in the worked example?
+
+::: {.callout-note collapse="true" title="Suggested answers"}
+1. It allowed distant controlling locations to exchange information promptly, supporting decisions about entry to sections.
+2. Locking between levers established permitted combinations within its design; section clearance required separate evidence and working arrangements.
+3. They provided an electrical indication of the state of a defined track section, which could be used in controls and indications.
+4. A workstation is the operator's interface. It can be connected to different forms of interlocking through suitable interfaces.
+5. The required point position and locking must be established before the movement is authorised.
+:::

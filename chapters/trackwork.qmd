@@ -48,7 +48,7 @@ At points and crossings the wheel-rail relationship becomes more complex because
 
 ## Relating the track to its plan
 
-[Railway basics](railway-basics.qmd) explains how tracks are represented on plans, how lines are named and how the spaces around them are described. Use those references to identify the track before considering its construction or the equipment attached to it.
+[Railway locations](railway-locations.qmd) explains how tracks are represented on plans, how lines are named and how the spaces around them are described. Use those references to identify the track before considering its construction or the equipment attached to it.
 
 ## Activity: a joint has two jobs
 

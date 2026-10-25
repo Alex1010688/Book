@@ -2,7 +2,7 @@
 
 This book provides a starting point for learning about railway signalling. Begin with the [Introduction](chapters/introduction.qmd) for its purpose, intended readership and study guidance, then read the opening chapters in sequence.
 
-[Overview of a signalling scheme](chapters/overview.qmd) brings the main system relationships together. The equipment chapters develop those subjects, and [Useful other sources of information](chapters/useful-sources-of-information.qmd) provides references for further study.
+[Railway signalling](chapters/railway-signalling.qmd) brings the main system relationships together. The equipment chapters develop those subjects, and [Useful other sources of information](chapters/useful-sources-of-information.qmd) provides references for further study.
 
 ::: {.callout-important title="Authority for work"}
 This is an educational introduction. It does not specify test limits, maintenance intervals, operating rules or authority to work. Use the applicable controlled documentation, local arrangements and competence requirements for work on the railway.

@@ -16,7 +16,7 @@ quarto preview --to html
 quarto render
 ```
 
-`quarto render` builds both formats together. The Typst format produces the PDF. Diagrams are local SVGs in `assets/images`; no remote images are required. The Introduction explains the book's purpose and how to use it. Overview of a signalling scheme brings together the main signalling relationships. The technical chapters contain objectives, explanations, a worked example or activity, and key points.
+`quarto render` builds both formats together. The Typst format produces the PDF. Diagrams are local SVGs in `assets/images`; no remote images are required. The Introduction explains the book's purpose and how to use it. Railway signalling brings together the main signalling relationships. History of signalling explains their development from early methods to electronic interlocking and cab signalling. The technical chapters contain objectives, explanations, a worked example or activity, and key points.
 
 ## Publish the website
 
