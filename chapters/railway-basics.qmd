@@ -167,7 +167,7 @@ It's important to understand what is shown on each type of diagram so that you c
 
 M12 signalling plans and bonding diagrams are generally to scale, but the scale may change throughout the plan depending on the complexity of the layout. Do not assume that just because two things look close together on the plan they will be a short walk in real life!
 
-There is also an [unofficial website](www.glasgowsignals.co.uk) \[password: Glasg0w!\] covering Glasgow showing the locations of all the assets and track circuits which can be useful when working out distances or finding assets. It's vital to be able to understand official diagrams but this can be useful resource to assist you in getting to know the area.
+There is also an [unofficial website](https://www.glasgowsignals.co.uk) \[password: Glasg0w!\] covering Glasgow showing the locations of all the assets and track circuits which can be useful when working out distances or finding assets. It's vital to be able to understand official diagrams but this can be useful resource to assist you in getting to know the area.
 
 ![](images/Screenshot 2026-10-24 231811.png){fig-align="center"}
 
